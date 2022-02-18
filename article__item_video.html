@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет</title>
+    <title>Страница статьи (с видео)</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
   <link href="css/main.min.css" rel="stylesheet"></head>
@@ -106,59 +106,85 @@
           </div>
         </nav>
       </div>
-      <div class="header__footer">
-        <button class="filter-toggler" type="button">
-          <svg class="filter-toggler__icon">
-            <use xlink:href="img/icons/icons.svg#icon-filter"></use>
-          </svg><span class="filter-toggler__title"><span class="filter-toggler__show">Показать</span><span class="filter-toggler__hide">Скрыть</span>меню</span>
-        </button>
-      </div>
     </header>
     <div class="wrapper">
-      <nav class="pathway"><a class="pathway__link" href="#">Главная</a><a class="pathway__current" href="#">Личный кабинет</a></nav>
-      <section class="content">
-        <h1>Личный кабинет</h1>
-      </section>
-      <div class="row align-items-start">
-        <div class="col-xl-3 col-lg-4 mb-lg-4">
-          <div class="filter filter_sticky">
-            <div class="filter__body">
-              <nav class="leftmenu"><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-case"></use>
-                  </svg><span class="leftmenu__item-title">Мои заказы</span><span class="leftmenu__item-badge bg-brand">2</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
-                  </svg><span class="leftmenu__item-title">Избранное</span><span class="leftmenu__item-badge bg-success">3</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-gift"></use>
-                  </svg><span class="leftmenu__item-title">Бонусные рубли</span><span class="leftmenu__item-badge bg-success">300<span class="text-sm">Б.₽.</span></span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-tool"></use>
-                  </svg><span class="leftmenu__item-title">Запись на услуги</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-settings"></use>
-                  </svg><span class="leftmenu__item-title">Подбор по VIN</span><span class="leftmenu__item-badge bg-success">1</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-user"></use>
-                  </svg><span class="leftmenu__item-title">Персональные данные</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-car"></use>
-                  </svg><span class="leftmenu__item-title">Мой автомобиль</span></a><a class="leftmenu__item active" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-shield"></use>
-                  </svg><span class="leftmenu__item-title">Смена пароля</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-exit"></use>
-                  </svg><span class="leftmenu__item-title">Выход</span></a></nav>
+      <div class="section">
+        <div class="section__wrapper section__wrapper_px mx-0">
+          <div class="section__meta">
+            <nav class="pathway"><a class="pathway__link" href="#">Главная</a><a class="pathway__link" href="#">Статьи</a><a class="pathway__current" href="#">Как самостоятельно заменить тормозную жидкость</a></nav>
+            <section class="content">
+              <div class="color-brand">
+                <h1>Обзор на летние шины Pirelli P Zero от ДонШина</h1>
+              </div>
+              <div class="content__date">30 ноября 2021</div>
+            </section>
+          </div>
+          <div class="section__video">
+            <div class="row">
+              <div class="col-xl-8 col-lg-10 mb-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_4rN_sP9DHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-10 d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-sm-between px-lg-0 px-md-5 px-4">
+                <nav class="social mb-4 mb-sm-0">
+                  <div class="social__title mr-2">Поделиться:<a class="social__item mr-2" href="#">
+                      <svg class="icon-fluid">
+                        <use xlink:href="img/icons/icons.svg#icon-vk"></use>
+                      </svg></a><a class="social__item mr-2" href="#">
+                      <svg class="icon-fluid">
+                        <use xlink:href="img/icons/icons.svg#icon-instagram"></use>
+                      </svg></a><a class="social__item mr-2" href="#">
+                      <svg class="icon-fluid">
+                        <use xlink:href="img/icons/icons.svg#icon-youtube"></use>
+                      </svg></a><a class="social__item" href="#">
+                      <svg class="icon-fluid">
+                        <use xlink:href="img/icons/icons.svg#icon-facebook"></use>
+                      </svg></a></div>
+                </nav><a class="readmore" href="#">Смотреть на нашем канале</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-9 col-lg-8">
+      </div>
+      <div class="section">
+        <div class="section__wrapper section__wrapper_px mx-0">
+          <div class="content">
+            <div class="color-brand text-center">
+              <h2>Почему нужно менять тормозную жидкость вовремя</h2>
+            </div>
+            <div class="content__columns">
+              <p>Её состав даёт одно неприятное свойство: гигроскопичность. Проще говоря, жидкость активно впитывает влагу. Как следствие, она теряет свои основные свойства. У только что купленной жидкости для тормозов точка кипения находится на отметке в 260-265 градусов. Но стоит ей разбавиться водой хотя бы на 3-4 процента, как она начнёт закипать уже при 160 градусах.</p>
+              <p>Учитывая, что в момент резкого торможения температура может подняться вплоть до 200 градусов, ездить с увлажнённой тормозной жидкостью опасно. Если она резко закипит, образовавшийся пар блокирует работу тормозов.</p>
+              <p>Поэтому разберёмся, в каких ситуациях вам нужно самому заменить тормозную жидкость:</p>
+              <ul>
+                <li>После 1,5-3 лет езды. Точный срок рекомендуемой замены определяется моделью автомобиля, качеством используемой жидкости и стилем вождения. Можно также считать по пробегу: заменяйте её каждые 40 тысяч километров пройденного пути.</li>
+                <li>Если любые другие элементы тормозной системы подвергались ремонту или замене. Скорее всего, при этом в систему попали избыточная влага и посторонние примеси.</li>
+                <li>В ситуациях, когда машина стояла нетронутой более года. Скорее всего, везде образовался конденсат.</li>
+              </ul>
+              <p>Многие водители предпочитают не тратить время, а просто оставить машину в сервисе. Но знать, как полностью заменить тормозную жидкость, всегда полезно. Это поможет в ситуациях, если нет возможности доехать до автомастера.</p>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="section mb-4">
+        <div class="section__wrapper section__wrapper_px mx-0">
+          <div class="content">
+            <div class="color-brand text-center">
+              <h2>Как заменить тормозную жидкость без прокачки</h2>
+            </div>
+            <div class="content__columns">
+              <p>Самый простой способ давно известен даже начинающим автомобилистам. Но так называемая «прокачка» тормозов требует либо помощника, либо постоянной беготни от кабины до каждого отдельного колеса. Можно самостоятельно заменить тормозную жидкость методом проливания.</p>
+              <p>Сначала вам нужно знать, какой именно тип жидкости сейчас находится в вашем автомобиле. Чаще всего это «дот-4». Ранние модификации считаются устаревшими и уже почти не применяются, а «дот-5» и «дот-5.1» можно встретить в машинах премиум-класса. Купите 1 литровую ёмкость этого же типа. Лучше всего брать одну и ту же марку, но смешивание разных не приведёт ни к чему страшному.</p>
+              <p>Загоните автомобиль на эстакаду или смотровую яму. Чтобы одному человеку быстро заменить тормозную жидкость, понадобится подобрать 4 небольшие ёмкости и столько же небольших шлангов или трубок. Диаметр нужно подбирать так, чтобы они плотно надевались на штуцеры каждого цилиндра. Один конец трубок надевается на открытый штуцер, а второй опускается в бутылку.</p>
+              <p>Теперь откройте бачок тормозной жидкости и шприцем или клизмой откачайте как можно больше старой. После чего медленно заливайте новую. Всего вам потребуется примерно литр. Оценивайте объём, вытекающий в каждую ёмкость. После того, как в передние сольётся примерно по 200 мл, а в задние — по 250-300 мл, замену можно считать завершённой. Аккуратно затяните штуцеры и доведите уровень тормозной жидкости в бачке до рекомендуемого. Учтите, что ёмкости будут наполняться неравномерно, поэтому вам придётся делать паузы, чтобы затягивать штуцеры вовремя.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-5"><a class="readmore readmore_arrow-down color-brand" href="#"><span class="text-lg">Другие статьи</span></a></div>
       <div class="section mb-3">
-        <div class="section__title">Ранее просмотренные товары:</div>
+        <div class="section__title">Рекомендуем:</div>
         <div class="slides slides_carousel swiper-container pt-1 pb-4">
           <div class="slides__nav">
             <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button">
@@ -813,6 +839,40 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section__wrapper section__wrapper_px">
+          <div class="mb-3">
+            <div class="section__title section__title_sm">Сезон</div><a class="toggler" href="#">Летняя</a><a class="toggler" href="#">Зимняя</a><a class="toggler" href="#">Всесезонная</a><a class="toggler" href="#">Летняя</a><a class="toggler" href="#">Зимняя</a><a class="toggler" href="#">Всесезонная</a>
+          </div>
+          <div class="mb-3">
+            <div class="section__title section__title_sm">Тип</div><a class="toggler" href="#">Легковые</a><a class="toggler" href="#">Для микроавтобуса</a><a class="toggler" href="#">Для микроавтобуса</a>
+          </div>
+          <div class="section__title section__title_sm">Диаметр</div><a class="toggler" href="#">13</a><a class="toggler" href="#">14</a><a class="toggler" href="#">14С</a><a class="toggler" href="#">15</a><a class="toggler" href="#">15С</a><a class="toggler" href="#">16</a><a class="toggler" href="#">16С</a><a class="toggler" href="#">17</a><a class="toggler" href="#">18</a><a class="toggler" href="#">13</a><a class="toggler" href="#">14</a><a class="toggler" href="#">14С</a><a class="toggler" href="#">15</a><a class="toggler" href="#">15С</a><a class="toggler" href="#">16</a><a class="toggler" href="#">16С</a><a class="toggler" href="#">17</a><a class="toggler" href="#">18</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="content content_expanded">
+          <h4>Летние шины в Ростове-на-Дону</h4>
+          <p>Весной большинство автомобилистов отправляется менять шины на летние. От правильно подобранных летних шин будет зависеть ваша безопасность на мокрой и сухой дорогах, а также управляемость. Хорошие шины служат несколько сезонов подряд, если их правильно эксплуатировать и вовремя менять на зимние. Каждый год менять их на новые вам не придётся, особенно если подберёте те, что наиболее чётко впишутся в ваши потребности.</p>
+          <p>Переходить на летние шины рекомендуется, когда температура поднимется приблизительно до +5-7 градусов. И стабилизируется, гарантированно не станет падать ниже (на постоянной основе, а не из-за разового перепада температуры). Независимо от того, когда в вашем домашнем регионе так поднимается температура, шины стоит покупать заранее. Выгоднее всего это делать в начале весны, когда и ассортимент представлен, и автомобилисты в спешке не снесли всё возможное с прилавков и складов интернет-магазинов, и цены доступные.</p>
+          <p>Летние шины выпускает каждый шинный производитель. Выбрать что-то наиболее удовлетворяющее ваши потребности получится как среди ассортимента известных шинных гигантов, так и у менее раскрутившихся производителей. Цены формируются в зависимости от производителей и характеристик. Но даже у самых популярных брендов всегда находятся в наличии покрышки эконом-класса, отличные по качеству и своим эксплуатационным показателям.</p>
+          <h4>Выбор летней резины в интернет-магазине "Дон-Шина"</h4>
+          <p>Летние шины должны обладать следующими характеристиками:</p>
+          <ul>
+            <li>высокие показатели курсовой устойчивости;</li>
+            <li>устойчивость к аквапланированию в дождь и на мокрой дороге;</li>
+            <li>стойкость резинового состава к нагреву;</li>
+            <li>надёжное сцепление с дорожным полотном даже на высоких скоростях.</li>
+            <li>Такие технические особенности позволят вам эксплуатировать шины полноценно, не беспокоясь о том, что с резким поворотом на высокой скорости они не справятся. К выбору подойти необходимо со всей ответственностью и учётом особенностей непосредственно вашего стиля вождения.</li>
+          </ul>
+          <p>В каталоге интернет-магазина "Дон-Шина" представлен широкий ассортимент шин летней сезонности. Выбрать есть из чего - по производителям, по параметрам, по конкретной модели вашего автомобиля. Подобрать подходящие покрышки летней сезонности вы сможете, воспользовавшись нашими удобными фильтрами. Сортируете каталог по заданным параметрам, а затем выбираете модель, которая наиболее всего подойдёт под ваши запросы. А если у вас возникают с этим сложности, вы можете просто обратиться за помощью к консультантам магазина по телефону.</p>
+          <h4>Купить летнюю резину с доставкой</h4>
+          <p>С доставкой прямо на указанный вами адрес купить летнюю резину вы сможете через интернет-магазин "Дон-Шина"! У нас вы найдёте огромный ассортимент летних покрышек, среди которых вы подберёте те, что подойдут как по возможностям, так и по потребностям. Шины представлены исключительно оригинальные, с распространяющейся на них заводской гарантией. Заказ идёт через интернет-магазин, сроки доставки оперативные, возможны индивидуальные заказы. Обращайтесь и заказывайте!</p>
+          <div class="content__footer">
+            <button class="readmore readmore_btn readmore_arrow-down" type="button"></button>
           </div>
         </div>
       </div>

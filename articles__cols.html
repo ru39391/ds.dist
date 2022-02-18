@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет</title>
+    <title>Статьи (плиткой)</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
   <link href="css/main.min.css" rel="stylesheet"></head>
@@ -106,59 +106,87 @@
           </div>
         </nav>
       </div>
-      <div class="header__footer">
-        <button class="filter-toggler" type="button">
-          <svg class="filter-toggler__icon">
-            <use xlink:href="img/icons/icons.svg#icon-filter"></use>
-          </svg><span class="filter-toggler__title"><span class="filter-toggler__show">Показать</span><span class="filter-toggler__hide">Скрыть</span>меню</span>
-        </button>
-      </div>
     </header>
     <div class="wrapper">
-      <nav class="pathway"><a class="pathway__link" href="#">Главная</a><a class="pathway__current" href="#">Личный кабинет</a></nav>
-      <section class="content">
-        <h1>Личный кабинет</h1>
-      </section>
-      <div class="row align-items-start">
-        <div class="col-xl-3 col-lg-4 mb-lg-4">
-          <div class="filter filter_sticky">
-            <div class="filter__body">
-              <nav class="leftmenu"><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-case"></use>
-                  </svg><span class="leftmenu__item-title">Мои заказы</span><span class="leftmenu__item-badge bg-brand">2</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
-                  </svg><span class="leftmenu__item-title">Избранное</span><span class="leftmenu__item-badge bg-success">3</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-gift"></use>
-                  </svg><span class="leftmenu__item-title">Бонусные рубли</span><span class="leftmenu__item-badge bg-success">300<span class="text-sm">Б.₽.</span></span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-tool"></use>
-                  </svg><span class="leftmenu__item-title">Запись на услуги</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-settings"></use>
-                  </svg><span class="leftmenu__item-title">Подбор по VIN</span><span class="leftmenu__item-badge bg-success">1</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-user"></use>
-                  </svg><span class="leftmenu__item-title">Персональные данные</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-car"></use>
-                  </svg><span class="leftmenu__item-title">Мой автомобиль</span></a><a class="leftmenu__item active" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-shield"></use>
-                  </svg><span class="leftmenu__item-title">Смена пароля</span></a><a class="leftmenu__item" href="#">
-                  <svg class="leftmenu__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-exit"></use>
-                  </svg><span class="leftmenu__item-title">Выход</span></a></nav>
+      <nav class="pathway"><a class="pathway__link" href="#">Главная</a><a class="pathway__link" href="#">Шины</a><a class="pathway__current" href="#">Шины R18</a></nav>
+      <section class="row">
+        <div class="content col-lg-5 col-md-6">
+          <h1>Статьи (плиткой)</h1>
+        </div>
+        <form class="form col-lg-7 col-md-6 d-flex align-items-center justify-content-end px-0 mb-3" action="#">
+          <div class="col-xl-4 col-lg-5 col-md-8">
+            <div class="form__select">
+              <select class="form__select-options">
+                <option>По умолчанию</option>
+                <option>По возрастанию цены</option>
+                <option>По убыванию цены</option>
+                <option>По популярности</option>
+              </select>
             </div>
           </div>
+          <div class="col-xl-2 col-lg-3 d-none d-lg-flex align-items-center justify-content-end">
+            <button class="form__view mr-3" type="button">
+              <svg class="icon-fluid">
+                <use xlink:href="img/icons/icons.svg#icon-list"></use>
+              </svg>
+            </button>
+            <button class="form__view active" type="button">
+              <svg class="icon-fluid">
+                <use xlink:href="img/icons/icons.svg#icon-tile"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </section>
+      <div class="category category_list mb-3">
+        <div class="media media_shadow media_col"><a class="media__picture mb-4 mb-md-0" href="#"><img class="img-cover" src="img/content/media/media-1.jpg" alt="" title=""/></a>
+          <div class="media__meta p-md-4 px-3 pb-4">
+            <div class="media__date">23.10.2021</div><a class="media__title d-block font-weight-bold mb-lg-2 mb-3" href="#">Как зарядить аккумулятор автомобиля зарядным устройством</a>
+            <div class="media__intro h5">Аккумулятор автомобиля — как правильно зарядить Аккумулятор автомобиля — один из ключевых элементов. Он используется для запуска мотора и служит источником питания бортовой сети. Важно знать, как заряжать аккумуляторную батарею. Это поможет...</div>
+          </div>
         </div>
-        <div class="col-xl-9 col-lg-8">
+        <div class="media media_shadow media_col"><a class="media__picture mb-4 mb-md-0" href="#"><img class="img-cover" src="img/content/media/media-1.jpg" alt="" title=""/></a>
+          <div class="media__meta p-md-4 px-3 pb-4">
+            <div class="media__date">23.10.2021</div><a class="media__title d-block font-weight-bold mb-lg-2 mb-3" href="#">Как зарядить аккумулятор автомобиля зарядным устройством</a>
+            <div class="media__intro h5">Аккумулятор автомобиля — как правильно зарядить Аккумулятор автомобиля — один из ключевых элементов. Он используется для запуска мотора и служит источником питания бортовой сети. Важно знать, как заряжать аккумуляторную батарею. Это поможет...</div>
+          </div>
+        </div>
+        <div class="media media_shadow media_col"><a class="media__picture mb-4 mb-md-0" href="#"><img class="img-cover" src="img/content/media/media-1.jpg" alt="" title=""/></a>
+          <div class="media__meta p-md-4 px-3 pb-4">
+            <div class="media__date">23.10.2021</div><a class="media__title d-block font-weight-bold mb-lg-2 mb-3" href="#">Как зарядить аккумулятор автомобиля зарядным устройством</a>
+            <div class="media__intro h5">Аккумулятор автомобиля — как правильно зарядить Аккумулятор автомобиля — один из ключевых элементов. Он используется для запуска мотора и служит источником питания бортовой сети. Важно знать, как заряжать аккумуляторную батарею. Это поможет...</div>
+          </div>
+        </div>
+        <div class="media media_shadow media_col"><a class="media__picture mb-4 mb-md-0" href="#"><img class="img-cover" src="img/content/media/media-1.jpg" alt="" title=""/></a>
+          <div class="media__meta p-md-4 px-3 pb-4">
+            <div class="media__date">23.10.2021</div><a class="media__title d-block font-weight-bold mb-lg-2 mb-3" href="#">Как зарядить аккумулятор автомобиля зарядным устройством</a>
+            <div class="media__intro h5">Аккумулятор автомобиля — как правильно зарядить Аккумулятор автомобиля — один из ключевых элементов. Он используется для запуска мотора и служит источником питания бортовой сети. Важно знать, как заряжать аккумуляторную батарею. Это поможет...</div>
+          </div>
+        </div>
+        <div class="media media_shadow media_col"><a class="media__picture mb-4 mb-md-0" href="#"><img class="img-cover" src="img/content/media/media-1.jpg" alt="" title=""/></a>
+          <div class="media__meta p-md-4 px-3 pb-4">
+            <div class="media__date">23.10.2021</div><a class="media__title d-block font-weight-bold mb-lg-2 mb-3" href="#">Как зарядить аккумулятор автомобиля зарядным устройством</a>
+            <div class="media__intro h5">Аккумулятор автомобиля — как правильно зарядить Аккумулятор автомобиля — один из ключевых элементов. Он используется для запуска мотора и служит источником питания бортовой сети. Важно знать, как заряжать аккумуляторную батарею. Это поможет...</div>
+          </div>
+        </div>
+        <div class="media media_shadow media_col"><a class="media__picture mb-4 mb-md-0" href="#"><img class="img-cover" src="img/content/media/media-1.jpg" alt="" title=""/></a>
+          <div class="media__meta p-md-4 px-3 pb-4">
+            <div class="media__date">23.10.2021</div><a class="media__title d-block font-weight-bold mb-lg-2 mb-3" href="#">Как зарядить аккумулятор автомобиля зарядным устройством</a>
+            <div class="media__intro h5">Аккумулятор автомобиля — как правильно зарядить Аккумулятор автомобиля — один из ключевых элементов. Он используется для запуска мотора и служит источником питания бортовой сети. Важно знать, как заряжать аккумуляторную батарею. Это поможет...</div>
+          </div>
+        </div>
+        <div class="media media_shadow media_col"><a class="media__picture mb-4 mb-md-0" href="#"><img class="img-cover" src="img/content/media/media-1.jpg" alt="" title=""/></a>
+          <div class="media__meta p-md-4 px-3 pb-4">
+            <div class="media__date">23.10.2021</div><a class="media__title d-block font-weight-bold mb-lg-2 mb-3" href="#">Как зарядить аккумулятор автомобиля зарядным устройством</a>
+            <div class="media__intro h5">Аккумулятор автомобиля — как правильно зарядить Аккумулятор автомобиля — один из ключевых элементов. Он используется для запуска мотора и служит источником питания бортовой сети. Важно знать, как заряжать аккумуляторную батарею. Это поможет...</div>
+          </div>
         </div>
       </div>
+      <div class="section text-center mb-5">
+        <div class="section__wrapper py-3"><a class="readmore readmore_arrow-down color-brand" href="#"><span class="text-lg">Показать еще</span></a></div>
+      </div>
       <div class="section mb-3">
-        <div class="section__title">Ранее просмотренные товары:</div>
+        <div class="section__title">Рекомендуем:</div>
         <div class="slides slides_carousel swiper-container pt-1 pb-4">
           <div class="slides__nav">
             <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button">
@@ -814,6 +842,17 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section__wrapper section__wrapper_px">
+          <div class="mb-3">
+            <div class="section__title section__title_sm">Сезон</div><a class="toggler" href="#">Летняя</a><a class="toggler" href="#">Зимняя</a><a class="toggler" href="#">Всесезонная</a><a class="toggler" href="#">Летняя</a><a class="toggler" href="#">Зимняя</a><a class="toggler" href="#">Всесезонная</a>
+          </div>
+          <div class="mb-3">
+            <div class="section__title section__title_sm">Тип</div><a class="toggler" href="#">Легковые</a><a class="toggler" href="#">Для микроавтобуса</a><a class="toggler" href="#">Для микроавтобуса</a>
+          </div>
+          <div class="section__title section__title_sm">Диаметр</div><a class="toggler" href="#">13</a><a class="toggler" href="#">14</a><a class="toggler" href="#">14С</a><a class="toggler" href="#">15</a><a class="toggler" href="#">15С</a><a class="toggler" href="#">16</a><a class="toggler" href="#">16С</a><a class="toggler" href="#">17</a><a class="toggler" href="#">18</a><a class="toggler" href="#">13</a><a class="toggler" href="#">14</a><a class="toggler" href="#">14С</a><a class="toggler" href="#">15</a><a class="toggler" href="#">15С</a><a class="toggler" href="#">16</a><a class="toggler" href="#">16С</a><a class="toggler" href="#">17</a><a class="toggler" href="#">18</a>
         </div>
       </div>
     </div>
