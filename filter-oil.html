@@ -8,37 +8,37 @@
     <meta name="description" content="">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
-    
+    <div class="icons d-none"></div>
     <header class="header">
       <div class="header__top">
         <div class="wrapper d-flex flex-wrap align-items-center">
           <div class="col-xl-6 col-lg-12 col-8 d-flex align-items-center justify-content-xl-start justify-content-lg-between mb-xl-0 mb-lg-2">
-            <div class="contacts col-xl-7 col-lg-5 w-auto px-0">
-              <div class="contacts__item contacts__item_notitle">
-                <svg class="contacts__item-icon">
-                  <use xlink:href="img/icons/icons.svg#icon-placemark"></use>
-                </svg><span class="contacts__item-title">г. Ростов-на-Дону</span>
-              </div><a class="contacts__item contacts__item_notitle" href="#">
-                <svg class="contacts__item-icon">
-                  <use xlink:href="img/icons/icons.svg#icon-phone"></use>
-                </svg><span class="contacts__item-title">+7 (365) 277-70-68</span></a>
+            <div class="contacts d-flex align-items-center justify-content-lg-between col-xl-7 col-lg-5 w-auto px-0">
+              <div class="contacts__item d-flex align-items-center h5 text-nowrap mr-4">
+                <svg class="contacts__icon color-theme-brand mr-lg-2">
+                  <use xlink:href="/img/icons/icons.svg#icon-placemark"></use>
+                </svg><span class="d-none d-lg-block">г. Ростов-на-Дону</span>
+              </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-4" href="#">
+                <svg class="contacts__icon color-theme-brand mr-lg-2">
+                  <use xlink:href="/img/icons/icons.svg#icon-phone"></use>
+                </svg><span class="d-none d-lg-block">+7 (365) 277-70-68</span></a>
             </div>
-            <div class="social"><a class="social__item" href="#">
+            <nav class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-brand mr-4 mr-lg-3" href="#">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-wapp"></use>
-                </svg></a><a class="social__item" href="#">
+                  <use xlink:href="/img/icons/icons.svg#icon-wapp"></use>
+                </svg></a><a class="social__item color-theme-brand" href="#">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-tg"></use>
-                </svg></a></div>
+                  <use xlink:href="/img/icons/icons.svg#icon-tg"></use>
+                </svg></a></nav>
           </div>
           <div class="col-xl-5 col-lg-10 d-none d-lg-block">
-            <nav class="header__nav justify-content-xl-end justify-content-between"><a class="header__nav-item" href="#">Скидки и акции</a><a class="header__nav-item" href="#">Бонусные рубли</a><a class="header__nav-item" href="#">Контакты</a></nav>
+            <nav class="header__nav d-flex align-items-center justify-content-xl-end justify-content-between"><a class="header__nav-item mr-4" href="#">Скидки и акции</a><a class="header__nav-item mr-4" href="#">Бонусные рубли</a><a class="header__nav-item" href="#">Контакты</a></nav>
           </div>
           <div class="col-xl-1 col-lg-2 col-4 d-flex align-items-xl-start justify-content-end">
-            <div class="menu">
+            <div class="menu d-flex align-items-center">
               <button class="menu__title" type="button">Помощь
-                <svg class="menu__icon">
-                  <use xlink:href="img/icons/icons.svg#icon-dropdown"></use>
+                <svg class="menu__icon ml-1">
+                  <use xlink:href="/img/icons/icons.svg#icon-dropdown"></use>
                 </svg>
               </button>
               <div class="menu__wrapper"></div>
@@ -47,16 +47,16 @@
         </div>
       </div>
       <div class="header__wrapper">
-        <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo mr-4" href="#">
+        <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo color-theme-brand mr-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="/img/icons/icons.svg#icon-logo"></use>
             </svg></a>
-          <nav class="header__nav justify-content-center"><a class="header__btn text-uppercase mr-3" href="#">
-              <svg class="header__btn-icon">
-                <use xlink:href="img/icons/icons.svg#icon-menu"></use>
+          <nav class="header__nav d-flex align-items-center justify-content-center"><a class="header__btn text-uppercase mr-3" href="#">
+              <svg class="header__btn-icon mr-lg-2">
+                <use xlink:href="/img/icons/icons.svg#icon-menu"></use>
               </svg><span class="header__btn-title">Каталог</span></a><a class="header__btn text-uppercase" href="#">
-              <svg class="header__btn-icon">
-                <use xlink:href="img/icons/icons.svg#icon-services"></use>
+              <svg class="header__btn-icon mr-lg-2">
+                <use xlink:href="/img/icons/icons.svg#icon-services"></use>
               </svg><span class="header__btn-title">Услуги</span></a></nav>
         </div>
         <div class="header__col header__col_search col-xl-3 mb-3">
@@ -64,32 +64,32 @@
             <input class="search__field" type="text" placeholder="Я ищу..." value="">
             <button class="search__btn" type="submit">
               <svg class="icon-fluid">
-                <use xlink:href="img/icons/icons.svg#icon-search"></use>
+                <use xlink:href="/img/icons/icons.svg#icon-search"></use>
               </svg>
             </button>
           </form>
         </div>
-        <div class="header__col header__col_nav col-xl-5 col-lg-7 mb-3">
-          <nav class="header__nav flex-grow-1 mr-lg-5">
-            <button class="header__nav-item header__nav-item_col d-flex d-lg-none" type="button"><span class="header__nav-icon">
+        <div class="header__col header__col_nav col-xl-5 col-lg-7 flex-grow-1 flex-lg-grow-0 mb-3">
+          <nav class="header__nav d-flex align-items-center justify-content-lg-start justify-content-between flex-grow-1 mr-lg-5">
+            <button class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap d-lg-none" type="button"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-search"></use>
-                </svg></span><span class="header__btn-title">Поиск</span></button><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-search"></use>
+                </svg></span><span class="header__btn-title">Поиск</span></button><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-compare"></use>
-                </svg></span><span class="header__btn-title">Сравнить</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
+                </svg></span><span class="header__btn-title">Сравнить</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-car"></use>
-                </svg></span><span class="header__btn-title">Выбор авто</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-car"></use>
+                </svg></span><span class="header__btn-title">Выбор авто</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-case"></use>
-                </svg></span><span class="header__btn-title">Заказы</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-case"></use>
+                </svg></span><span class="header__btn-title">Заказы</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-user"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-user"></use>
                 </svg></span><span class="header__btn-title">Вход | регистрация</span></a>
           </nav><a class="header__btn text-uppercase header__btn_inverse" href="#">
-            <svg class="header__btn-icon mr-0">
-              <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+            <svg class="header__btn-icon">
+              <use xlink:href="/img/icons/icons.svg#icon-cart"></use>
             </svg></a>
         </div>
       </div>
@@ -107,9 +107,9 @@
         </nav>
       </div>
       <div class="header__footer">
-        <button class="filter-toggler" type="button">
-          <svg class="filter-toggler__icon">
-            <use xlink:href="img/icons/icons.svg#icon-filter"></use>
+        <button class="filter-toggler d-flex align-items-center justify-content-center p-2" type="button">
+          <svg class="filter-toggler__icon mr-2">
+            <use xlink:href="/img/icons/icons.svg#icon-filter"></use>
           </svg><span class="filter-toggler__title"><span class="filter-toggler__show">Показать</span><span class="filter-toggler__hide">Скрыть</span>фильтр</span>
         </button>
       </div>
@@ -119,22 +119,22 @@
       <section class="content">
         <h1>Подбор автомасел</h1>
       </section>
-      <div class="category-counter">1 840 товаров в 4 каталогах</div>
+      <div class="category-counter mb-4">1 840 товаров в 4 каталогах</div>
       <div class="row">
         <div class="col-xl-2 col-lg-3 mb-lg-4">
           <div class="filter filter_sticky">
             <div class="filter__body">
               <form class="form form_bg form_filter" action="#">
-                <div class="form__header">
-                  <div class="form__title form__title_icon">
-                    <svg class="form__title-icon">
-                      <use xlink:href="img/icons/icons.svg#icon-oil"></use>
+                <div class="form__header d-flex align-items-center justify-content-between d-lg-block">
+                  <div class="form__title form__title_icon d-flex align-items-center h3 font-weight-bold color-theme-brand mb-0 mb-lg-2">
+                    <svg class="form__title-icon mr-2">
+                      <use xlink:href="#icon-oil"></use>
                     </svg>Подбор автомасел
                   </div>
-                  <button class="btn-link" type="reset">Сбросить</button>
+                  <button class="btn-unstyled h6" type="reset">Сбросить</button>
                 </div>
                 <div class="form__section">
-                  <div class="form__section-title">Параметры</div>
+                  <div class="form__section-title h6 color-theme-disabled mb-4">Параметры</div>
                   <div class="row">
                     <div class="col-6 col-lg-12">
                       <div class="form__select mb-4">
@@ -203,29 +203,29 @@
                   </div>
                 </div>
                 <div class="form__section">
-                  <div class="form__section-title">Цена, ₽</div>
+                  <div class="form__section-title h6 color-theme-disabled mb-4">Цена, ₽</div>
                   <div class="row mb-3">
                     <div class="form__item col-6">
-                      <label class="form__label form__label_plain">От</label>
+                      <label class="form__label form__label_plain color-theme-disabled">От</label>
                       <input class="form__field" id="price-min" type="text" value="">
                     </div>
                     <div class="form__item col-6">
-                      <label class="form__label form__label_plain">До</label>
+                      <label class="form__label form__label_plain color-theme-disabled">До</label>
                       <input class="form__field" id="price-max" type="text" value="">
                     </div>
                   </div>
                   <div class="form__slider" id="price-ranger"></div>
                 </div>
                 <div class="form__section">
-                  <div class="form__section-title">Наличие</div>
+                  <div class="form__section-title h6 color-theme-disabled mb-4">Наличие</div>
                   <input class="form__toggler form__toggler_checkbox" id="instock" type="checkbox" value="">
                   <label class="form__label" for="instock"><span class="form__label-icon">
                       <svg class="icon-fluid">
-                        <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                        <use xlink:href="#icon-checked"></use>
                       </svg></span><span class="form__label-title">Сейчас в наличии</span></label>
                 </div>
                 <div class="form__section border-0 pb-0">
-                  <div class="form__section-title">Бренд</div>
+                  <div class="form__section-title h6 color-theme-disabled mb-4">Бренд</div>
                   <div class="form__item mb-4">
                     <input class="form__field" type="text" value="">
                     <label class="form__label form__label_title">Введите название</label>
@@ -235,67 +235,67 @@
                       <input class="form__toggler form__toggler_checkbox" id="Michelin" type="checkbox" value="">
                       <label class="form__label mb-4" for="Michelin"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Michelin</span></label>
                     </div>
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Cordiant" type="checkbox" value="">
                       <label class="form__label mb-4" for="Cordiant"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Cordiant</span></label>
                     </div>
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Pirelli" type="checkbox" value="">
                       <label class="form__label mb-4" for="Pirelli"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Pirelli</span></label>
                     </div>
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Hankook" type="checkbox" value="">
                       <label class="form__label mb-4" for="Hankook"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Hankook</span></label>
                     </div>
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Yokohama" type="checkbox" value="">
                       <label class="form__label mb-4" for="Yokohama"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Yokohama</span></label>
                     </div>
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Goodyear" type="checkbox" value="">
                       <label class="form__label mb-4" for="Goodyear"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Good year</span></label>
                     </div>
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Continental" type="checkbox" value="">
                       <label class="form__label mb-4" for="Continental"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Continental</span></label>
                     </div>
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Bridgestone" type="checkbox" value="">
                       <label class="form__label mb-4" for="Bridgestone"><span class="form__label-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                            <use xlink:href="#icon-checked"></use>
                           </svg></span><span class="form__label-title">Bridgestone</span></label>
                     </div>
                   </div>
                 </div>
                 <div class="text-center">
-                  <button class="btn-unstyled" type="submit"><span class="readmore readmore_arrow-down">Показать еще</span></button>
+                  <button class="btn-unstyled h6" type="submit"><span class="readmore readmore_arrow-down">Показать еще</span></button>
                 </div>
               </form>
-              <div class="filter__alert">
-                <div class="filter__alert-info">
-                  <div class="text-sm">Найдено:</div>713
+              <div class="filter__alert d-flex align-items-center justify-content-between flex-lg-column color-theme-white bg-theme-brand px-lg-3 pt-lg-1 pb-lg-3 py-3 px-4">
+                <div class="filter__alert-info h2 font-weight-bold d-flex align-items-center mb-lg-1">
+                  <div class="h5 font-weight-normal mr-2">Найдено:</div>713
                 </div>
                 <button class="btn text-uppercase btn_bordered px-3" type="button">Показать</button>
               </div>
@@ -305,55 +305,55 @@
         <div class="col-xl-10 col-lg-9 mb-4"></div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="footer h6 color-theme-white bg-theme-brand">
       <div class="wrapper d-flex flex-wrap">
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Каталог</div><a class="footer__nav-item" href="#">Шины</a><a class="footer__nav-item" href="#">Диски</a><a class="footer__nav-item" href="#">Мотошины</a><a class="footer__nav-item" href="#">Акб</a><a class="footer__nav-item" href="#">Масла</a><a class="footer__nav-item" href="#">Автотовары</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Каталог</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Диски</a><a class="footer__nav-item color-theme-white mb-2" href="#">Мотошины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Акб</a><a class="footer__nav-item color-theme-white mb-2" href="#">Масла</a><a class="footer__nav-item color-theme-white mb-2" href="#">Автотовары</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Услуги</div><a class="footer__nav-item" href="#">Шиномонтаж</a><a class="footer__nav-item" href="#">Сезонное хранение шин и дисков</a><a class="footer__nav-item" href="#">Заправка автокондиционеровов</a><a class="footer__nav-item" href="#">Прокатка дисков</a><a class="footer__nav-item" href="#">Покраска дисков</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Услуги</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шиномонтаж</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сезонное хранение шин и дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Заправка автокондиционеровов</a><a class="footer__nav-item color-theme-white mb-2" href="#">Прокатка дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Покраска дисков</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Пользователям</div><a class="footer__nav-item" href="#">Скидки и акции</a><a class="footer__nav-item" href="#">Сравнить</a><a class="footer__nav-item" href="#">Избранное</a><a class="footer__nav-item" href="#">Подбор по авто</a><a class="footer__nav-item" href="#">Шинный калькулятор</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Новости</a><a class="footer__nav-item" href="#">Статьи</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Пользователям</div><a class="footer__nav-item color-theme-white mb-2" href="#">Скидки и акции</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сравнить</a><a class="footer__nav-item color-theme-white mb-2" href="#">Избранное</a><a class="footer__nav-item color-theme-white mb-2" href="#">Подбор по авто</a><a class="footer__nav-item color-theme-white mb-2" href="#">Шинный калькулятор</a><a class="footer__nav-item color-theme-white mb-2" href="#">О компании</a><a class="footer__nav-item color-theme-white mb-2" href="#">Новости</a><a class="footer__nav-item color-theme-white mb-2" href="#">Статьи</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Помощь</div><a class="footer__nav-item" href="#">Контакты</a><a class="footer__nav-item" href="#">Вопросы и ответы</a><a class="footer__nav-item" href="#">Оплата и доставка</a><a class="footer__nav-item" href="#">Кредит</a><a class="footer__nav-item" href="#">КупиВкредит</a><a class="footer__nav-item" href="#">Политика конфиденциальности</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Помощь</div><a class="footer__nav-item color-theme-white mb-2" href="#">Контакты</a><a class="footer__nav-item color-theme-white mb-2" href="#">Вопросы и ответы</a><a class="footer__nav-item color-theme-white mb-2" href="#">Оплата и доставка</a><a class="footer__nav-item color-theme-white mb-2" href="#">Кредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">КупиВкредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">Политика конфиденциальности</a>
           </nav>
         </div>
-        <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo mb-4" href="#">
+        <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo color-theme-white mb-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="/img/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <div class="row align-items-center">
             <div class="col-8">
-              <div class="contacts contacts_list mb-2">
-                <div class="contacts__item contacts__item_inverse">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-placemark"></use>
-                  </svg>г. Ростов-на-Дону
-                </div><a class="contacts__item contacts__item_inverse" href="#">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-phone-nobg"></use>
-                  </svg>+7 (365) 277-70-68</a><a class="contacts__item contacts__item_inverse" href="#">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-email"></use>
-                  </svg>office@don-shina.ru</a>
+              <div class="contacts mb-2">
+                <div class="contacts__item d-flex align-items-center h5 text-nowrap mb-1">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-placemark"></use>
+                  </svg><span class="color-theme-white">г. Ростов-на-Дону</span>
+                </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-phone-nobg"></use>
+                  </svg><span class="color-theme-white">+7 (365) 277-70-68</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-email"></use>
+                  </svg><span class="color-theme-white">office@don-shina.ru</span></a>
               </div>
             </div>
             <div class="col-4">
-              <nav class="social"><a class="social__item social__item_inverse" href="#">
+              <nav class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-white mr-4 mr-lg-3" href="#">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-wapp-bordered"></use>
-                  </svg></a><a class="social__item social__item_inverse" href="#">
+                    <use xlink:href="#icon-wapp-bordered"></use>
+                  </svg></a><a class="social__item color-theme-white" href="#">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-tg-bordered"></use>
+                    <use xlink:href="#icon-tg-bordered"></use>
                   </svg></a></nav>
             </div>
           </div>
@@ -369,5 +369,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
-  <script src="js/main.bundle.js"></script></body>
+  <script src="js/main.bundle.js"></script><script src="js/icons.bundle.js"></script></body>
 </html>

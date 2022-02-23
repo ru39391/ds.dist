@@ -8,37 +8,37 @@
     <meta name="description" content="">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
-    
+    <div class="icons d-none"></div>
     <header class="header">
       <div class="header__top">
         <div class="wrapper d-flex flex-wrap align-items-center">
           <div class="col-xl-6 col-lg-12 col-8 d-flex align-items-center justify-content-xl-start justify-content-lg-between mb-xl-0 mb-lg-2">
-            <div class="contacts col-xl-7 col-lg-5 w-auto px-0">
-              <div class="contacts__item contacts__item_notitle">
-                <svg class="contacts__item-icon">
-                  <use xlink:href="img/icons/icons.svg#icon-placemark"></use>
-                </svg><span class="contacts__item-title">г. Ростов-на-Дону</span>
-              </div><a class="contacts__item contacts__item_notitle" href="#">
-                <svg class="contacts__item-icon">
-                  <use xlink:href="img/icons/icons.svg#icon-phone"></use>
-                </svg><span class="contacts__item-title">+7 (365) 277-70-68</span></a>
+            <div class="contacts d-flex align-items-center justify-content-lg-between col-xl-7 col-lg-5 w-auto px-0">
+              <div class="contacts__item d-flex align-items-center h5 text-nowrap mr-4">
+                <svg class="contacts__icon color-theme-brand mr-lg-2">
+                  <use xlink:href="/img/icons/icons.svg#icon-placemark"></use>
+                </svg><span class="d-none d-lg-block">г. Ростов-на-Дону</span>
+              </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-4" href="#">
+                <svg class="contacts__icon color-theme-brand mr-lg-2">
+                  <use xlink:href="/img/icons/icons.svg#icon-phone"></use>
+                </svg><span class="d-none d-lg-block">+7 (365) 277-70-68</span></a>
             </div>
-            <div class="social"><a class="social__item" href="#">
+            <nav class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-brand mr-4 mr-lg-3" href="#">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-wapp"></use>
-                </svg></a><a class="social__item" href="#">
+                  <use xlink:href="/img/icons/icons.svg#icon-wapp"></use>
+                </svg></a><a class="social__item color-theme-brand" href="#">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-tg"></use>
-                </svg></a></div>
+                  <use xlink:href="/img/icons/icons.svg#icon-tg"></use>
+                </svg></a></nav>
           </div>
           <div class="col-xl-5 col-lg-10 d-none d-lg-block">
-            <nav class="header__nav justify-content-xl-end justify-content-between"><a class="header__nav-item" href="#">Скидки и акции</a><a class="header__nav-item" href="#">Бонусные рубли</a><a class="header__nav-item" href="#">Контакты</a></nav>
+            <nav class="header__nav d-flex align-items-center justify-content-xl-end justify-content-between"><a class="header__nav-item mr-4" href="#">Скидки и акции</a><a class="header__nav-item mr-4" href="#">Бонусные рубли</a><a class="header__nav-item" href="#">Контакты</a></nav>
           </div>
           <div class="col-xl-1 col-lg-2 col-4 d-flex align-items-xl-start justify-content-end">
-            <div class="menu">
+            <div class="menu d-flex align-items-center">
               <button class="menu__title" type="button">Помощь
-                <svg class="menu__icon">
-                  <use xlink:href="img/icons/icons.svg#icon-dropdown"></use>
+                <svg class="menu__icon ml-1">
+                  <use xlink:href="/img/icons/icons.svg#icon-dropdown"></use>
                 </svg>
               </button>
               <div class="menu__wrapper"></div>
@@ -47,16 +47,16 @@
         </div>
       </div>
       <div class="header__wrapper">
-        <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo mr-4" href="#">
+        <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo color-theme-brand mr-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="/img/icons/icons.svg#icon-logo"></use>
             </svg></a>
-          <nav class="header__nav justify-content-center"><a class="header__btn text-uppercase mr-3" href="#">
-              <svg class="header__btn-icon">
-                <use xlink:href="img/icons/icons.svg#icon-menu"></use>
+          <nav class="header__nav d-flex align-items-center justify-content-center"><a class="header__btn text-uppercase mr-3" href="#">
+              <svg class="header__btn-icon mr-lg-2">
+                <use xlink:href="/img/icons/icons.svg#icon-menu"></use>
               </svg><span class="header__btn-title">Каталог</span></a><a class="header__btn text-uppercase" href="#">
-              <svg class="header__btn-icon">
-                <use xlink:href="img/icons/icons.svg#icon-services"></use>
+              <svg class="header__btn-icon mr-lg-2">
+                <use xlink:href="/img/icons/icons.svg#icon-services"></use>
               </svg><span class="header__btn-title">Услуги</span></a></nav>
         </div>
         <div class="header__col header__col_search col-xl-3 mb-3">
@@ -64,32 +64,32 @@
             <input class="search__field" type="text" placeholder="Я ищу..." value="">
             <button class="search__btn" type="submit">
               <svg class="icon-fluid">
-                <use xlink:href="img/icons/icons.svg#icon-search"></use>
+                <use xlink:href="/img/icons/icons.svg#icon-search"></use>
               </svg>
             </button>
           </form>
         </div>
-        <div class="header__col header__col_nav col-xl-5 col-lg-7 mb-3">
-          <nav class="header__nav flex-grow-1 mr-lg-5">
-            <button class="header__nav-item header__nav-item_col d-flex d-lg-none" type="button"><span class="header__nav-icon">
+        <div class="header__col header__col_nav col-xl-5 col-lg-7 flex-grow-1 flex-lg-grow-0 mb-3">
+          <nav class="header__nav d-flex align-items-center justify-content-lg-start justify-content-between flex-grow-1 mr-lg-5">
+            <button class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap d-lg-none" type="button"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-search"></use>
-                </svg></span><span class="header__btn-title">Поиск</span></button><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-search"></use>
+                </svg></span><span class="header__btn-title">Поиск</span></button><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-compare"></use>
-                </svg></span><span class="header__btn-title">Сравнить</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
+                </svg></span><span class="header__btn-title">Сравнить</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-car"></use>
-                </svg></span><span class="header__btn-title">Выбор авто</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-car"></use>
+                </svg></span><span class="header__btn-title">Выбор авто</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-case"></use>
-                </svg></span><span class="header__btn-title">Заказы</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-case"></use>
+                </svg></span><span class="header__btn-title">Заказы</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-user"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-user"></use>
                 </svg></span><span class="header__btn-title">Вход | регистрация</span></a>
           </nav><a class="header__btn text-uppercase header__btn_inverse" href="#">
-            <svg class="header__btn-icon mr-0">
-              <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+            <svg class="header__btn-icon">
+              <use xlink:href="/img/icons/icons.svg#icon-cart"></use>
             </svg></a>
         </div>
       </div>
@@ -108,19 +108,19 @@
       </div>
     </header>
     <div class="wrapper">
-      <div class="tabs">
+      <div class="tabs mb-5">
         <ul class="tabs__nav nav nav-tabs" role="tablist">
-          <li class="tabs__nav-item nav-item"><a class="tabs__nav-link tabs__nav-link_notitle nav-link active" href="#filter-tires" data-toggle="tab" role="tab" aria-controls="filter-tires" aria-selected="true">
+          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 tabs__nav-link_notitle nav-link active" href="#filter-tires" data-toggle="tab" role="tab" aria-controls="filter-tires" aria-selected="true">
               <svg class="tabs__nav-icon">
-                <use xlink:href="img/icons/icons.svg#icon-tires"></use>
+                <use xlink:href="#icon-tires"></use>
               </svg><span class="tabs__nav-title">Подбор шин</span></a></li>
-          <li class="tabs__nav-item nav-item"><a class="tabs__nav-link tabs__nav-link_notitle nav-link" href="#filter-wheels" data-toggle="tab" role="tab" aria-controls="filter-wheels" aria-selected="false">
+          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 tabs__nav-link_notitle nav-link" href="#filter-wheels" data-toggle="tab" role="tab" aria-controls="filter-wheels" aria-selected="false">
               <svg class="tabs__nav-icon">
-                <use xlink:href="img/icons/icons.svg#icon-wheels"></use>
+                <use xlink:href="#icon-wheels"></use>
               </svg><span class="tabs__nav-title">Подбор дисков</span></a></li>
-          <li class="tabs__nav-item nav-item"><a class="tabs__nav-link tabs__nav-link_notitle nav-link" href="#filter-cars" data-toggle="tab" role="tab" aria-controls="filter-cars" aria-selected="false">
+          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 tabs__nav-link_notitle nav-link" href="#filter-cars" data-toggle="tab" role="tab" aria-controls="filter-cars" aria-selected="false">
               <svg class="tabs__nav-icon">
-                <use xlink:href="img/icons/icons.svg#icon-car"></use>
+                <use xlink:href="#icon-car"></use>
               </svg><span class="tabs__nav-title">Подбор по авто</span></a></li>
         </ul>
         <div class="tabs__content tab-content">
@@ -179,46 +179,46 @@
                 <input class="form__toggler form__toggler_checkbox" id="tires-checkbox-1" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-1"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-allseason"></use>
+                    <use xlink:href="#icon-allseason"></use>
                   </svg><span class="form__label-title">Всесезонные</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="tires-checkbox-2" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-2"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-summer"></use>
+                    <use xlink:href="#icon-summer"></use>
                   </svg><span class="form__label-title">Летние</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="tires-checkbox-3" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-3"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                    <use xlink:href="#icon-winter"></use>
                   </svg><span class="form__label-title">Зимние</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="tires-checkbox-4" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-4"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                    <use xlink:href="#icon-spikes"></use>
                   </svg><span class="form__label-title">Шипы</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="tires-checkbox-5" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-5"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-nonspikes"></use>
+                    <use xlink:href="#icon-nonspikes"></use>
                   </svg><span class="form__label-title">Без шипов</span>
                 </label>
               </div>
@@ -287,28 +287,28 @@
                 <input class="form__toggler form__toggler_checkbox" id="wheels-checkbox-11" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="wheels-checkbox-11"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-iron"></use>
+                    <use xlink:href="#icon-iron"></use>
                   </svg><span class="form__label-title">Кованые</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="wheels-checkbox-21" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="wheels-checkbox-21"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-founding"></use>
+                    <use xlink:href="#icon-founding"></use>
                   </svg><span class="form__label-title">Литые</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="wheels-checkbox-31" type="checkbox" value="">
                 <label class="form__label form__label_checkbox mb-4" for="wheels-checkbox-31"><span class="form__label-icon">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-checked"></use>
+                      <use xlink:href="#icon-checked"></use>
                     </svg></span>
                   <svg class="icon-marker mr-2">
-                    <use xlink:href="img/icons/icons.svg#icon-steel"></use>
+                    <use xlink:href="#icon-steel"></use>
                   </svg><span class="form__label-title">Стальные</span>
                 </label>
               </div>
@@ -329,7 +329,7 @@
                     </select>
                     <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выберете марку</button>
                     <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
-                      <div class="dropdown-menu__header bs-searchbox">
+                      <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
                       <div class="dropdown-menu__body">
@@ -360,7 +360,7 @@
                     </select>
                     <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Модель</button>
                     <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
-                      <div class="dropdown-menu__header bs-searchbox">
+                      <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
                       <div class="dropdown-menu__body">
@@ -385,7 +385,7 @@
                     </select>
                     <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Кузов</button>
                     <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
-                      <div class="dropdown-menu__header bs-searchbox">
+                      <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
                       <div class="dropdown-menu__body">
@@ -410,7 +410,7 @@
                     </select>
                     <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Двигатель</button>
                     <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
-                      <div class="dropdown-menu__header bs-searchbox">
+                      <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
                       <div class="dropdown-menu__body">
@@ -427,15 +427,15 @@
               </div>
               <div class="col-lg-10 offset-lg-1">
                 <div class="form__title">Наиболее популярные:</div>
-                <div class="text-center mb-1"><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/acura.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/toyota.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/suzuki.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/nissan.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/bmw.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/fiat.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/mazda.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/lexus.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/mitsubishi.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/infiniti.jpg" alt="" title=""></a></div>
+                <div class="text-center mb-1"><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/acura.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/toyota.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/suzuki.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/nissan.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/bmw.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/fiat.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/mazda.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/lexus.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/mitsubishi.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="/img/content/logo/infiniti.jpg" alt="" title=""/></a></div>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-2 col-sm-3 col-6 offset-lg-1"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="img/content/results/car-1.jpg" alt="" title=""></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
-              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="img/content/results/car-2.jpg" alt="" title=""></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
-              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="img/content/results/car-1.jpg" alt="" title=""></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
-              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="img/content/results/car-2.jpg" alt="" title=""></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
-              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="img/content/results/car-1.jpg" alt="" title=""></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
+              <div class="col-md-2 col-sm-3 col-6 offset-lg-1"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="/img/content/results/car-1.jpg" alt="" title=""/></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
+              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="/img/content/results/car-2.jpg" alt="" title=""/></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
+              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="/img/content/results/car-1.jpg" alt="" title=""/></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
+              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="/img/content/results/car-2.jpg" alt="" title=""/></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
+              <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="/img/content/results/car-1.jpg" alt="" title=""/></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
             </div>
             <div class="row">
               <div class="col-lg-10 offset-lg-1 d-flex flex-sm-row flex-column align-items-center justify-content-sm-around justify-content-center"><a class="btn text-uppercase px-4 mb-4 mb-sm-0" href="#">подобрать шины</a><a class="btn text-uppercase px-4" href="#">подобрать Диски</a></div>
@@ -443,64 +443,64 @@
           </form>
         </div>
       </div>
-      <div class="section row">
-        <div class="col-lg-7">
+      <div class="row mb-5">
+        <div class="col-lg-7 mb-5 mb-lg-0">
           <div class="banner banner_carousel">
             <div class="slides slides_banners swiper-container">
-              <div class="swiper-wrapper"><a class="swiper-slide px-0" href="#"><img class="img-cover" src="img/content/slides/slide-1.jpg" alt="" title=""></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="img/content/slides/slide-1.jpg" alt="" title=""></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="img/content/slides/slide-1.jpg" alt="" title=""></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="img/content/slides/slide-1.jpg" alt="" title=""></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="img/content/slides/slide-1.jpg" alt="" title=""></a></div>
+              <div class="swiper-wrapper"><a class="swiper-slide px-0" href="#"><img class="img-cover" src="/img/content/slides/slide-1.jpg" alt="" title=""/></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="/img/content/slides/slide-1.jpg" alt="" title=""/></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="/img/content/slides/slide-1.jpg" alt="" title=""/></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="/img/content/slides/slide-1.jpg" alt="" title=""/></a><a class="swiper-slide px-0" href="#"><img class="img-cover" src="/img/content/slides/slide-1.jpg" alt="" title=""/></a></div>
             </div>
             <div class="slides-banners-pagination slides-pagination"></div>
           </div>
         </div>
         <div class="col-lg-4 offset-lg-1 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-          <div class="banner text-uppercase"><img class="img-cover" src="img/content/banners/banner-1.jpg" alt="" title="">
-            <div class="banner__inner">
-              <div class="banner__title banner__title_colored banner__title_sm">Запись на шиномонтаж онлайн</div><a class="btn text-uppercase" href="#">Записаться</a>
+          <div class="banner overflow-hidden"><img class="img-cover" src="/img/content/banners/banner-1.jpg" alt="" title=""/>
+            <div class="banner__inner d-flex flex-column align-items-center justify-content-between px-3 py-4">
+              <div class="banner__title banner__title_sm h1 text-uppercase font-weight-bold color-theme-brand">Запись на шиномонтаж онлайн</div><a class="btn text-uppercase" href="#">Записаться</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="tabs">
+      <div class="tabs mb-5">
         <ul class="tabs__nav nav nav-tabs" role="tablist">
-          <li class="tabs__nav-item nav-item"><a class="tabs__nav-link nav-link active" href="#links-tires" data-toggle="tab" role="tab" aria-controls="links-tires" aria-selected="true">
+          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 nav-link active" href="#links-tires" data-toggle="tab" role="tab" aria-controls="links-tires" aria-selected="true">
               <svg class="tabs__nav-icon">
-                <use xlink:href="img/icons/icons.svg#icon-tires"></use>
+                <use xlink:href="/img/icons/icons.svg#icon-tires"></use>
               </svg><span class="tabs__nav-title text-uppercase">шины</span></a></li>
-          <li class="tabs__nav-item nav-item"><a class="tabs__nav-link nav-link" href="#links-wheels" data-toggle="tab" role="tab" aria-controls="links-wheels" aria-selected="false">
+          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 nav-link" href="#links-wheels" data-toggle="tab" role="tab" aria-controls="links-wheels" aria-selected="false">
               <svg class="tabs__nav-icon">
-                <use xlink:href="img/icons/icons.svg#icon-wheels"></use>
+                <use xlink:href="/img/icons/icons.svg#icon-wheels"></use>
               </svg><span class="tabs__nav-title text-uppercase">диски</span></a></li>
         </ul>
         <div class="tabs__content tab-content">
           <div class="tab-pane fade show active" id="links-tires" role="tabpanel" action="#">
             <div class="row">
-              <div class="col-lg-10 offset-lg-1 text-center text-lg-left"><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a>
+              <div class="col-lg-10 offset-lg-1 text-center text-lg-left"><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a>
                 <div class="text-center"><a class="readmore" href="#">Показать еще</a></div>
               </div>
             </div>
           </div>
           <div class="tab-pane fade" id="links-wheels" role="tabpanel" action="#">
             <div class="row">
-              <div class="col-lg-10 offset-lg-1 text-center text-lg-left"><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""></a>
+              <div class="col-lg-10 offset-lg-1 text-center text-lg-left"><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-4" href="#"><img class="img-fluid" src="/img/content/logo/logo-3.jpg" alt="" title=""/></a>
                 <div class="text-center"><a class="readmore" href="#">Показать еще</a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section mb-3">
-        <div class="section__title">Часто выбирают:</div>
+      <div class="mb-3">
+        <div class="h2 font-weight-bold mb-4">Часто выбирают:</div>
         <form class="form mb-3" action="#">
           <div class="slides slides_togglers swiper-container">
             <div class="slides__nav">
               <button class="slides__btn slides__btn_prev slides-carousel-prev slides__btn_sm slides_togglers-prev" type="button">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow-left"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-arrow-left"></use>
                 </svg>
               </button>
               <button class="slides__btn slides__btn_next slides-carousel-next slides__btn_sm slides_togglers-next" type="button">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow-right"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-arrow-right"></use>
                 </svg>
               </button>
             </div>
@@ -563,19 +563,19 @@
             <div class="slides__nav">
               <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow-left"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-arrow-left"></use>
                 </svg>
               </button>
               <button class="slides__btn slides__btn_next slides-carousel-next" type="button">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow-right"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-arrow-right"></use>
                 </svg>
               </button>
             </div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
                       <div class="card__features card__features_col">
                       </div>
@@ -583,56 +583,56 @@
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-0">
                       <div class="card__features">
                         <div class="icon-marker mr-2">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                           </svg>
                         </div>
                         <div class="icon-marker">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                           </svg>
                         </div>
                       </div>
-                      <div class="card__params">215 / 55  R16</div>
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
                       <div class="card__features card__features_col">
                       </div>
@@ -640,181 +640,183 @@
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-0">
                       <div class="card__features">
                         <div class="icon-marker mr-2">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                           </svg>
                         </div>
                         <div class="icon-marker">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                           </svg>
                         </div>
                       </div>
-                      <div class="card__params">215 / 55  R16</div>
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                         <div class="card__price card__price_old">12 337.12₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column card_banner"><a class="card__picture" href="#"><img class="img-cover" src="img/content/banners/banner-3.jpg" alt="" title=""/></a></div>
+                <div class="card overflow-hidden h-100 card_sm"><a class="card__picture h-100" href="#"><img class="img-cover" src="/img/content/banners/banner-3.jpg" alt="" title=""/></a>
+                </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_sale text-uppercase">Акция</div>
+                      <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
                       <div class="card__features card__features_col">
-                        <div class="card__features-item"><span class="card__features-icon bg-warning">
+                        <div class="card__features-item"><span class="card__features-icon bg-theme-warning">
                             <svg class="icon-fluid">
-                              <use xlink:href="img/icons/icons.svg#icon-card"></use>
-                            </svg></span><span class="card__features-title bg-warning">Топливная карта</span></div>
+                              <use xlink:href="/img/icons/icons.svg#icon-card"></use>
+                            </svg></span><span class="card__features-title bg-theme-warning">Топливная карта</span></div>
                       </div>
                     </div>
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
-                      <div class="card__params">215 / 55  R16</div>
+                    <div class="card__meta card__meta_row mb-0">
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column card_banner"><a class="card__picture" href="#"><img class="img-cover" src="img/content/banners/banner-4.jpg" alt="" title=""/></a></div>
+                <div class="card overflow-hidden h-100 card_sm"><a class="card__picture h-100" href="#"><img class="img-cover" src="/img/content/banners/banner-4.jpg" alt="" title=""/></a>
+                </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_discount text-uppercase">Скидка</div>
+                      <div class="card__label card__label_discount text-uppercase px-2">Скидка</div>
                       <div class="card__features card__features_col">
-                        <div class="card__features-item"><span class="card__features-icon bg-info">
+                        <div class="card__features-item"><span class="card__features-icon bg-theme-info">
                             <svg class="icon-fluid">
-                              <use xlink:href="img/icons/icons.svg#icon-warranty"></use>
-                            </svg></span><span class="card__features-title bg-info">Расширеная гарантия</span></div>
-                        <div class="card__features-item"><span class="card__features-icon bg-disabled">
+                              <use xlink:href="/img/icons/icons.svg#icon-warranty"></use>
+                            </svg></span><span class="card__features-title bg-theme-info">Расширеная гарантия</span></div>
+                        <div class="card__features-item"><span class="card__features-icon bg-theme-disabled">
                             <svg class="icon-fluid">
-                              <use xlink:href="img/icons/icons.svg#icon-credit"></use>
-                            </svg></span><span class="card__features-title bg-disabled">Кредит</span></div>
+                              <use xlink:href="/img/icons/icons.svg#icon-credit"></use>
+                            </svg></span><span class="card__features-title bg-theme-disabled">Кредит</span></div>
                       </div>
                     </div>
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
-                      <div class="card__params">215 / 55  R16</div>
+                    <div class="card__meta card__meta_row mb-0">
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                         <div class="card__price card__price_old">12 337.12₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_hit text-uppercase">Хит</div>
+                      <div class="card__label card__label_hit text-uppercase px-2">Хит</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item"><span class="card__features-icon">
                             <svg class="icon-fluid">
-                              <use xlink:href="img/icons/icons.svg#icon-delivery"></use>
+                              <use xlink:href="/img/icons/icons.svg#icon-delivery"></use>
                             </svg></span><span class="card__features-title">Бесплатная доставка</span></div>
                         <div class="card__features-item">
-                          <div class="card__features-content bg-success">
-                            <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-success">
+                          <div class="card__features-content bg-theme-success">
+                            <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-theme-success">
                                 <svg class="icon-fluid">
-                                  <use xlink:href="img/icons/icons.svg#icon-repair"></use>
-                                </svg></span><span class="card__features-title bg-success">Бесплатный шиномотаж</span></div>
+                                  <use xlink:href="/img/icons/icons.svg#icon-repair"></use>
+                                </svg></span><span class="card__features-title bg-theme-success">Бесплатный шиномотаж</span></div>
                             <div class="card__features-text">
                               <p>Акция действует при покупке комплекта шин за наличные (от 4 шт.)</p>
                               <p>При наличии на Доватора 11</p>
@@ -826,53 +828,53 @@
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
-                      <div class="card__params">215 / 55  R16</div>
+                    <div class="card__meta card__meta_row mb-0">
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_sale text-uppercase">Акция</div>
+                      <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item">
-                          <div class="card__features-content bg-success">
-                            <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-success">
+                          <div class="card__features-content bg-theme-success">
+                            <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-theme-success">
                                 <svg class="icon-fluid">
-                                  <use xlink:href="img/icons/icons.svg#icon-repair"></use>
-                                </svg></span><span class="card__features-title bg-success">Бесплатный шиномотаж</span></div>
+                                  <use xlink:href="/img/icons/icons.svg#icon-repair"></use>
+                                </svg></span><span class="card__features-title bg-theme-success">Бесплатный шиномотаж</span></div>
                             <div class="card__features-text">
                               <p>Акция действует при покупке комплекта шин за наличные (от 4 шт.)</p>
                               <p>При наличии на Доватора 11</p>
@@ -884,94 +886,94 @@
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
-                      <div class="card__params">215 / 55  R16</div>
+                    <div class="card__meta card__meta_row mb-0">
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_sale text-uppercase">Акция</div>
+                      <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item"><span class="card__features-icon">
                             <svg class="icon-fluid">
-                              <use xlink:href="img/icons/icons.svg#icon-delivery"></use>
+                              <use xlink:href="/img/icons/icons.svg#icon-delivery"></use>
                             </svg></span><span class="card__features-title">Бесплатная доставка</span></div>
                       </div>
                     </div>
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
-                      <div class="card__params">215 / 55  R16</div>
+                    <div class="card__meta card__meta_row mb-0">
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
                       <div class="card__features card__features_col">
                       </div>
@@ -979,56 +981,56 @@
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-0">
                       <div class="card__features">
                         <div class="icon-marker mr-2">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                           </svg>
                         </div>
                         <div class="icon-marker">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                           </svg>
                         </div>
                       </div>
-                      <div class="card__params">215 / 55  R16</div>
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row">
+                      <div class="card__meta card__meta_row mb-2">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card card_column">
-                  <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+                <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
+                  <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
                       <div class="card__features card__features_col">
                       </div>
@@ -1036,23 +1038,23 @@
                     <div class="card__meta card__meta_right">
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                         </svg><span class="card__btn-title">Сравнить</span>
                       </button>
                       <button class="card__btn card__btn_icon" type="button">
                         <svg class="card__btn-icon">
-                          <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                         </svg><span class="card__btn-title">Добавить в избранное</span>
                       </button>
                     </div>
-                    <div class="card__meta card__meta_row">
-                      <div class="card__params">215 / 55  R16</div>
+                    <div class="card__meta card__meta_row mb-0">
+                      <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                     </div>
                   </div>
-                  <div class="card__body">
-                    <div class="card__intro"><a class="card__title" href="#">Шины Yokohama Ice Guard IG55 215/55 R17 98T</a></div>
+                  <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                    <div class="card__intro"><a class="card__title d-block mb-2" href="#">Шины Yokohama Ice Guard IG55 215/55 R17 98T</a></div>
                     <div class="card__footer">
-                      <div class="card__meta card__meta_row align-items-end">
+                      <div class="card__meta card__meta_row mb-2 align-items-end">
                         <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                         <div class="d-flex flex-column">
                           <div class="card__price card__price_new">14 000₽</div>
@@ -1060,16 +1062,16 @@
                         </div>
                       </div>
                       <div class="d-flex align-items-center justify-content-between mb-3">
-                        <div class="recalculate">
-                          <input class="recalculate__field" type="number" name="count" value="4"/>
-                          <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                          <div class="recalculate__value">4</div>
-                          <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                        <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                          <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                          <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                          <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
                       <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-plane"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-plane"></use>
                           </svg></span>Купить в один клик</button>
                     </div>
                   </div>
@@ -1079,25 +1081,25 @@
           </div>
         </form>
       </div>
-      <div class="section mb-3">
-        <div class="section__title">Рекомендуем так же:</div>
+      <div class="mb-3">
+        <div class="h2 font-weight-bold mb-4">Рекомендуем так же:</div>
         <div class="slides slides_carousel swiper-container pt-1 pb-4">
           <div class="slides__nav">
             <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button">
               <svg class="icon-fluid">
-                <use xlink:href="img/icons/icons.svg#icon-arrow-left"></use>
+                <use xlink:href="/img/icons/icons.svg#icon-arrow-left"></use>
               </svg>
             </button>
             <button class="slides__btn slides__btn_next slides-carousel-next" type="button">
               <svg class="icon-fluid">
-                <use xlink:href="img/icons/icons.svg#icon-arrow-right"></use>
+                <use xlink:href="/img/icons/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </div>
           <div class="swiper-wrapper align-items-stretch">
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -1105,35 +1107,35 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
+                  <div class="card__meta card__meta_row mb-0">
                     <div class="card__features">
                       <div class="icon-marker mr-2">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                         </svg>
                       </div>
                       <div class="icon-marker">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                         </svg>
                       </div>
                     </div>
-                    <div class="card__params">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row align-items-end">
+                    <div class="card__meta card__meta_row mb-2 align-items-end">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="d-flex flex-column">
                         <div class="card__price card__price_new">1 840₽</div>
@@ -1141,11 +1143,11 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1153,8 +1155,8 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -1162,43 +1164,43 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
+                  <div class="card__meta card__meta_row mb-0">
                     <div class="card__features">
                       <div class="icon-marker mr-2">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                         </svg>
                       </div>
                       <div class="icon-marker">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                         </svg>
                       </div>
                     </div>
-                    <div class="card__params">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1206,8 +1208,8 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -1215,44 +1217,44 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
+                  <div class="card__meta card__meta_row mb-0">
                     <div class="card__features">
                       <div class="icon-marker mr-2">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                         </svg>
                       </div>
                       <div class="icon-marker">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                         </svg>
                       </div>
                     </div>
-                    <div class="card__params">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1260,50 +1262,50 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_discount text-uppercase">Скидка</div>
+                    <div class="card__label card__label_discount text-uppercase px-2">Скидка</div>
                     <div class="card__features card__features_col">
-                      <div class="card__features-item"><span class="card__features-icon bg-info">
+                      <div class="card__features-item"><span class="card__features-icon bg-theme-info">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-warranty"></use>
-                          </svg></span><span class="card__features-title bg-info">Расширеная гарантия</span></div>
-                      <div class="card__features-item"><span class="card__features-icon bg-disabled">
+                            <use xlink:href="/img/icons/icons.svg#icon-warranty"></use>
+                          </svg></span><span class="card__features-title bg-theme-info">Расширеная гарантия</span></div>
+                      <div class="card__features-item"><span class="card__features-icon bg-theme-disabled">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-credit"></use>
-                          </svg></span><span class="card__features-title bg-disabled">Кредит</span></div>
+                            <use xlink:href="/img/icons/icons.svg#icon-credit"></use>
+                          </svg></span><span class="card__features-title bg-theme-disabled">Кредит</span></div>
                     </div>
                   </div>
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
-                    <div class="card__params">215 / 55  R16</div>
+                  <div class="card__meta card__meta_row mb-0">
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1311,45 +1313,45 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_sale text-uppercase">Акция</div>
+                    <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
                     <div class="card__features card__features_col">
-                      <div class="card__features-item"><span class="card__features-icon bg-warning">
+                      <div class="card__features-item"><span class="card__features-icon bg-theme-warning">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-card"></use>
-                          </svg></span><span class="card__features-title bg-warning">Топливная карта</span></div>
+                            <use xlink:href="/img/icons/icons.svg#icon-card"></use>
+                          </svg></span><span class="card__features-title bg-theme-warning">Топливная карта</span></div>
                     </div>
                   </div>
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
-                    <div class="card__params">215 / 55  R16</div>
+                  <div class="card__meta card__meta_row mb-0">
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1357,21 +1359,21 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_hit text-uppercase">Хит</div>
+                    <div class="card__label card__label_hit text-uppercase px-2">Хит</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-delivery"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-delivery"></use>
                           </svg></span><span class="card__features-title">Бесплатная доставка</span></div>
                       <div class="card__features-item">
-                        <div class="card__features-content bg-success">
-                          <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-success">
+                        <div class="card__features-content bg-theme-success">
+                          <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-theme-success">
                               <svg class="icon-fluid">
-                                <use xlink:href="img/icons/icons.svg#icon-repair"></use>
-                              </svg></span><span class="card__features-title bg-success">Бесплатный шиномотаж</span></div>
+                                <use xlink:href="/img/icons/icons.svg#icon-repair"></use>
+                              </svg></span><span class="card__features-title bg-theme-success">Бесплатный шиномотаж</span></div>
                           <div class="card__features-text">
                             <p>Акция действует при покупке комплекта шин за наличные (от 4 шт.)</p>
                             <p>При наличии на Доватора 11</p>
@@ -1383,32 +1385,32 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
-                    <div class="card__params">215 / 55  R16</div>
+                  <div class="card__meta card__meta_row mb-0">
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1416,8 +1418,8 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -1425,35 +1427,35 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
+                  <div class="card__meta card__meta_row mb-0">
                     <div class="card__features">
                       <div class="icon-marker mr-2">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                         </svg>
                       </div>
                       <div class="icon-marker">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                         </svg>
                       </div>
                     </div>
-                    <div class="card__params">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row align-items-end">
+                    <div class="card__meta card__meta_row mb-2 align-items-end">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="d-flex flex-column">
                         <div class="card__price card__price_new">1 840₽</div>
@@ -1461,11 +1463,11 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1473,8 +1475,8 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -1482,43 +1484,43 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
+                  <div class="card__meta card__meta_row mb-0">
                     <div class="card__features">
                       <div class="icon-marker mr-2">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                         </svg>
                       </div>
                       <div class="icon-marker">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                         </svg>
                       </div>
                     </div>
-                    <div class="card__params">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1526,8 +1528,8 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -1535,44 +1537,44 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
+                  <div class="card__meta card__meta_row mb-0">
                     <div class="card__features">
                       <div class="icon-marker mr-2">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-winter"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-winter"></use>
                         </svg>
                       </div>
                       <div class="icon-marker">
                         <svg class="icon-fluid">
-                          <use xlink:href="img/icons/icons.svg#icon-spikes"></use>
+                          <use xlink:href="/img/icons/icons.svg#icon-spikes"></use>
                         </svg>
                       </div>
                     </div>
-                    <div class="card__params">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1580,50 +1582,50 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_discount text-uppercase">Скидка</div>
+                    <div class="card__label card__label_discount text-uppercase px-2">Скидка</div>
                     <div class="card__features card__features_col">
-                      <div class="card__features-item"><span class="card__features-icon bg-info">
+                      <div class="card__features-item"><span class="card__features-icon bg-theme-info">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-warranty"></use>
-                          </svg></span><span class="card__features-title bg-info">Расширеная гарантия</span></div>
-                      <div class="card__features-item"><span class="card__features-icon bg-disabled">
+                            <use xlink:href="/img/icons/icons.svg#icon-warranty"></use>
+                          </svg></span><span class="card__features-title bg-theme-info">Расширеная гарантия</span></div>
+                      <div class="card__features-item"><span class="card__features-icon bg-theme-disabled">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-credit"></use>
-                          </svg></span><span class="card__features-title bg-disabled">Кредит</span></div>
+                            <use xlink:href="/img/icons/icons.svg#icon-credit"></use>
+                          </svg></span><span class="card__features-title bg-theme-disabled">Кредит</span></div>
                     </div>
                   </div>
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
-                    <div class="card__params">215 / 55  R16</div>
+                  <div class="card__meta card__meta_row mb-0">
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1631,45 +1633,45 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_sale text-uppercase">Акция</div>
+                    <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
                     <div class="card__features card__features_col">
-                      <div class="card__features-item"><span class="card__features-icon bg-warning">
+                      <div class="card__features-item"><span class="card__features-icon bg-theme-warning">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-card"></use>
-                          </svg></span><span class="card__features-title bg-warning">Топливная карта</span></div>
+                            <use xlink:href="/img/icons/icons.svg#icon-card"></use>
+                          </svg></span><span class="card__features-title bg-theme-warning">Топливная карта</span></div>
                     </div>
                   </div>
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
-                    <div class="card__params">215 / 55  R16</div>
+                  <div class="card__meta card__meta_row mb-0">
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1677,21 +1679,21 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card card_column card_slide">
-                <div class="card__header"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="/img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_hit text-uppercase">Хит</div>
+                    <div class="card__label card__label_hit text-uppercase px-2">Хит</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon">
                           <svg class="icon-fluid">
-                            <use xlink:href="img/icons/icons.svg#icon-delivery"></use>
+                            <use xlink:href="/img/icons/icons.svg#icon-delivery"></use>
                           </svg></span><span class="card__features-title">Бесплатная доставка</span></div>
                       <div class="card__features-item">
-                        <div class="card__features-content bg-success">
-                          <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-success">
+                        <div class="card__features-content bg-theme-success">
+                          <div class="d-flex align-items-center pointer-events-none"><span class="card__features-icon bg-theme-success">
                               <svg class="icon-fluid">
-                                <use xlink:href="img/icons/icons.svg#icon-repair"></use>
-                              </svg></span><span class="card__features-title bg-success">Бесплатный шиномотаж</span></div>
+                                <use xlink:href="/img/icons/icons.svg#icon-repair"></use>
+                              </svg></span><span class="card__features-title bg-theme-success">Бесплатный шиномотаж</span></div>
                           <div class="card__features-text">
                             <p>Акция действует при покупке комплекта шин за наличные (от 4 шт.)</p>
                             <p>При наличии на Доватора 11</p>
@@ -1703,32 +1705,32 @@
                   <div class="card__meta card__meta_right">
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-compare"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
                       </svg><span class="card__btn-title">Сравнить</span>
                     </button>
                     <button class="card__btn card__btn_icon" type="button">
                       <svg class="card__btn-icon">
-                        <use xlink:href="img/icons/icons.svg#icon-favourite"></use>
+                        <use xlink:href="/img/icons/icons.svg#icon-favourite"></use>
                       </svg><span class="card__btn-title">Добавить в избранное</span>
                     </button>
                   </div>
-                  <div class="card__meta card__meta_row">
-                    <div class="card__params">215 / 55  R16</div>
+                  <div class="card__meta card__meta_row mb-0">
+                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
                   </div>
                 </div>
-                <div class="card__body">
-                  <div class="card__intro"><a class="card__title" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
                   <div class="card__footer">
-                    <div class="card__meta card__meta_row">
+                    <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field" type="number" name="count" value="4"/>
-                        <button class="recalculate__btn recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value">4</div>
-                        <button class="recalculate__btn recalculate__btn_add" type="button">+</button>
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                        <input class="recalculate__field d-none" type="number" name="count" value="4"/>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                       </div><a class="btn text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
@@ -1738,143 +1740,141 @@
           </div>
         </div>
       </div>
-      <div class="section row">
-        <div class="col-lg-9">
-          <div class="section__wrapper section__wrapper_offset">
-            <div class="section__title">Новости</div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="media mb-4"><a class="media__picture mr-2" href="#"><img class="img-fluid" src="img/content/media/media-1.jpg" alt="" title=""></a>
-                  <div class="media__meta"><a class="media__title d-block mb-2" href="#">Работа на майские праздники 2021</a>
-                    <div class="media__date">23.10.2021</div>
+      <div class="row mb-5">
+        <div class="col-lg-9 mb-5 mb-lg-0">
+          <div class="section d-flex flex-column justify-content-between h-100 px-3">
+            <div class="px-lg-5 px-sm-4">
+              <div class="h2 font-weight-bold mb-4">Новости</div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="media"><a class="media__picture mr-2" href="#"><img class="img-cover" src="/img/content/media/media-1.jpg" alt="" title=""/></a>
+                    <div class="media__meta flex-grow-1"><a class="media__title d-block mb-2" href="#">Работа на майские праздники 2021</a>
+                      <div class="date px-2">23.10.2021</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="media mb-4"><a class="media__picture mr-2" href="#"><img class="img-fluid" src="img/content/media/media-2.jpg" alt="" title=""></a>
-                  <div class="media__meta"><a class="media__title d-block mb-2" href="#">Выходные Дини с 29 марта до 5 апреля</a>
-                    <div class="media__date">23.10.2021</div>
+                <div class="col-md-6 mb-4">
+                  <div class="media"><a class="media__picture mr-2" href="#"><img class="img-cover" src="/img/content/media/media-2.jpg" alt="" title=""/></a>
+                    <div class="media__meta flex-grow-1"><a class="media__title d-block mb-2" href="#">Выходные Дини с 29 марта до 5 апреля</a>
+                      <div class="date px-2">23.10.2021</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="media mb-4"><a class="media__picture mr-2" href="#"><img class="img-fluid" src="img/content/media/media-3.jpg" alt="" title=""></a>
-                  <div class="media__meta"><a class="media__title d-block mb-2" href="#">Открытие шинного центра ДонШина Ростов-на-Дону.</a>
-                    <div class="media__date">23.10.2021</div>
+                <div class="col-md-6 mb-4">
+                  <div class="media"><a class="media__picture mr-2" href="#"><img class="img-cover" src="/img/content/media/media-3.jpg" alt="" title=""/></a>
+                    <div class="media__meta flex-grow-1"><a class="media__title d-block mb-2" href="#">Открытие шинного центра ДонШина Ростов-на-Дону</a>
+                      <div class="date px-2">23.10.2021</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="media mb-4"><a class="media__picture mr-2" href="#"><img class="img-fluid" src="img/content/media/media-4.jpg" alt="" title=""></a>
-                  <div class="media__meta"><a class="media__title d-block mb-2" href="#">Открытие шинного центра ДонШина Ростов-на-Дону.</a>
-                    <div class="media__date">23.10.2021</div>
+                <div class="col-md-6 mb-4">
+                  <div class="media"><a class="media__picture mr-2" href="#"><img class="img-cover" src="/img/content/media/media-4.jpg" alt="" title=""/></a>
+                    <div class="media__meta flex-grow-1"><a class="media__title d-block mb-2" href="#">Открытие шинного центра ДонШина Ростов-на-Дону</a>
+                      <div class="date px-2">23.10.2021</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="media mb-4"><a class="media__picture mr-2" href="#"><img class="img-fluid" src="img/content/media/media-5.jpg" alt="" title=""></a>
-                  <div class="media__meta"><a class="media__title d-block mb-2" href="#">Рассрочка на шины и диски!</a>
-                    <div class="media__date">23.10.2021</div>
+                <div class="col-md-6 mb-4">
+                  <div class="media"><a class="media__picture mr-2" href="#"><img class="img-cover" src="/img/content/media/media-5.jpg" alt="" title=""/></a>
+                    <div class="media__meta flex-grow-1"><a class="media__title d-block mb-2" href="#">Рассрочка на шины и диски!</a>
+                      <div class="date px-2">23.10.2021</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="media mb-4"><a class="media__picture mr-2" href="#"><img class="img-fluid" src="img/content/media/media-6.jpg" alt="" title=""></a>
-                  <div class="media__meta"><a class="media__title d-block mb-2" href="#">Открытие шинного центра ДонШина Ростов-на-Дону.</a>
-                    <div class="media__date">23.10.2021</div>
+                <div class="col-md-6 mb-4">
+                  <div class="media"><a class="media__picture mr-2" href="#"><img class="img-cover" src="/img/content/media/media-6.jpg" alt="" title=""/></a>
+                    <div class="media__meta flex-grow-1"><a class="media__title d-block mb-2" href="#">Открытие шинного центра ДонШина Ростов-на-Дону</a>
+                      <div class="date px-2">23.10.2021</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="text-center"><a class="readmore" href="#">Узнать больше новостей</a></div>
+            <div class="text-center px-lg-5 px-sm-4"><a class="readmore" href="#">Узнать больше новостей</a></div>
           </div>
         </div>
         <div class="col-lg-3 ml-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-          <div class="banner"><img class="img-cover" src="img/content/banners/banner-2.jpg" alt="" title="">
-            <div class="banner__inner banner__inner_offset">
-              <div class="banner__title">Подбор запчастей по VIN-коду</div><a class="btn text-uppercase" href="#">Подобрать</a>
+          <div class="banner overflow-hidden"><img class="img-cover" src="/img/content/banners/banner-2.jpg" alt="" title=""/>
+            <div class="banner__inner banner__inner_offset d-flex flex-column align-items-center justify-content-between">
+              <div class="banner__title h1 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="btn text-uppercase" href="#">Подобрать</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="section__wrapper">
-          <div class="row">
-            <div class="col-lg-4 col-sm-10 offset-sm-1 d-flex flex-column">
-              <div class="section__title pr-lg-5">Интернет-магазин резины, авто шин и дисков в Ростове-на-Дону</div>
-              <div class="row flex-grow-1">
-                <div class="col-xl-6 col-lg-8 col-md-6 d-flex flex-column justify-content-around h-100">
-                  <div class="feature">
-                    <div class="feature__value">10<span class="text-sm">лет</span></div>
-                    <div class="feature__title">на рынке продаж шин дисков и автотоваров.</div>
-                  </div>
-                  <div class="feature">
-                    <div class="feature__value">&gt;2000</div>
-                    <div class="feature__title">качественных товаров в каталоге сайта.</div>
-                  </div>
-                </div>
+      <div class="section d-flex flex-wrap px-3 mb-5">
+        <div class="col-lg-4 d-flex flex-column pl-lg-5 pr-lg-0 px-sm-4">
+          <div class="h2 font-weight-bold pr-xl-5 mb-4">Интернет-магазин резины, авто шин и дисков в Ростове-на-Дону</div>
+          <div class="row flex-grow-1">
+            <div class="col-xl-6 col-lg-8 col-md-6 d-flex flex-column justify-content-around h-100">
+              <div class="feature mb-5 mb-lg-4">
+                <div class="feature__value font-weight-bold color-theme-brand">10<span class="h1">лет</span></div>
+                <div class="h4">на рынке продаж шин дисков и автотоваров.</div>
               </div>
-            </div>
-            <div class="col-lg-6 ml-lg-0 col-sm-10 offset-sm-1">
-              <div class="content">
-                <p>В нашем интернет-магазине шин и дисков Don-Shina.ru (Дон Шина) представлен большой выбор зимней и летней резины ведущих мировых производителей. Надежные и проверенные шины Nokian (Нокиан), Goodyear, зимние и летние шины Michelin, недорогая резина Continental, Yokohama, Gislaved, Kleber, BF Goodrich, а также автомобильные покрышки отечественных производителей по низким ценам. Купить летние и зимние шины в Ростове можно по низким ценам. Кроме того, в ассортименте присутствуют диски и шины грузовые и для внедорожников. Шины в Таганроге. Шины Шахты. Шины в Новочеркасске.</p>
-                <p>Кроме летних и зимних шин разных размеров, у нас можно купить литые диски, кованые, штампованные на авто: Lenso, Enkei, Slik, ВСМПО, литые диски LS Replica (Реплика), KOSEI, KFZ, Futek, Теч-лайн, хромированные литые диски Futek, а также осуществляем хранение шин и литых дисков на авто всех размеров. Если вы захотите купить диски (автомобильные) на сумму 50000 руб и более, то мы предоставим вам бесплатную доставку. На нашем сайте вы можете воспользоваться удобным подбором шин и дисков по марке автомобиля, а также заказать шины на Дом. В магазине автомобильных шин и дисков ДонШина цены ниже рыночных.</p>
+              <div class="feature mb-5 mb-lg-0">
+                <div class="feature__value font-weight-bold color-theme-brand">&gt;2000</div>
+                <div class="h4">качественных товаров в каталоге сайта.</div>
               </div>
-              <div class="text-lg-left text-center"><a class="readmore" href="#">Узнать больше о компании</a></div>
             </div>
           </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 px-lg-0 px-sm-4">
+          <div class="content">
+            <p>В нашем интернет-магазине шин и дисков Don-Shina.ru (Дон Шина) представлен большой выбор зимней и летней резины ведущих мировых производителей. Надежные и проверенные шины Nokian (Нокиан), Goodyear, зимние и летние шины Michelin, недорогая резина Continental, Yokohama, Gislaved, Kleber, BF Goodrich, а также автомобильные покрышки отечественных производителей по низким ценам. Купить летние и зимние шины в Ростове можно по низким ценам. Кроме того, в ассортименте присутствуют диски и шины грузовые и для внедорожников. Шины в Таганроге. Шины Шахты. Шины в Новочеркасске.</p>
+            <p>Кроме летних и зимних шин разных размеров, у нас можно купить литые диски, кованые, штампованные на авто: Lenso, Enkei, Slik, ВСМПО, литые диски LS Replica (Реплика), KOSEI, KFZ, Futek, Теч-лайн, хромированные литые диски Futek, а также осуществляем хранение шин и литых дисков на авто всех размеров. Если вы захотите купить диски (автомобильные) на сумму 50000 руб и более, то мы предоставим вам бесплатную доставку. На нашем сайте вы можете воспользоваться удобным подбором шин и дисков по марке автомобиля, а также заказать шины на Дом. В магазине автомобильных шин и дисков ДонШина цены ниже рыночных.</p>
+          </div>
+          <div class="text-lg-left text-center"><a class="readmore" href="#">Узнать больше о компании</a></div>
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="footer h6 color-theme-white bg-theme-brand">
       <div class="wrapper d-flex flex-wrap">
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Каталог</div><a class="footer__nav-item" href="#">Шины</a><a class="footer__nav-item" href="#">Диски</a><a class="footer__nav-item" href="#">Мотошины</a><a class="footer__nav-item" href="#">Акб</a><a class="footer__nav-item" href="#">Масла</a><a class="footer__nav-item" href="#">Автотовары</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Каталог</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Диски</a><a class="footer__nav-item color-theme-white mb-2" href="#">Мотошины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Акб</a><a class="footer__nav-item color-theme-white mb-2" href="#">Масла</a><a class="footer__nav-item color-theme-white mb-2" href="#">Автотовары</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Услуги</div><a class="footer__nav-item" href="#">Шиномонтаж</a><a class="footer__nav-item" href="#">Сезонное хранение шин и дисков</a><a class="footer__nav-item" href="#">Заправка автокондиционеровов</a><a class="footer__nav-item" href="#">Прокатка дисков</a><a class="footer__nav-item" href="#">Покраска дисков</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Услуги</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шиномонтаж</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сезонное хранение шин и дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Заправка автокондиционеровов</a><a class="footer__nav-item color-theme-white mb-2" href="#">Прокатка дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Покраска дисков</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Пользователям</div><a class="footer__nav-item" href="#">Скидки и акции</a><a class="footer__nav-item" href="#">Сравнить</a><a class="footer__nav-item" href="#">Избранное</a><a class="footer__nav-item" href="#">Подбор по авто</a><a class="footer__nav-item" href="#">Шинный калькулятор</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Новости</a><a class="footer__nav-item" href="#">Статьи</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Пользователям</div><a class="footer__nav-item color-theme-white mb-2" href="#">Скидки и акции</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сравнить</a><a class="footer__nav-item color-theme-white mb-2" href="#">Избранное</a><a class="footer__nav-item color-theme-white mb-2" href="#">Подбор по авто</a><a class="footer__nav-item color-theme-white mb-2" href="#">Шинный калькулятор</a><a class="footer__nav-item color-theme-white mb-2" href="#">О компании</a><a class="footer__nav-item color-theme-white mb-2" href="#">Новости</a><a class="footer__nav-item color-theme-white mb-2" href="#">Статьи</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Помощь</div><a class="footer__nav-item" href="#">Контакты</a><a class="footer__nav-item" href="#">Вопросы и ответы</a><a class="footer__nav-item" href="#">Оплата и доставка</a><a class="footer__nav-item" href="#">Кредит</a><a class="footer__nav-item" href="#">КупиВкредит</a><a class="footer__nav-item" href="#">Политика конфиденциальности</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Помощь</div><a class="footer__nav-item color-theme-white mb-2" href="#">Контакты</a><a class="footer__nav-item color-theme-white mb-2" href="#">Вопросы и ответы</a><a class="footer__nav-item color-theme-white mb-2" href="#">Оплата и доставка</a><a class="footer__nav-item color-theme-white mb-2" href="#">Кредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">КупиВкредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">Политика конфиденциальности</a>
           </nav>
         </div>
-        <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo mb-4" href="#">
+        <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo color-theme-white mb-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="/img/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <div class="row align-items-center">
             <div class="col-8">
-              <div class="contacts contacts_list mb-2">
-                <div class="contacts__item contacts__item_inverse">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-placemark"></use>
-                  </svg>г. Ростов-на-Дону
-                </div><a class="contacts__item contacts__item_inverse" href="#">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-phone-nobg"></use>
-                  </svg>+7 (365) 277-70-68</a><a class="contacts__item contacts__item_inverse" href="#">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-email"></use>
-                  </svg>office@don-shina.ru</a>
+              <div class="contacts mb-2">
+                <div class="contacts__item d-flex align-items-center h5 text-nowrap mb-1">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-placemark"></use>
+                  </svg><span class="color-theme-white">г. Ростов-на-Дону</span>
+                </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-phone-nobg"></use>
+                  </svg><span class="color-theme-white">+7 (365) 277-70-68</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-email"></use>
+                  </svg><span class="color-theme-white">office@don-shina.ru</span></a>
               </div>
             </div>
             <div class="col-4">
-              <nav class="social"><a class="social__item social__item_inverse" href="#">
+              <nav class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-white mr-4 mr-lg-3" href="#">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-wapp-bordered"></use>
-                  </svg></a><a class="social__item social__item_inverse" href="#">
+                    <use xlink:href="#icon-wapp-bordered"></use>
+                  </svg></a><a class="social__item color-theme-white" href="#">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-tg-bordered"></use>
+                    <use xlink:href="#icon-tg-bordered"></use>
                   </svg></a></nav>
             </div>
           </div>
@@ -1890,5 +1890,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
-  <script src="js/main.bundle.js"></script></body>
+  <script src="js/main.bundle.js"></script><script src="js/icons.bundle.js"></script></body>
 </html>

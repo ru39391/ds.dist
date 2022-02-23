@@ -8,15 +8,87 @@
     <meta name="description" content="">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
-    <div class="py-4 px-5">
+    <div class="header d-none"></div>
+    <div class="pt-4 pb-3 px-5 border-bottom">
       <div class="content">
-        <h1>Н1 Noto Sans Bold 36pt / line height 110%</h1>
-        <h2>Н2 Noto Sans Bold 24pt</h2>
-        <h3>Н3 Noto Sans Bold 18pt</h3>
-        <h4>H4 Noto Sans Regular 16pt</h4>
-        <h5>SimpleText Noto Sans Regular 14pt</h5>
-        <h6>SmallText Noto Sans Regular 12pt</h6>
-        <p>В нашем интернет-магазине шин и дисков Don-Shina.ru (Дон Шина) представлен большой выбор зимней и летней резины ведущих мировых производителей. Надежные и проверенные шины Nokian (Нокиан), Goodyear, зимние и летние шины Michelin, недорогая резина Continental, Yokohama, Gislaved, Kleber, BF Goodrich, а также автомобильные покрышки отечественных производителей по низким ценам. Купить летние и зимние шины в Ростове можно по низким ценам. Кроме того, в ассортименте присутствуют диски и шины грузовые и для внедорожников. Шины в Таганроге. Шины Шахты. Шины в Новочеркасске.</p>
+        <h1>h1 Заголовок первого уровня</h1>
+        <h2>h2 Заголовок второго уровня</h2>
+        <h3>h3 Заголовок третьего уровня</h3>
+        <h4>h4 Заголовок четвёртого уровня</h4>
+        <h5>h5 Заголовок пятого уровня</h5>
+        <h6>h6 Заголовок шестого уровня</h6>
+        <p>Обычный текст, размещённый внутри блока с селектором класса&nbsp;<span class="font-weight-bold">.content</span><br>Прописал стили таким образом, чтобы тэгам заголовков, абзацев и списков не пришлось бы дописывать селекторы классов. Достаточно поместить их внутри соответствующего блока. Исключение составляет маркированный список:</p>
+        <ul class="list-marked">
+          <li>Элементу&nbsp;<span class="font-weight-bold">ul&nbsp;</span>необходимо присвоить класс&nbsp;<span class="font-weight-bold">list-marked&nbsp;</span>;</li>
+          <li>В других случаях списки внутри&nbsp;<span class="font-weight-bold">.content&nbsp;</span>будут размечены автоматически;</li>
+          <li>Это касается как простых маркированных списков, так и нумерованных. Например:</li>
+        </ul>
+        <ul>
+          <li>Это простой маркированный список;</li>
+          <li>Если список с крупным цветным маркером можно разместить, благодаря селектору класса&nbsp;<span class="font-weight-bold">list-marked</span>, где угодно на сайте, то обычный список принимает соответствующий вид только внутри текстового блока;</li>
+          <li>В других случаях стандартное форматирование не работает;</li>
+          <li>То же относится и к нумерованным спискам.</li>
+        </ul>
+        <ol>
+          <li>Это простой нумерованный список;</li>
+          <li>У него стандартное форматирование.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="pt-4 pb-3 px-5 border-bottom">
+      <ul>
+        <li class="h1 mb-4">Присваиваем любому тексту размер заголовка первого уровня;</li>
+        <li class="h2 mb-4">Это возможно благодаря селекторам класса&nbsp;<span class="font-weight-bold">.hN</span>;</li>
+        <li class="h3 mb-4">Где N - число от 1 до 6, для текущей строчки N = 3, для двух предыдущих N равно 1 и 2 соответственно;</li>
+        <li class="h4 mb-4">Вместе с размером текста не присваивается отступ и полужирное начертание;</li>
+        <li class="h5 mb-4">Сделать это можно, используя нативные селекторы классов Bootstrap, например:</li>
+        <li class="h6 font-weight-bold mb-4">Применён .font-weight-bold</li>
+      </ul>
+    </div>
+    <div class="pt-4 pb-3 px-5 border-bottom">
+      <p class="h2 mb-4">Ниже несколько селекторов, подстроенных под использованные в макете цвета:</p>
+      <ul>
+        <li class="h3 font-weight-bold color-theme-info mb-4">Применён .color-theme-info;</li>
+        <li class="h3 font-weight-bold color-theme-light mb-4">Применён .color-theme-light;</li>
+        <li class="h3 font-weight-bold color-theme-brand mb-4">Применён .color-theme-brand;</li>
+        <li class="h3 font-weight-bold color-theme-brand-dark mb-4">Применён .color-theme-brand-dark;</li>
+        <li class="h3 font-weight-bold color-theme-success mb-4">Применён .color-theme-success;</li>
+        <li class="h3 font-weight-bold color-theme-warning mb-4">Применён .color-theme-warning;</li>
+        <li class="h3 font-weight-bold color-theme-disabled mb-4">Применён .color-theme-disabled;</li>
+      </ul>
+    </div>
+    <div class="pt-4 pb-3 px-5 border-bottom">
+      <p class="h2 mb-4">Фоны, текст в блоке наследует цвет от родителя благодаря селектору класса .color-theme-inherit (кроме второго и последнего элементов):</p>
+      <ul class="color-theme-white">
+        <li class="h4 color-theme-inherit bg-theme-info p-4 mb-3">.bg-theme-info</li>
+        <li class="h4 color-theme-brand-dark bg-theme-light p-4 mb-3">.bg-theme-light</li>
+        <li class="h4 color-theme-inherit bg-theme-brand p-4 mb-3">.bg-theme-brand</li>
+        <li class="h4 color-theme-inherit bg-theme-brand-dark p-4 mb-3">.bg-theme-brand-dark</li>
+        <li class="h4 color-theme-inherit bg-theme-success p-4 mb-3">.bg-theme-success</li>
+        <li class="h4 color-theme-inherit bg-theme-warning p-4 mb-3">.bg-theme-warning</li>
+        <li class="h4 color-theme-inherit bg-theme-disabled p-4 mb-3">.bg-theme-disabled</li>
+        <li class="h4 color-theme-brand-dark bg-theme-white border p-4 mb-3">.bg-theme-white</li>
+      </ul>
+    </div>
+    <div class="pt-4 pb-3 px-5 border-bottom">
+      <p class="h2 mb-4">Кнопки</p>
+      <div class="mb-3">
+        <button class="btn" type="button">Кнопка со стилями по умолчанию</button>
+      </div>
+      <div class="mb-3">
+        <button class="btn text-uppercase" type="button">.text-uppercase</button>
+      </div>
+      <div class="mb-3">
+        <button class="btn bg-theme-disabled" type="button">.bg-theme-disabled</button>
+      </div>
+      <div class="mb-3">
+        <button class="btn color-theme-light" type="button">.color-theme-light</button>
+      </div>
+      <div class="mb-3">
+        <button class="btn py-4 px-5" type="button">.py-4.px-5</button>
+      </div>
+      <div class="mb-3">
+        <button class="btn w-100" type="button">Ширина 100%</button>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
@@ -26,5 +98,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
-  <script src="js/main.bundle.js"></script></body>
+  <script src="js/main.bundle.js"></script><script src="js/icons.bundle.js"></script></body>
 </html>

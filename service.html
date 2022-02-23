@@ -8,37 +8,37 @@
     <meta name="description" content="">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
-    
+    <div class="icons d-none"></div>
     <header class="header">
       <div class="header__top">
         <div class="wrapper d-flex flex-wrap align-items-center">
           <div class="col-xl-6 col-lg-12 col-8 d-flex align-items-center justify-content-xl-start justify-content-lg-between mb-xl-0 mb-lg-2">
-            <div class="contacts col-xl-7 col-lg-5 w-auto px-0">
-              <div class="contacts__item contacts__item_notitle">
-                <svg class="contacts__item-icon">
-                  <use xlink:href="img/icons/icons.svg#icon-placemark"></use>
-                </svg><span class="contacts__item-title">г. Ростов-на-Дону</span>
-              </div><a class="contacts__item contacts__item_notitle" href="#">
-                <svg class="contacts__item-icon">
-                  <use xlink:href="img/icons/icons.svg#icon-phone"></use>
-                </svg><span class="contacts__item-title">+7 (365) 277-70-68</span></a>
+            <div class="contacts d-flex align-items-center justify-content-lg-between col-xl-7 col-lg-5 w-auto px-0">
+              <div class="contacts__item d-flex align-items-center h5 text-nowrap mr-4">
+                <svg class="contacts__icon color-theme-brand mr-lg-2">
+                  <use xlink:href="/img/icons/icons.svg#icon-placemark"></use>
+                </svg><span class="d-none d-lg-block">г. Ростов-на-Дону</span>
+              </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-4" href="#">
+                <svg class="contacts__icon color-theme-brand mr-lg-2">
+                  <use xlink:href="/img/icons/icons.svg#icon-phone"></use>
+                </svg><span class="d-none d-lg-block">+7 (365) 277-70-68</span></a>
             </div>
-            <div class="social"><a class="social__item" href="#">
+            <nav class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-brand mr-4 mr-lg-3" href="#">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-wapp"></use>
-                </svg></a><a class="social__item" href="#">
+                  <use xlink:href="/img/icons/icons.svg#icon-wapp"></use>
+                </svg></a><a class="social__item color-theme-brand" href="#">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-tg"></use>
-                </svg></a></div>
+                  <use xlink:href="/img/icons/icons.svg#icon-tg"></use>
+                </svg></a></nav>
           </div>
           <div class="col-xl-5 col-lg-10 d-none d-lg-block">
-            <nav class="header__nav justify-content-xl-end justify-content-between"><a class="header__nav-item" href="#">Скидки и акции</a><a class="header__nav-item" href="#">Бонусные рубли</a><a class="header__nav-item" href="#">Контакты</a></nav>
+            <nav class="header__nav d-flex align-items-center justify-content-xl-end justify-content-between"><a class="header__nav-item mr-4" href="#">Скидки и акции</a><a class="header__nav-item mr-4" href="#">Бонусные рубли</a><a class="header__nav-item" href="#">Контакты</a></nav>
           </div>
           <div class="col-xl-1 col-lg-2 col-4 d-flex align-items-xl-start justify-content-end">
-            <div class="menu">
+            <div class="menu d-flex align-items-center">
               <button class="menu__title" type="button">Помощь
-                <svg class="menu__icon">
-                  <use xlink:href="img/icons/icons.svg#icon-dropdown"></use>
+                <svg class="menu__icon ml-1">
+                  <use xlink:href="/img/icons/icons.svg#icon-dropdown"></use>
                 </svg>
               </button>
               <div class="menu__wrapper"></div>
@@ -47,16 +47,16 @@
         </div>
       </div>
       <div class="header__wrapper">
-        <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo mr-4" href="#">
+        <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo color-theme-brand mr-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="/img/icons/icons.svg#icon-logo"></use>
             </svg></a>
-          <nav class="header__nav justify-content-center"><a class="header__btn text-uppercase mr-3" href="#">
-              <svg class="header__btn-icon">
-                <use xlink:href="img/icons/icons.svg#icon-menu"></use>
+          <nav class="header__nav d-flex align-items-center justify-content-center"><a class="header__btn text-uppercase mr-3" href="#">
+              <svg class="header__btn-icon mr-lg-2">
+                <use xlink:href="/img/icons/icons.svg#icon-menu"></use>
               </svg><span class="header__btn-title">Каталог</span></a><a class="header__btn text-uppercase" href="#">
-              <svg class="header__btn-icon">
-                <use xlink:href="img/icons/icons.svg#icon-services"></use>
+              <svg class="header__btn-icon mr-lg-2">
+                <use xlink:href="/img/icons/icons.svg#icon-services"></use>
               </svg><span class="header__btn-title">Услуги</span></a></nav>
         </div>
         <div class="header__col header__col_search col-xl-3 mb-3">
@@ -64,32 +64,32 @@
             <input class="search__field" type="text" placeholder="Я ищу..." value="">
             <button class="search__btn" type="submit">
               <svg class="icon-fluid">
-                <use xlink:href="img/icons/icons.svg#icon-search"></use>
+                <use xlink:href="/img/icons/icons.svg#icon-search"></use>
               </svg>
             </button>
           </form>
         </div>
-        <div class="header__col header__col_nav col-xl-5 col-lg-7 mb-3">
-          <nav class="header__nav flex-grow-1 mr-lg-5">
-            <button class="header__nav-item header__nav-item_col d-flex d-lg-none" type="button"><span class="header__nav-icon">
+        <div class="header__col header__col_nav col-xl-5 col-lg-7 flex-grow-1 flex-lg-grow-0 mb-3">
+          <nav class="header__nav d-flex align-items-center justify-content-lg-start justify-content-between flex-grow-1 mr-lg-5">
+            <button class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap d-lg-none" type="button"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-search"></use>
-                </svg></span><span class="header__btn-title">Поиск</span></button><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-search"></use>
+                </svg></span><span class="header__btn-title">Поиск</span></button><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-compare"></use>
-                </svg></span><span class="header__btn-title">Сравнить</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-compare"></use>
+                </svg></span><span class="header__btn-title">Сравнить</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-car"></use>
-                </svg></span><span class="header__btn-title">Выбор авто</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-car"></use>
+                </svg></span><span class="header__btn-title">Выбор авто</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-case"></use>
-                </svg></span><span class="header__btn-title">Заказы</span></a><a class="header__nav-item header__nav-item_col col-lg-3" href="#"><span class="header__nav-icon">
+                  <use xlink:href="/img/icons/icons.svg#icon-case"></use>
+                </svg></span><span class="header__btn-title">Заказы</span></a><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap col-lg-3" href="#"><span class="header__nav-icon">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-user"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-user"></use>
                 </svg></span><span class="header__btn-title">Вход | регистрация</span></a>
           </nav><a class="header__btn text-uppercase header__btn_inverse" href="#">
-            <svg class="header__btn-icon mr-0">
-              <use xlink:href="img/icons/icons.svg#icon-cart"></use>
+            <svg class="header__btn-icon">
+              <use xlink:href="/img/icons/icons.svg#icon-cart"></use>
             </svg></a>
         </div>
       </div>
@@ -107,60 +107,63 @@
         </nav>
       </div>
     </header>
-    <div class="section section_top">
-      <div class="section__picture section__picture_top text-right zi-1"><img class="img-cover d-none d-lg-block" src="img/content/services/services-top-1.jpg" alt=""><img class="img-cover d-block d-lg-none" src="img/content/services/services-top-1-mobile.jpg" alt=""></div>
-      <div class="wrapper container_column zi-2">
-        <div class="section__body section__body_unstyled">
-          <nav class="pathway"><a class="pathway__link" href="#">Главная</a><a class="pathway__link" href="#">Услуги</a><a class="pathway__current" href="#">Шиномонтаж</a></nav>
-          <section class="content">
-            <h1>Шиномонтаж в Ростове-на-Дону</h1>
-            <div class="content__intro">Хватит стоять в очередях,<br>запишитесь прямо сейчас:</div>
-          </section>
-        </div>
-        <div class="section__footer p-0">
-          <button class="btn text-uppercase" type="button">Записаться онлайн</button>
+    <div class="promo mb-5">
+      <div class="promo__picture text-right zi-1"><img class="img-cover d-none d-lg-block" src="/img/content/services/services-top-1.jpg" alt="" title=""/><img class="img-cover d-block d-lg-none" src="/img/content/services/services-top-1-mobile.jpg" alt="" title=""/>
+      </div>
+      <div class="wrapper zi-2">
+        <div class="promo__wrapper d-flex flex-column justify-content-between py-lg-5 py-md-4 py-3">
+          <div class="promo__content mb-3">
+            <nav class="pathway"><a class="pathway__link" href="#">Главная</a><a class="pathway__link" href="#">Услуги</a><a class="pathway__current" href="#">Шиномонтаж</a></nav>
+            <section class="content">
+              <h1>Шиномонтаж в Ростове-на-Дону</h1>
+              <div class="h4">Хватит стоять в очередях,<br>запишитесь прямо сейчас:</div>
+            </section>
+          </div>
+          <div class="promo__footer">
+            <button class="btn text-uppercase" type="button">Записаться онлайн</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="wrapper">
-      <div class="section">
-        <div class="section__wrapper section__wrapper_px mx-0">
-          <div class="section__title text-center">Почему лучше обращаться к профессионалам?</div>
-          <div class="section__intro">В межсезонье, когда приходит пора менять комплект шин, остро встает вопрос, где это лучше сделать, что бы не стоять больщую очередь. И В такой ситуации мало кто задумывается о качестве работ, а ведь это основной момент. Именно от качества шиномонтажа зависит сразу несколько моментов:</div>
+      <div class="section px-lg-0 px-3 mb-5">
+        <div class="px-lg-5 px-md-4">
+          <div class="h2 font-weight-bold text-center mb-4">Почему лучше обращаться к профессионалам?</div>
+          <div class="h4 mb-4">В межсезонье, когда приходит пора менять комплект шин, остро встает вопрос, где это лучше сделать, что бы не стоять больщую очередь. И В такой ситуации мало кто задумывается о качестве работ, а ведь это основной момент. Именно от качества шиномонтажа зависит сразу несколько моментов:</div>
           <div class="slides slides_features swiper-container px-0">
             <div class="slides__nav slides__nav_row">
               <button class="slides__btn slides__btn_prev slides-features-prev" type="button">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow-prev"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-arrow-prev"></use>
                 </svg>
               </button>
               <button class="slides__btn slides__btn_prev slides-features-next" type="button">
                 <svg class="icon-fluid">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow-next"></use>
+                  <use xlink:href="/img/icons/icons.svg#icon-arrow-next"></use>
                 </svg>
               </button>
             </div>
             <div class="swiper-wrapper">
               <div class="swiper-slide px-3">
-                <div class="icon-rounded mb-3">
+                <div class="icon-rounded color-theme-brand bg-theme-light mb-3">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-scales"></use>
+                    <use xlink:href="/img/icons/icons.svg#icon-scales"></use>
                   </svg>
                 </div>
                 <p>Уменьшение срока службы подвески. Неточная или не качественная балансировка может привести к поломке всей ходовой. При некачественной балансировке, неверно выбранный груз или неверном его креплении на диске в процессе эксплуатации груз может слететь.</p>
               </div>
               <div class="swiper-slide px-3">
-                <div class="icon-rounded mb-3">
+                <div class="icon-rounded color-theme-brand bg-theme-light mb-3">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-target"></use>
+                    <use xlink:href="/img/icons/icons.svg#icon-target"></use>
                   </svg>
                 </div>
                 <p>Неравномерная изношенность покрышек. При неверной балансировке износ шин происходит намного быстрее, что может привести не только к преждевременной замены покрышки, но и к возникновению аварийной ситуации на дороге.</p>
               </div>
               <div class="swiper-slide px-3">
-                <div class="icon-rounded mb-3">
+                <div class="icon-rounded color-theme-brand bg-theme-light mb-3">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-attention"></use>
+                    <use xlink:href="/img/icons/icons.svg#icon-attention"></use>
                   </svg>
                 </div>
                 <p>Безопасность на дороге. Дороже этого ничего быть не может. Сэкономленные 2 часа на смену комплекта шин у непрофессионалов не стоят Вашей безопасности и безопасности Ваших близких.</p>
@@ -169,109 +172,108 @@
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="section__wrapper section__wrapper_px mx-0">
-          <div class="row">
-            <div class="col-xl-4 col-lg-5">
-              <div class="section__picture section__picture_left"><img class="img-fluid" src="img/content/services/services-1.jpg" alt=""></div>
+      <div class="section section_divider px-lg-0 px-3 mb-5">
+        <div class="px-lg-5 px-md-4 d-flex flex-wrap">
+          <div class="col-xl-4 col-lg-5 px-0">
+            <div class="section__picture section__picture_left text-center mx-0"><img class="img-fluid" src="/img/content/services/services-1.jpg" alt="" title=""/>
             </div>
-            <div class="col-lg-6 offset-xl-1">
-              <div class="content">
-                <p>Все работы осуществляют только квалифицированные специалисты, прошедшие профессионально-техническое обучение.</p>
-                <p>У нас вы можете произвести полный комплекс услуг профессионального шиномонтажа: монтаж-демонтаж легковых шин, шин для внедорожников и микроавтобусов, балансировку и ремонт колес, шиномонтаж мотошин.</p>
-                <p>Все шиномонтажные работы выполняются на новейшем высококачественном немецком оборудовании фирмы Hofmann, а стоимость услуг вас приятно удивит.</p>
-              </div>
-              <div class="h3 color-brand font-weight-bold mb-2">Получить более подробную информацию<br>или записаться вы можете по телефону:</div>
-              <div class="contacts"><a class="contacts__item contacts__item_lg color-brand" href="tel:+73652777068">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-phone"></use>
-                  </svg><span class="contacts__item-title">+7 (365) 277-70-68</span></a></div>
+          </div>
+          <div class="col-lg-6 offset-xl-1 px-0">
+            <div class="content">
+              <p>Все работы осуществляют только квалифицированные специалисты, прошедшие профессионально-техническое обучение.</p>
+              <p>У нас вы можете произвести полный комплекс услуг профессионального шиномонтажа: монтаж-демонтаж легковых шин, шин для внедорожников и микроавтобусов, балансировку и ремонт колес, шиномонтаж мотошин.</p>
+              <p>Все шиномонтажные работы выполняются на новейшем высококачественном немецком оборудовании фирмы Hofmann, а стоимость услуг вас приятно удивит.</p>
             </div>
+            <div class="h3 color-theme-brand font-weight-bold mb-2">Получить более подробную информацию<br>или записаться вы можете по телефону:</div>
+            <div class="contacts"><a class="contacts__item d-flex align-items-center h3 font-weight-bold text-nowrap color-theme-brand" href="tel:+73652777068">
+                <svg class="contacts__icon color-theme-brand mr-2">
+                  <use xlink:href="/img/icons/icons.svg#icon-phone"></use>
+                </svg><span class="contacts__item-title">+7 (365) 277-70-68</span></a></div>
           </div>
         </div>
       </div>
-      <div class="section mb-3">
-        <div class="section__title">Отзывы</div>
+      <div class="mb-3">
+        <div class="h2 font-weight-bold mb-4">Отзывы</div>
         <div class="slides slides_reviews swiper-container pt-1 pb-4 px-0 mx-0">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="review review_slide">
-                <div class="review__header">
-                  <div class="icon-rounded mr-3">
+              <div class="review review_slide h-100 p-3">
+                <div class="review__header d-flex align-items-center mb-3">
+                  <div class="icon-rounded color-theme-brand bg-theme-light mr-3">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-emoji"></use>
+                      <use xlink:href="#icon-emoji"></use>
                     </svg>
                   </div>
-                  <div class="review__meta">
-                    <div class="review__title">Анатолий Ефимов</div>
-                    <div class="review__date">10 дек в 11:37</div>
+                  <div class="review__meta flex-grow-1">
+                    <div class="review__title d-block h4 color-theme-brand">Анатолий Ефимов</div>
+                    <div class="date">10 дек в 11:37</div>
                   </div>
                 </div>
-                <div class="review__content">Был 10 декабря, отличный сервис. Сам ещё приеду и всем друзьям посоветую. Мастеру большой репект! Мне очень понравилось, советую ВСЕМ!!!</div>
+                <div class="review__content h5">Был 10 декабря, отличный сервис. Сам ещё приеду и всем друзьям посоветую. Мастеру большой репект! Мне очень понравилось, советую ВСЕМ!!!</div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="review review_slide">
-                <div class="review__header">
-                  <div class="icon-rounded mr-3">
+              <div class="review review_slide h-100 p-3">
+                <div class="review__header d-flex align-items-center mb-3">
+                  <div class="icon-rounded color-theme-brand bg-theme-light mr-3">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-emoji"></use>
+                      <use xlink:href="#icon-emoji"></use>
                     </svg>
                   </div>
-                  <div class="review__meta">
-                    <div class="review__title">Павел Антипин</div>
-                    <div class="review__date">10 дек в 11:37</div>
+                  <div class="review__meta flex-grow-1">
+                    <div class="review__title d-block h4 color-theme-brand">Павел Антипин</div>
+                    <div class="date">10 дек в 11:37</div>
                   </div>
                 </div>
-                <div class="review__content">Друг присоветовал этот салон. Приехал, не пожалел. Ребята, сервис шикарный! И доступно, и оперативно, и без проблем. Теперь сам работаю сарафанным радио и друзьям советую!</div>
+                <div class="review__content h5">Друг присоветовал этот салон. Приехал, не пожалел. Ребята, сервис шикарный! И доступно, и оперативно, и без проблем. Теперь сам работаю сарафанным радио и друзьям советую!</div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="review review_slide">
-                <div class="review__header">
-                  <div class="icon-rounded mr-3">
+              <div class="review review_slide h-100 p-3">
+                <div class="review__header d-flex align-items-center mb-3">
+                  <div class="icon-rounded color-theme-brand bg-theme-light mr-3">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-emoji"></use>
+                      <use xlink:href="#icon-emoji"></use>
                     </svg>
                   </div>
-                  <div class="review__meta">
-                    <div class="review__title">Костя Боярский</div>
-                    <div class="review__date">10 дек в 11:37</div>
+                  <div class="review__meta flex-grow-1">
+                    <div class="review__title d-block h4 color-theme-brand">Костя Боярский</div>
+                    <div class="date">10 дек в 11:37</div>
                   </div>
                 </div>
-                <div class="review__content">Терпеть не могу сам лезть менять! Считаю, что лучше обратиться к спецам, чем возиться. В последний раз обращался сюда, сервис очень понравился. Думаю, дальше тоже буду кататься к Вашему мастеру!</div>
+                <div class="review__content h5">Терпеть не могу сам лезть менять! Считаю, что лучше обратиться к спецам, чем возиться. В последний раз обращался сюда, сервис очень понравился. Думаю, дальше тоже буду кататься к Вашему мастеру!</div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="review review_slide">
-                <div class="review__header">
-                  <div class="icon-rounded mr-3">
+              <div class="review review_slide h-100 p-3">
+                <div class="review__header d-flex align-items-center mb-3">
+                  <div class="icon-rounded color-theme-brand bg-theme-light mr-3">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-emoji"></use>
+                      <use xlink:href="#icon-emoji"></use>
                     </svg>
                   </div>
-                  <div class="review__meta">
-                    <div class="review__title">Иван Трактиров</div>
-                    <div class="review__date">10 дек в 11:37</div>
+                  <div class="review__meta flex-grow-1">
+                    <div class="review__title d-block h4 color-theme-brand">Иван Трактиров</div>
+                    <div class="date">10 дек в 11:37</div>
                   </div>
                 </div>
-                <div class="review__content">Приезжал сюда ставить шины на зимний сезон. Вот и масло решил приехать менять сюда же. Мастера отличные, работают быстро и качественно. Рекомендую всем!</div>
+                <div class="review__content h5">Приезжал сюда ставить шины на зимний сезон. Вот и масло решил приехать менять сюда же. Мастера отличные, работают быстро и качественно. Рекомендую всем!</div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="review review_slide">
-                <div class="review__header">
-                  <div class="icon-rounded mr-3">
+              <div class="review review_slide h-100 p-3">
+                <div class="review__header d-flex align-items-center mb-3">
+                  <div class="icon-rounded color-theme-brand bg-theme-light mr-3">
                     <svg class="icon-fluid">
-                      <use xlink:href="img/icons/icons.svg#icon-emoji"></use>
+                      <use xlink:href="#icon-emoji"></use>
                     </svg>
                   </div>
-                  <div class="review__meta">
-                    <div class="review__title">Анатолий Ефимов</div>
-                    <div class="review__date">10 дек в 11:37</div>
+                  <div class="review__meta flex-grow-1">
+                    <div class="review__title d-block h4 color-theme-brand">Анатолий Ефимов</div>
+                    <div class="date">10 дек в 11:37</div>
                   </div>
                 </div>
-                <div class="review__content">Был 10 декабря, отличный сервис. Сам ещё приеду и всем друзьям посоветую. Мастеру большой репект! Мне очень понравилось, советую ВСЕМ!!!</div>
+                <div class="review__content h5">Был 10 декабря, отличный сервис. Сам ещё приеду и всем друзьям посоветую. Мастеру большой репект! Мне очень понравилось, советую ВСЕМ!!!</div>
               </div>
             </div>
           </div>
@@ -279,29 +281,35 @@
       </div>
     </div>
     <div class="wrapper">
-      <div class="section mb-3">
-        <div class="section__title">Как мы работаем</div>
+      <div class="mb-3">
+        <div class="h2 font-weight-bold mb-4">Как мы работаем</div>
       </div>
     </div>
-    <div class="section">
-      <div class="slides slides_carousel swiper-container pt-1 pb-4 px-0 mx-0">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-1.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-2.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-3.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-4.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-1.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-2.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-3.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="img-fluid border-radius" src="img/content/carousel/item-4.jpg" alt=""></div>
+    <div class="slides slides_carousel swiper-container pt-1 pb-4 px-0 mx-0 mb-3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-1.jpg" alt="" title=""/>
+        </div>
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-2.jpg" alt="" title=""/>
+        </div>
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-3.jpg" alt="" title=""/>
+        </div>
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-4.jpg" alt="" title=""/>
+        </div>
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-1.jpg" alt="" title=""/>
+        </div>
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-2.jpg" alt="" title=""/>
+        </div>
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-3.jpg" alt="" title=""/>
+        </div>
+        <div class="swiper-slide"><img class="img-fluid border-radius" src="/img/content/carousel/item-4.jpg" alt="" title=""/>
         </div>
       </div>
-      <div class="text-center"><a class="readmore" href="#">Больше фото</a></div>
     </div>
+    <div class="text-center mb-5"><a class="readmore" href="#">Больше фото</a></div>
     <div class="wrapper">
-      <div class="section text-center">
-        <div class="section__wrapper section__wrapper_px">
-          <div class="section__title color-brand">Оставьте заявку и наши менеджеры свяжутся с вами в<br>ближайшее время</div>
+      <div class="section text-center mb-5">
+        <div class="px-lg-5 px-md-4 px-3">
+          <div class="h2 font-weight-bold color-theme-brand mb-4">Оставьте заявку и наши менеджеры свяжутся с вами в<br>ближайшее время</div>
           <div class="row">
             <form class="form col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2" action="#">
               <div class="form__item mb-4">
@@ -309,84 +317,82 @@
                 <label class="form__label form__label_title">+7 (_ _ _) _ _ _-_ _-_ _</label>
               </div>
               <button class="btn text-uppercase px-4 mb-3" type="submit">перезвонить мне</button>
-              <div class="form__footer">Нажимая “Подписаться” вы принимаете условия<a class="color-brand" href="#">Политики конфиденциальности</a></div>
+              <div class="h6">Нажимая “Подписаться” вы принимаете условия&nbsp;<a class="color-theme-brand" href="#">Политики конфиденциальности</a></div>
             </form>
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="content content_expanded">
-          <h4>Летние шины в Ростове-на-Дону</h4>
-          <p>Весной большинство автомобилистов отправляется менять шины на летние. От правильно подобранных летних шин будет зависеть ваша безопасность на мокрой и сухой дорогах, а также управляемость. Хорошие шины служат несколько сезонов подряд, если их правильно эксплуатировать и вовремя менять на зимние. Каждый год менять их на новые вам не придётся, особенно если подберёте те, что наиболее чётко впишутся в ваши потребности.</p>
-          <p>Переходить на летние шины рекомендуется, когда температура поднимется приблизительно до +5-7 градусов. И стабилизируется, гарантированно не станет падать ниже (на постоянной основе, а не из-за разового перепада температуры). Независимо от того, когда в вашем домашнем регионе так поднимается температура, шины стоит покупать заранее. Выгоднее всего это делать в начале весны, когда и ассортимент представлен, и автомобилисты в спешке не снесли всё возможное с прилавков и складов интернет-магазинов, и цены доступные.</p>
-          <p>Летние шины выпускает каждый шинный производитель. Выбрать что-то наиболее удовлетворяющее ваши потребности получится как среди ассортимента известных шинных гигантов, так и у менее раскрутившихся производителей. Цены формируются в зависимости от производителей и характеристик. Но даже у самых популярных брендов всегда находятся в наличии покрышки эконом-класса, отличные по качеству и своим эксплуатационным показателям.</p>
-          <h4>Выбор летней резины в интернет-магазине "Дон-Шина"</h4>
-          <p>Летние шины должны обладать следующими характеристиками:</p>
-          <ul>
-            <li>высокие показатели курсовой устойчивости;</li>
-            <li>устойчивость к аквапланированию в дождь и на мокрой дороге;</li>
-            <li>стойкость резинового состава к нагреву;</li>
-            <li>надёжное сцепление с дорожным полотном даже на высоких скоростях.</li>
-            <li>Такие технические особенности позволят вам эксплуатировать шины полноценно, не беспокоясь о том, что с резким поворотом на высокой скорости они не справятся. К выбору подойти необходимо со всей ответственностью и учётом особенностей непосредственно вашего стиля вождения.</li>
-          </ul>
-          <p>В каталоге интернет-магазина "Дон-Шина" представлен широкий ассортимент шин летней сезонности. Выбрать есть из чего - по производителям, по параметрам, по конкретной модели вашего автомобиля. Подобрать подходящие покрышки летней сезонности вы сможете, воспользовавшись нашими удобными фильтрами. Сортируете каталог по заданным параметрам, а затем выбираете модель, которая наиболее всего подойдёт под ваши запросы. А если у вас возникают с этим сложности, вы можете просто обратиться за помощью к консультантам магазина по телефону.</p>
-          <h4>Купить летнюю резину с доставкой</h4>
-          <p>С доставкой прямо на указанный вами адрес купить летнюю резину вы сможете через интернет-магазин "Дон-Шина"! У нас вы найдёте огромный ассортимент летних покрышек, среди которых вы подберёте те, что подойдут как по возможностям, так и по потребностям. Шины представлены исключительно оригинальные, с распространяющейся на них заводской гарантией. Заказ идёт через интернет-магазин, сроки доставки оперативные, возможны индивидуальные заказы. Обращайтесь и заказывайте!</p>
-          <div class="content__footer">
-            <button class="readmore readmore_btn readmore_arrow-down" type="button"></button>
-          </div>
+      <div class="content content_expanded mb-5">
+        <h4>Летние шины в Ростове-на-Дону</h4>
+        <p>Весной большинство автомобилистов отправляется менять шины на летние. От правильно подобранных летних шин будет зависеть ваша безопасность на мокрой и сухой дорогах, а также управляемость. Хорошие шины служат несколько сезонов подряд, если их правильно эксплуатировать и вовремя менять на зимние. Каждый год менять их на новые вам не придётся, особенно если подберёте те, что наиболее чётко впишутся в ваши потребности.</p>
+        <p>Переходить на летние шины рекомендуется, когда температура поднимется приблизительно до +5-7 градусов. И стабилизируется, гарантированно не станет падать ниже (на постоянной основе, а не из-за разового перепада температуры). Независимо от того, когда в вашем домашнем регионе так поднимается температура, шины стоит покупать заранее. Выгоднее всего это делать в начале весны, когда и ассортимент представлен, и автомобилисты в спешке не снесли всё возможное с прилавков и складов интернет-магазинов, и цены доступные.</p>
+        <p>Летние шины выпускает каждый шинный производитель. Выбрать что-то наиболее удовлетворяющее ваши потребности получится как среди ассортимента известных шинных гигантов, так и у менее раскрутившихся производителей. Цены формируются в зависимости от производителей и характеристик. Но даже у самых популярных брендов всегда находятся в наличии покрышки эконом-класса, отличные по качеству и своим эксплуатационным показателям.</p>
+        <h4>Выбор летней резины в интернет-магазине "Дон-Шина"</h4>
+        <p>Летние шины должны обладать следующими характеристиками:</p>
+        <ul>
+          <li>высокие показатели курсовой устойчивости;</li>
+          <li>устойчивость к аквапланированию в дождь и на мокрой дороге;</li>
+          <li>стойкость резинового состава к нагреву;</li>
+          <li>надёжное сцепление с дорожным полотном даже на высоких скоростях.</li>
+          <li>Такие технические особенности позволят вам эксплуатировать шины полноценно, не беспокоясь о том, что с резким поворотом на высокой скорости они не справятся. К выбору подойти необходимо со всей ответственностью и учётом особенностей непосредственно вашего стиля вождения.</li>
+        </ul>
+        <p>В каталоге интернет-магазина "Дон-Шина" представлен широкий ассортимент шин летней сезонности. Выбрать есть из чего - по производителям, по параметрам, по конкретной модели вашего автомобиля. Подобрать подходящие покрышки летней сезонности вы сможете, воспользовавшись нашими удобными фильтрами. Сортируете каталог по заданным параметрам, а затем выбираете модель, которая наиболее всего подойдёт под ваши запросы. А если у вас возникают с этим сложности, вы можете просто обратиться за помощью к консультантам магазина по телефону.</p>
+        <h4>Купить летнюю резину с доставкой</h4>
+        <p>С доставкой прямо на указанный вами адрес купить летнюю резину вы сможете через интернет-магазин "Дон-Шина"! У нас вы найдёте огромный ассортимент летних покрышек, среди которых вы подберёте те, что подойдут как по возможностям, так и по потребностям. Шины представлены исключительно оригинальные, с распространяющейся на них заводской гарантией. Заказ идёт через интернет-магазин, сроки доставки оперативные, возможны индивидуальные заказы. Обращайтесь и заказывайте!</p>
+        <div class="content__footer">
+          <button class="readmore readmore_btn readmore_arrow-down" type="button"></button>
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="footer h6 color-theme-white bg-theme-brand">
       <div class="wrapper d-flex flex-wrap">
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Каталог</div><a class="footer__nav-item" href="#">Шины</a><a class="footer__nav-item" href="#">Диски</a><a class="footer__nav-item" href="#">Мотошины</a><a class="footer__nav-item" href="#">Акб</a><a class="footer__nav-item" href="#">Масла</a><a class="footer__nav-item" href="#">Автотовары</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Каталог</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Диски</a><a class="footer__nav-item color-theme-white mb-2" href="#">Мотошины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Акб</a><a class="footer__nav-item color-theme-white mb-2" href="#">Масла</a><a class="footer__nav-item color-theme-white mb-2" href="#">Автотовары</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Услуги</div><a class="footer__nav-item" href="#">Шиномонтаж</a><a class="footer__nav-item" href="#">Сезонное хранение шин и дисков</a><a class="footer__nav-item" href="#">Заправка автокондиционеровов</a><a class="footer__nav-item" href="#">Прокатка дисков</a><a class="footer__nav-item" href="#">Покраска дисков</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Услуги</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шиномонтаж</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сезонное хранение шин и дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Заправка автокондиционеровов</a><a class="footer__nav-item color-theme-white mb-2" href="#">Прокатка дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Покраска дисков</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Пользователям</div><a class="footer__nav-item" href="#">Скидки и акции</a><a class="footer__nav-item" href="#">Сравнить</a><a class="footer__nav-item" href="#">Избранное</a><a class="footer__nav-item" href="#">Подбор по авто</a><a class="footer__nav-item" href="#">Шинный калькулятор</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Новости</a><a class="footer__nav-item" href="#">Статьи</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Пользователям</div><a class="footer__nav-item color-theme-white mb-2" href="#">Скидки и акции</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сравнить</a><a class="footer__nav-item color-theme-white mb-2" href="#">Избранное</a><a class="footer__nav-item color-theme-white mb-2" href="#">Подбор по авто</a><a class="footer__nav-item color-theme-white mb-2" href="#">Шинный калькулятор</a><a class="footer__nav-item color-theme-white mb-2" href="#">О компании</a><a class="footer__nav-item color-theme-white mb-2" href="#">Новости</a><a class="footer__nav-item color-theme-white mb-2" href="#">Статьи</a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav">
-            <div class="footer__nav-title">Помощь</div><a class="footer__nav-item" href="#">Контакты</a><a class="footer__nav-item" href="#">Вопросы и ответы</a><a class="footer__nav-item" href="#">Оплата и доставка</a><a class="footer__nav-item" href="#">Кредит</a><a class="footer__nav-item" href="#">КупиВкредит</a><a class="footer__nav-item" href="#">Политика конфиденциальности</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
+            <div class="footer__nav-title h4">Помощь</div><a class="footer__nav-item color-theme-white mb-2" href="#">Контакты</a><a class="footer__nav-item color-theme-white mb-2" href="#">Вопросы и ответы</a><a class="footer__nav-item color-theme-white mb-2" href="#">Оплата и доставка</a><a class="footer__nav-item color-theme-white mb-2" href="#">Кредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">КупиВкредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">Политика конфиденциальности</a>
           </nav>
         </div>
-        <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo mb-4" href="#">
+        <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo color-theme-white mb-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="/img/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <div class="row align-items-center">
             <div class="col-8">
-              <div class="contacts contacts_list mb-2">
-                <div class="contacts__item contacts__item_inverse">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-placemark"></use>
-                  </svg>г. Ростов-на-Дону
-                </div><a class="contacts__item contacts__item_inverse" href="#">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-phone-nobg"></use>
-                  </svg>+7 (365) 277-70-68</a><a class="contacts__item contacts__item_inverse" href="#">
-                  <svg class="contacts__item-icon">
-                    <use xlink:href="img/icons/icons.svg#icon-email"></use>
-                  </svg>office@don-shina.ru</a>
+              <div class="contacts mb-2">
+                <div class="contacts__item d-flex align-items-center h5 text-nowrap mb-1">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-placemark"></use>
+                  </svg><span class="color-theme-white">г. Ростов-на-Дону</span>
+                </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-phone-nobg"></use>
+                  </svg><span class="color-theme-white">+7 (365) 277-70-68</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#">
+                  <svg class="contacts__icon color-theme-white mr-2">
+                    <use xlink:href="/img/icons/icons.svg#icon-email"></use>
+                  </svg><span class="color-theme-white">office@don-shina.ru</span></a>
               </div>
             </div>
             <div class="col-4">
-              <nav class="social"><a class="social__item social__item_inverse" href="#">
+              <nav class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-white mr-4 mr-lg-3" href="#">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-wapp-bordered"></use>
-                  </svg></a><a class="social__item social__item_inverse" href="#">
+                    <use xlink:href="#icon-wapp-bordered"></use>
+                  </svg></a><a class="social__item color-theme-white" href="#">
                   <svg class="icon-fluid">
-                    <use xlink:href="img/icons/icons.svg#icon-tg-bordered"></use>
+                    <use xlink:href="#icon-tg-bordered"></use>
                   </svg></a></nav>
             </div>
           </div>
@@ -402,5 +408,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
-  <script src="js/main.bundle.js"></script></body>
+  <script src="js/main.bundle.js"></script><script src="js/icons.bundle.js"></script></body>
 </html>
