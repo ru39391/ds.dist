@@ -3,94 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Элементы интерфейса</title>
+    <title>Модальные окна</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
     <div class="header d-none"></div>
-    <div class="pt-4 pb-3 px-5 border-bottom">
-      <div class="content">
-        <h1>h1 Заголовок первого уровня</h1>
-        <h2>h2 Заголовок второго уровня</h2>
-        <h3>h3 Заголовок третьего уровня</h3>
-        <h4>h4 Заголовок четвёртого уровня</h4>
-        <h5>h5 Заголовок пятого уровня</h5>
-        <h6>h6 Заголовок шестого уровня</h6>
-        <p>Обычный текст, размещённый внутри блока с селектором класса&nbsp;<span class="font-weight-bold">.content</span><br>Прописал стили таким образом, чтобы тэгам заголовков, абзацев и списков не пришлось бы дописывать селекторы классов. Достаточно поместить их внутри соответствующего блока. Исключение составляет маркированный список:</p>
-        <ul class="list-marked">
-          <li>Элементу&nbsp;<span class="font-weight-bold">ul&nbsp;</span>необходимо присвоить класс&nbsp;<span class="font-weight-bold">list-marked&nbsp;</span>;</li>
-          <li>В других случаях списки внутри&nbsp;<span class="font-weight-bold">.content&nbsp;</span>будут размечены автоматически;</li>
-          <li>Это касается как простых маркированных списков, так и нумерованных. Например:</li>
-        </ul>
-        <ul>
-          <li>Это простой маркированный список;</li>
-          <li>Если список с крупным цветным маркером можно разместить, благодаря селектору класса&nbsp;<span class="font-weight-bold">list-marked</span>, где угодно на сайте, то обычный список принимает соответствующий вид только внутри текстового блока;</li>
-          <li>В других случаях стандартное форматирование не работает;</li>
-          <li>То же относится и к нумерованным спискам.</li>
-        </ul>
-        <ol>
-          <li>Это простой нумерованный список;</li>
-          <li>У него стандартное форматирование.</li>
-        </ol>
-      </div>
+    <div class="py-4 px-5">
+      <div class="h2 font-weight-bold mb-4">Модальные окна:</div>
+      <ol class="mb-5 px-3">
+        <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#personal-vin-success">Ваш запрос на подбор по VIN успешно отправлен</a></li>
+        <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#reg">Регистрация</a></li>
+        <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#auth">Авторизация</a></li>
+        <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#pwd">Восстановление пароля</a></li>
+      </ol>
     </div>
-    <div class="pt-4 pb-3 px-5 border-bottom">
-      <ul>
-        <li class="h1 mb-4">Присваиваем любому тексту размер заголовка первого уровня;</li>
-        <li class="h2 mb-4">Это возможно благодаря селекторам класса&nbsp;<span class="font-weight-bold">.hN</span>;</li>
-        <li class="h3 mb-4">Где N - число от 1 до 6, для текущей строчки N = 3, для двух предыдущих N равно 1 и 2 соответственно;</li>
-        <li class="h4 mb-4">Вместе с размером текста не присваивается отступ и полужирное начертание;</li>
-        <li class="h5 mb-4">Сделать это можно, используя нативные селекторы классов Bootstrap, например:</li>
-        <li class="h6 font-weight-bold mb-4">Применён .font-weight-bold</li>
-      </ul>
-    </div>
-    <div class="pt-4 pb-3 px-5 border-bottom">
-      <p class="h2 mb-4">Ниже несколько селекторов, подстроенных под использованные в макете цвета:</p>
-      <ul>
-        <li class="h3 font-weight-bold color-theme-info mb-4">Применён .color-theme-info;</li>
-        <li class="h3 font-weight-bold color-theme-light mb-4">Применён .color-theme-light;</li>
-        <li class="h3 font-weight-bold color-theme-brand mb-4">Применён .color-theme-brand;</li>
-        <li class="h3 font-weight-bold color-theme-brand-dark mb-4">Применён .color-theme-brand-dark;</li>
-        <li class="h3 font-weight-bold color-theme-success mb-4">Применён .color-theme-success;</li>
-        <li class="h3 font-weight-bold color-theme-warning mb-4">Применён .color-theme-warning;</li>
-        <li class="h3 font-weight-bold color-theme-danger mb-4">Применён .color-theme-danger;</li>
-        <li class="h3 font-weight-bold color-theme-disabled mb-4">Применён .color-theme-disabled;</li>
-      </ul>
-    </div>
-    <div class="pt-4 pb-3 px-5 border-bottom">
-      <p class="h2 mb-4">Фоны, текст в блоке наследует цвет от родителя благодаря селектору класса .color-theme-inherit (кроме второго и последнего элементов):</p>
-      <ul class="color-theme-white">
-        <li class="h4 color-theme-inherit bg-theme-info p-4 mb-3">.bg-theme-info</li>
-        <li class="h4 color-theme-brand-dark bg-theme-light p-4 mb-3">.bg-theme-light</li>
-        <li class="h4 color-theme-inherit bg-theme-brand p-4 mb-3">.bg-theme-brand</li>
-        <li class="h4 color-theme-inherit bg-theme-brand-dark p-4 mb-3">.bg-theme-brand-dark</li>
-        <li class="h4 color-theme-inherit bg-theme-success p-4 mb-3">.bg-theme-success</li>
-        <li class="h4 color-theme-inherit bg-theme-warning p-4 mb-3">.bg-theme-warning</li>
-        <li class="h4 color-theme-inherit bg-theme-danger p-4 mb-3">.bg-theme-danger</li>
-        <li class="h4 color-theme-inherit bg-theme-disabled p-4 mb-3">.bg-theme-disabled</li>
-        <li class="h4 color-theme-brand-dark bg-theme-white border p-4 mb-3">.bg-theme-white</li>
-      </ul>
-    </div>
-    <div class="pt-4 pb-3 px-5 border-bottom">
-      <p class="h2 mb-4">Кнопки</p>
-      <div class="mb-3">
-        <button class="btn" type="button">Кнопка со стилями по умолчанию</button>
-      </div>
-      <div class="mb-3">
-        <button class="btn text-uppercase" type="button">.text-uppercase</button>
-      </div>
-      <div class="mb-3">
-        <button class="btn bg-theme-disabled" type="button">.bg-theme-disabled</button>
-      </div>
-      <div class="mb-3">
-        <button class="btn color-theme-light" type="button">.color-theme-light</button>
-      </div>
-      <div class="mb-3">
-        <button class="btn py-4 px-5" type="button">.py-4.px-5</button>
-      </div>
-      <div class="mb-3">
-        <button class="btn w-100" type="button">Ширина 100%</button>
+    <div class="modal fade" id="personal-vin-success" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog_wide">
+        <div class="modal-content border-0 box-shadow overflow-hidden p-md-5 p-4">
+          <svg class="modal__bg">
+            <use xlink:href="img/icons/icons.svg#icon-settings"></use>
+          </svg>
+          <div class="modal-header d-flex align-items-center justify-content-between border-0 zi-2 p-0 mb-4">
+            <div class="h3 font-weight-bold color-theme-brand mr-3">Ваш запрос на подбор по VIN успешно отправлен</div>
+            <button class="close h2 btn-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            </button>
+          </div>
+          <div class="modal-body zi-2 p-0 mb-4">
+            <div class="h4 mb-3">Ваша заявка №49409 от 07.06.2021 (16:37:23) успешно оформлена и будет обработана в ближайшее время.</div>
+            <div class="h4 mb-3">Результаты подбора можно будет посмотреть в&nbsp;<a class="color-theme-brand" href="#">личном кабинете.</a>Так же, Вы можете получать информацию в удобных для вас месенджерах, сообщив нам номер своей заявки.</div>
+          </div>
+          <div class="row zi-2">
+            <div class="contacts d-md-flex flex-wrap align-items-center col-xl-10 mb-xl-0 mb-3"><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-0 mr-md-4 mb-2 mb-xl-0" href="#"><span class="ds-icon-tg-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Продолжить в Telegram</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-2 mb-xl-0" href="#"><span class="ds-icon-wapp-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Продолжить в WhatsApp</span></a></div>
+            <div class="col-xl-2 d-flex justify-content-xl-end">
+              <button class="btn text-uppercse px-4" type="button" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="modal fade" id="reg" tabindex="-1" aria-hidden="true">
