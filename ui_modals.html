@@ -16,13 +16,14 @@
         <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#reg">Регистрация</a></li>
         <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#auth">Авторизация</a></li>
         <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#pwd">Восстановление пароля</a></li>
+        <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#order-success">Заказ успешно оформлен</a></li>
       </ol>
     </div>
     <div class="modal fade" id="personal-vin-success" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog_wide">
         <div class="modal-content border-0 box-shadow overflow-hidden p-md-5 p-4">
           <svg class="modal__bg">
-            <use xlink:href="/img/icons/icons.svg#icon-settings"></use>
+            <use xlink:href="img/icons/icons.svg#icon-settings"></use>
           </svg>
           <div class="modal-header d-flex align-items-center justify-content-between border-0 zi-2 p-0 mb-4">
             <div class="h3 font-weight-bold color-theme-brand mr-3">Ваш запрос на подбор по VIN успешно отправлен</div>
@@ -37,6 +38,41 @@
             <div class="contacts d-md-flex flex-wrap align-items-center col-xl-10 mb-xl-0 mb-3"><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-0 mr-md-4 mb-2 mb-xl-0" href="#"><span class="ds-icon-tg-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Продолжить в Telegram</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-2 mb-xl-0" href="#"><span class="ds-icon-wapp-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Продолжить в WhatsApp</span></a></div>
             <div class="col-xl-2 d-flex justify-content-xl-end">
               <button class="btn text-uppercse px-4" type="button" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="order-success" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog_wide">
+        <div class="modal-content border-0 box-shadow py-3">
+          <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
+            <div class="h3 font-weight-bold color-theme-brand mr-3">Заказ успешно оформлен</div>
+            <button class="close h2 btn-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            </button>
+          </div>
+          <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
+            <div class="h5 mb-4">Ваш заказ успешно оформлен и будет обработан в ближайшее время. С вами свяжется менеджер для его подтверждения.</div>
+            <div class="h5 mb-4">Вы можете следить за выполнением своего заказа в личном кабинете. Либо Вы можете получать информацию удобных для вас месенджерах, сообщив нам номер своего заказа.</div>
+            <div class="desclist">
+              <div class="d-flex align-items-center mb-1">
+                <div class="desclist__title h6 d-block overflow-hidden px-0 col-xl-2 col-sm-3">Номер заказа:</div>
+                <div class="h5 col-xl-10 col-sm-9">49409</div>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <div class="desclist__title h6 d-block overflow-hidden px-0 col-xl-2 col-sm-3">Дата:</div>
+                <div class="h5 col-xl-10 col-sm-9">07.06.202</div>
+              </div>
+            </div>
+          </div>
+          <div class="px-4">
+            <div class="row align-items-center zi-2">
+              <div class="contacts d-md-flex flex-wrap align-items-center col-xl-10 mb-xl-0 mb-3">
+                <div class="h5 color-theme-brand col-12 px-0 mb-2">Добравляйтесь и получайте напоминание там, где это удобно:</div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-0 mr-md-4 mb-2 mb-xl-0" href="#"><span class="ds-icon-tg-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Следить в Telegram</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-2 mb-xl-0" href="#"><span class="ds-icon-wapp-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Следить в WhatsApp</span></a>
+              </div>
+              <div class="col-xl-2 d-flex justify-content-xl-end">
+                <button class="btn text-uppercse px-4" type="button" data-dismiss="modal">OK</button>
+              </div>
             </div>
           </div>
         </div>
@@ -148,5 +184,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
-  <script src="js/main.bundle.js"></script></body>
+  <script src="js/main.bundle.js"></script>
+</body>
 </html>
