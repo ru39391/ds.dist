@@ -46,12 +46,15 @@
     <div class="modal fade" id="order-success" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog_wide">
         <div class="modal-content border-0 box-shadow py-3">
+          <svg class="modal__bg modal__bg_checked">
+            <use xlink:href="img/icons/icons.svg#icon-checked-double"></use>
+          </svg>
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="h3 font-weight-bold color-theme-brand mr-3">Заказ успешно оформлен</div>
             <button class="close h2 btn-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
-          <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
+          <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3 zi-2">
             <div class="h5 mb-4">Ваш заказ успешно оформлен и будет обработан в ближайшее время. С вами свяжется менеджер для его подтверждения.</div>
             <div class="h5 mb-4">Вы можете следить за выполнением своего заказа в личном кабинете. Либо Вы можете получать информацию удобных для вас месенджерах, сообщив нам номер своего заказа.</div>
             <div class="desclist">
@@ -177,6 +180,7 @@
         </div>
       </form>
     </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper@5.4.1/js/swiper.min.js"></script>
@@ -184,6 +188,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/main.bundle.js"></script>
 </body>
 </html>

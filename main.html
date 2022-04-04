@@ -75,10 +75,10 @@
     </header>
     <div class="wrapper">
       <div class="tabs mb-5">
-        <ul class="tabs__nav nav nav-tabs" role="tablist">
-          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 tabs__nav-link_notitle nav-link active" href="#filter-tires" data-toggle="tab" role="tab" aria-controls="filter-tires" aria-selected="true"><span class="ds-icon-tires tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title">Подбор шин</span></a></li>
-          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 tabs__nav-link_notitle nav-link" href="#filter-wheels" data-toggle="tab" role="tab" aria-controls="filter-wheels" aria-selected="false"><span class="ds-icon-wheels tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title">Подбор дисков</span></a></li>
-          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 tabs__nav-link_notitle nav-link" href="#filter-cars" data-toggle="tab" role="tab" aria-controls="filter-cars" aria-selected="false"><span class="ds-icon-car tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title">Подбор по авто</span></a></li>
+        <ul class="nav nav-tabs d-flex align-items-center p-0 m-0" role="tablist">
+          <li class="tabs__nav-item nav-item flex-grow-1"><a class="tabs__nav-link nav-link d-flex align-items-center justify-content-center p-2 tabs__nav-link_notitle active" href="#filter-tires" data-toggle="tab" role="tab" aria-controls="filter-tires" aria-selected="true"><span class="ds-icon-tires tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title h3 font-weight-bold">Подбор шин</span></a></li>
+          <li class="tabs__nav-item nav-item flex-grow-1"><a class="tabs__nav-link nav-link d-flex align-items-center justify-content-center p-2 tabs__nav-link_notitle" href="#filter-wheels" data-toggle="tab" role="tab" aria-controls="filter-wheels" aria-selected="false"><span class="ds-icon-wheels tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title h3 font-weight-bold">Подбор дисков</span></a></li>
+          <li class="tabs__nav-item nav-item flex-grow-1"><a class="tabs__nav-link nav-link d-flex align-items-center justify-content-center p-2 tabs__nav-link_notitle" href="#filter-cars" data-toggle="tab" role="tab" aria-controls="filter-cars" aria-selected="false"><span class="ds-icon-car tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title h3 font-weight-bold">Подбор по авто</span></a></li>
         </ul>
         <div class="tabs__content tab-content">
           <form class="form tab-pane fade show active" id="filter-tires" role="tabpanel" action="#">
@@ -236,8 +236,8 @@
                       <option>Значение 4</option>
                       <option>Значение 5</option>
                     </select>
-                    <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выберете марку</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
+                    <button class="dropdown-toggle" id="filter-cars-dropdown-1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выберете марку</button>
+                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-1">
                       <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
@@ -267,8 +267,8 @@
                       <option>Значение 4</option>
                       <option>Значение 5</option>
                     </select>
-                    <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Модель</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
+                    <button class="dropdown-toggle" id="filter-cars-dropdown-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Модель</button>
+                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-2">
                       <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
@@ -292,8 +292,8 @@
                       <option>Значение 4</option>
                       <option>Значение 5</option>
                     </select>
-                    <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Кузов</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
+                    <button class="dropdown-toggle" id="filter-cars-dropdown-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Кузов</button>
+                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-3">
                       <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
@@ -317,8 +317,8 @@
                       <option>Значение 4</option>
                       <option>Значение 5</option>
                     </select>
-                    <button class="dropdown-toggle" id="filter-cars-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Двигатель</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown">
+                    <button class="dropdown-toggle" id="filter-cars-dropdown-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Двигатель</button>
+                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-4">
                       <div class="dropdown-menu__header mb-2 bs-searchbox">
                         <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
                       </div>
@@ -333,10 +333,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-10 offset-lg-1">
-                <div class="form__title">Наиболее популярные:</div>
-                <div class="text-center mb-1"><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/acura.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/toyota.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/suzuki.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/nissan.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/bmw.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/fiat.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/mazda.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/lexus.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/mitsubishi.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/infiniti.jpg" alt="" title=""/></a></div>
+                <div class="col-lg-10 offset-lg-1">
+                  <div class="form__title mb-3">Наиболее популярные:</div>
+                  <div class="text-center mb-1"><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/acura.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/toyota.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/suzuki.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/nissan.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/bmw.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/fiat.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/mazda.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/lexus.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/mitsubishi.jpg" alt="" title=""/></a><a class="d-inline-block mr-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/infiniti.jpg" alt="" title=""/></a></div>
+                </div>
               </div>
             </div>
             <div class="row">
@@ -370,9 +370,9 @@
         </div>
       </div>
       <div class="tabs mb-5">
-        <ul class="tabs__nav nav nav-tabs" role="tablist">
-          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 nav-link active" href="#links-tires" data-toggle="tab" role="tab" aria-controls="links-tires" aria-selected="true"><span class="ds-icon-tires tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title text-uppercase">шины</span></a></li>
-          <li class="tabs__nav-item flex-grow-1 nav-item"><a class="tabs__nav-link p-2 nav-link" href="#links-wheels" data-toggle="tab" role="tab" aria-controls="links-wheels" aria-selected="false"><span class="ds-icon-wheels tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center pointer-events-none"></span><span class="tabs__nav-title text-uppercase">диски</span></a></li>
+        <ul class="nav nav-tabs d-flex align-items-center p-0 m-0" role="tablist">
+          <li class="tabs__nav-item nav-item flex-grow-1"><a class="tabs__nav-link nav-link d-flex align-items-center justify-content-center p-2 active" href="#links-tires" data-toggle="tab" role="tab" aria-controls="links-tires" aria-selected="true"><span class="ds-icon-tires tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center mr-2 pointer-events-none"></span><span class="tabs__nav-title h3 font-weight-bold text-uppercase">шины</span></a></li>
+          <li class="tabs__nav-item nav-item flex-grow-1"><a class="tabs__nav-link nav-link d-flex align-items-center justify-content-center p-2" href="#links-wheels" data-toggle="tab" role="tab" aria-controls="links-wheels" aria-selected="false"><span class="ds-icon-wheels tabs__nav-icon h3 d-flex flex-column align-items-center justify-content-center mr-2 pointer-events-none"></span><span class="tabs__nav-title h3 font-weight-bold text-uppercase">диски</span></a></li>
         </ul>
         <div class="tabs__content tab-content">
           <div class="tab-pane fade show active" id="links-tires" role="tabpanel" action="#">
@@ -501,7 +501,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -544,7 +545,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -557,7 +559,7 @@
                 <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
                   <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
+                      <div class="label label_sale text-uppercase px-2">Акция</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-warning"><span class="ds-icon-card pointer-events-none"></span></span><span class="card__features-title bg-theme-warning">Топливная карта</span></div>
                       </div>
@@ -586,7 +588,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -599,7 +602,7 @@
                 <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
                   <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_discount text-uppercase px-2">Скидка</div>
+                      <div class="label label_discount text-uppercase px-2">Скидка</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-info"><span class="ds-icon-shield pointer-events-none"></span></span><span class="card__features-title bg-theme-info">Расширеная гарантия</span></div>
                         <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-disabled"><span class="ds-icon-credit pointer-events-none"></span></span><span class="card__features-title bg-theme-disabled">Кредит</span></div>
@@ -630,7 +633,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -639,7 +643,7 @@
                 <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
                   <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_hit text-uppercase px-2">Хит</div>
+                      <div class="label label_hit text-uppercase px-2">Хит</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-delivery pointer-events-none"></span></span><span class="card__features-title">Бесплатная доставка</span></div>
                         <div class="card__features-item">
@@ -677,7 +681,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -686,7 +691,7 @@
                 <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
                   <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
+                      <div class="label label_sale text-uppercase px-2">Акция</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item">
                           <div class="card__features-content bg-theme-success">
@@ -723,7 +728,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -732,7 +738,7 @@
                 <div class="card flex-column justify-content-between h-100 p-3 card_sm d-flex">
                   <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                     <div class="card__meta card__meta_left">
-                      <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
+                      <div class="label label_sale text-uppercase px-2">Акция</div>
                       <div class="card__features card__features_col">
                         <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-delivery pointer-events-none"></span></span><span class="card__features-title">Бесплатная доставка</span></div>
                       </div>
@@ -761,7 +767,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -803,7 +810,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -843,7 +851,8 @@
                           <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                         </div><a class="btn text-uppercase" href="#">В корзину</a>
                       </div>
-                      <button class="card__btn card__btn_link w-100" type="button"><span class="card__btn-icon"><span class="ds-icon-plane pointer-events-none"></span></span>Купить в один клик</button>
+                      <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -994,7 +1003,7 @@
               <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
                 <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_discount text-uppercase px-2">Скидка</div>
+                    <div class="label label_discount text-uppercase px-2">Скидка</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-info"><span class="ds-icon-shield pointer-events-none"></span></span><span class="card__features-title bg-theme-info">Расширеная гарантия</span></div>
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-disabled"><span class="ds-icon-credit pointer-events-none"></span></span><span class="card__features-title bg-theme-disabled">Кредит</span></div>
@@ -1033,7 +1042,7 @@
               <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
                 <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
+                    <div class="label label_sale text-uppercase px-2">Акция</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-warning"><span class="ds-icon-card pointer-events-none"></span></span><span class="card__features-title bg-theme-warning">Топливная карта</span></div>
                     </div>
@@ -1070,7 +1079,7 @@
               <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
                 <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_hit text-uppercase px-2">Хит</div>
+                    <div class="label label_hit text-uppercase px-2">Хит</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-delivery pointer-events-none"></span></span><span class="card__features-title">Бесплатная доставка</span></div>
                       <div class="card__features-item">
@@ -1245,7 +1254,7 @@
               <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
                 <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_discount text-uppercase px-2">Скидка</div>
+                    <div class="label label_discount text-uppercase px-2">Скидка</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-info"><span class="ds-icon-shield pointer-events-none"></span></span><span class="card__features-title bg-theme-info">Расширеная гарантия</span></div>
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-disabled"><span class="ds-icon-credit pointer-events-none"></span></span><span class="card__features-title bg-theme-disabled">Кредит</span></div>
@@ -1284,7 +1293,7 @@
               <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
                 <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_sale text-uppercase px-2">Акция</div>
+                    <div class="label label_sale text-uppercase px-2">Акция</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center bg-theme-warning"><span class="ds-icon-card pointer-events-none"></span></span><span class="card__features-title bg-theme-warning">Топливная карта</span></div>
                     </div>
@@ -1321,7 +1330,7 @@
               <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
                 <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
                   <div class="card__meta card__meta_left">
-                    <div class="card__label card__label_hit text-uppercase px-2">Хит</div>
+                    <div class="label label_hit text-uppercase px-2">Хит</div>
                     <div class="card__features card__features_col">
                       <div class="card__features-item"><span class="card__features-icon h4 d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-delivery pointer-events-none"></span></span><span class="card__features-title">Бесплатная доставка</span></div>
                       <div class="card__features-item">
@@ -1595,6 +1604,7 @@
         </div>
       </form>
     </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper@5.4.1/js/swiper.min.js"></script>
@@ -1602,6 +1612,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/main.bundle.js"></script>
 </body>
 </html>
