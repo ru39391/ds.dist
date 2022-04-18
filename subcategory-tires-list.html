@@ -230,7 +230,7 @@
                     <input class="form__field" type="text" value="">
                     <label class="form__label form__label_title">Введите название</label>
                   </div>
-                  <div class="row">
+                  <div class="form__list row" id="brand">
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Michelin" type="checkbox" value="">
                       <label class="form__label mb-4" for="Michelin"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Michelin</span>
@@ -271,14 +271,24 @@
                       <label class="form__label mb-4" for="Bridgestone"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Bridgestone</span>
                       </label>
                     </div>
+                    <div class="col-6">
+                      <input class="form__toggler form__toggler_checkbox" id="Michelin2" type="checkbox" value="">
+                      <label class="form__label mb-4" for="Michelin2"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Michelin</span>
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <input class="form__toggler form__toggler_checkbox" id="Cordiant2" type="checkbox" value="">
+                      <label class="form__label mb-4" for="Cordiant2"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Cordiant</span>
+                      </label>
+                    </div>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <button class="btn-unstyled d-flex align-items-center" type="submit"><span class="h6 mr-2">Показать еще</span><span class="ds-icon-readmore h3 color-theme-brand pointer-events-none"></span>
+                  <button class="readmore d-flex align-items-center" type="submit" data-toggle="list" data-target="#brand"><span class="h6 mr-2 pointer-events-none">Показать еще</span><span class="ds-icon-readmore h3 color-theme-brand readmore__icon pointer-events-none"></span>
                   </button>
                 </div>
               </form>
-              <div class="filter__alert d-flex align-items-center justify-content-between flex-lg-column color-theme-white bg-theme-brand px-lg-3 pt-lg-1 pb-lg-3 py-3 px-4">
+              <div class="filter__alert d-flex align-items-center justify-content-between flex-lg-column color-theme-white bg-theme-brand px-lg-3 pt-lg-1 pb-lg-3 py-3 px-4" style="top:574px;">
                 <div class="filter__alert-info h2 font-weight-bold d-flex align-items-center mb-lg-1">
                   <div class="h5 font-weight-normal mr-2">Найдено:</div>713
                 </div>
@@ -346,410 +356,391 @@
             </div>
           </form>
           <div class="mb-3">
-            <div class="heading d-flex align-items-center h6 mb-2">
-              <div class="heading__col d-block overflow-hidden">Диаметр</div>
-              <div class="heading__col d-block overflow-hidden">Ширина</div>
-              <div class="heading__col d-block overflow-hidden">Высота</div>
-              <div class="heading__col d-block overflow-hidden">Сезон</div>
-              <div class="heading__col heading__col_lg d-block overflow-hidden">Название</div>
-              <div class="heading__col d-block overflow-hidden">Цена</div>
-              <div class="heading__col d-block overflow-hidden">Наличие</div>
+            <div class="heading heading_category px-3">
+              <div class="heading__col heading__col_category-group h6 mb-2">Диаметр</div>
+              <div class="heading__col heading__col_category-width h6 mb-2">Ширина</div>
+              <div class="heading__col heading__col_category-height h6 mb-2">Высота</div>
+              <div class="heading__col heading__col_category-type h6 mb-2">Сезон</div>
+              <div class="heading__col heading__col_category-title h6 mb-2">Название</div>
+              <div class="heading__col heading__col_category-price h6 mb-2">Цена</div>
+              <div class="heading__col heading__col_category-stock h6 mb-2">Наличие</div>
             </div>
-            <div class="card-row">
-              <div class="card-row__left">
-                <div class="card-row__param">18”</div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <div class="table-row__col table-row__col_group d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center px-3 mb-2 mb-md-0">
+                <div class="h6 d-md-none mr-2">Диаметр:</div>
+                <div class="h2 font-weight-bold">18”</div>
               </div>
-              <div class="card-row__right">
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
                   </div>
                 </div>
-              </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
+                  </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="card-row">
-              <div class="card-row__left">
-                <div class="card-row__param">17”</div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <div class="table-row__col table-row__col_group d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center px-3 mb-2 mb-md-0">
+                <div class="h6 d-md-none mr-2">Диаметр:</div>
+                <div class="h2 font-weight-bold">17”</div>
               </div>
-              <div class="card-row__right">
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
                   </div>
                 </div>
-              </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
+                  </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="card-row">
-              <div class="card-row__left">
-                <div class="card-row__param">16”</div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <div class="table-row__col table-row__col_group d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center px-3 mb-2 mb-md-0">
+                <div class="h6 d-md-none mr-2">Диаметр:</div>
+                <div class="h2 font-weight-bold">16”</div>
               </div>
-              <div class="card-row__right">
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
                   </div>
                 </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                   </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
                   </div>
                 </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
-            <div class="card-row">
-              <div class="card-row__left">
-                <div class="card-row__param">15”</div>
-              </div>
-              <div class="card-row__right">
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
                   </div>
                 </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                   </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
                   </div>
                 </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
-            <div class="card-row">
-              <div class="card-row__left">
-                <div class="card-row__param">14”</div>
-              </div>
-              <div class="card-row__right">
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
                   </div>
                 </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                   </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
                   </div>
                 </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
-            <div class="card-row">
-              <div class="card-row__left">
-                <div class="card-row__param">13”</div>
-              </div>
-              <div class="card-row__right">
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
                   </div>
                 </div>
-                <div class="card d-flex flex-wrap align-items-center pr-1 mb-2">
-                  <div class="card__col">175</div>
-                  <div class="card__col">70</div>
-                  <div class="card__col">
-                    <div class="card__meta card__meta_row mb-0">
-                      <div class="card__features"><span class="ds-icon-summer icon-marker mr-2 pointer-events-none"></span>
-                      </div>
-                    </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
                   </div>
-                  <div class="card__col card__col_lg"><a class="card__title d-block h5 mb-0" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
-                  <div class="card__col">
-                    <div class="card__price card__price_sm">7 337.12 ₽</div>
-                  </div>
-                  <div class="card__col">много</div>
-                  <div class="card__col card__col_footer">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="recalculate">
-                        <input class="recalculate__field d-none" type="number" name="count" value="4">
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                        <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
-                        <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
-                    </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
                   </div>
                 </div>
+              </form>
+            </div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <div class="table-row__col table-row__col_group d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center px-3 mb-2 mb-md-0">
+                <div class="h6 d-md-none mr-2">Диаметр:</div>
+                <div class="h2 font-weight-bold">15”</div>
               </div>
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
+                  </div>
+                </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
+                  </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
+                  </div>
+                </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
+                  </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
+                  </div>
+                </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
+                  </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="table-row table-row_category mb-md-2 mb-3">
+              <form class="table-row__col table-row__col_category box-shadow border-radius p-3" action="#">
+                <div class="bubble d-md-none mb-3 mb-md-0"><span class="ds-icon-photo h2 color-theme-brand mr-2 pointer-events-none"></span>
+                  <div class="bubble__picture box-shadow border border-radius"><img class="img-cover border-radius zi-2" src="img/content/cards/pirelli.jpg" alt="" title=""/>
+                  </div>
+                </div>
+                <div class="table__col table__col_width d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Ш:</div>175
+                </div>
+                <div class="table__col table__col_height d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">В:</div>70
+                </div>
+                <div class="table__col table__col_type d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Сезон:</div><span class="ds-icon-summer pointer-events-none"></span>
+                </div>
+                <div class="table__col table__col_title d-md-flex flex-column align-items-start justify-content-center pr-2 mb-2 mb-md-0"><a class="h5" href="#">Летние шины Cordiant Comfort 2 175/70 R13 86H</a></div>
+                <div class="table__col table__col_price d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-1 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Цена:</div>2 530, 08 ₽
+                </div>
+                <div class="table__col table__col_stock d-flex flex-md-column align-items-center align-items-md-start justify-content-md-center mb-3 mb-md-0">
+                  <div class="table__col-title h5 mr-2 d-md-none">Наличие:</div>много
+                </div>
+                <div class="table__col table__col_btn d-flex align-items-center">
+                  <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                    <input class="recalculate__field d-none" type="number" name="count" value="4">
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                    <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
+                    <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
+                  </div>
+                  <div class="text-center text-md-left">
+                    <button class="btn text-uppercase px-3" type="submit">В корзину</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="box-shadow pt-4 pb-3 mb-5">
+      <div class="wrapper">
+        <div class="h2 font-weight-bold mb-4">Другие бренды:</div><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a>
+      </div>
+    </div>
+    <div class="wrapper">
       <div class="mb-3">
         <div class="h2 font-weight-bold mb-4">Подходящие диски:</div>
         <div class="slides slides_carousel swiper-container pt-1 pb-4">

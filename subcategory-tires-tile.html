@@ -83,6 +83,12 @@
         <h1>Купить шины CORDIANT в Ростове-на-Дону</h1>
       </section>
       <div class="category-counter mb-4">1 840 товаров</div>
+      <div class="brand d-flex flex-wrap bg-white h-auto p-3 mb-3">
+        <div class="col-xl-2 col-lg-3 d-flex flex-column align-items-center justify-content-center mb-3 mb-lg-0"><img class="mb-3" src="img/content/logo/logo-1.jpg" alt="" title=""/>
+          <div class="h4 color-theme-brand">Cordiant</div>
+        </div>
+        <div class="brand__desc h4 col-xl-10 col-lg-9">Компания Bridgestone – мировой лидер по производству автомобильных шин. Зимние и летние автомобильные шины Бриджстоун — символ качества и безопасности. Шины Бриджстоун — это совершенные технологии, прошедшие проверку в самых жестких условиях. Шины Бриджстоун марки Potenza используются в гонках «Формулы-1». Продажа зимних и летних автошин Bridgestone, возможность осуществить выбор шин по марке автомобиля. Шины Бриджстоун — гарантия вашего безопасности и спокойствия.</div>
+      </div>
       <div class="row">
         <div class="col-xl-2 col-lg-3 mb-lg-4"><a class="brand brand_category d-flex flex-column align-items-center justify-lg-content-center justify-content-between bg-white py-2 py-lg-3 px-3 mb-3" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/><span class="brand__title d-inline-block">Cordiant</span></a>
           <div class="filter filter_sticky">
@@ -230,7 +236,7 @@
                     <input class="form__field" type="text" value="">
                     <label class="form__label form__label_title">Введите название</label>
                   </div>
-                  <div class="row">
+                  <div class="form__list row" id="brand">
                     <div class="col-6">
                       <input class="form__toggler form__toggler_checkbox" id="Michelin" type="checkbox" value="">
                       <label class="form__label mb-4" for="Michelin"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Michelin</span>
@@ -271,14 +277,24 @@
                       <label class="form__label mb-4" for="Bridgestone"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Bridgestone</span>
                       </label>
                     </div>
+                    <div class="col-6">
+                      <input class="form__toggler form__toggler_checkbox" id="Michelin2" type="checkbox" value="">
+                      <label class="form__label mb-4" for="Michelin2"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Michelin</span>
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <input class="form__toggler form__toggler_checkbox" id="Cordiant2" type="checkbox" value="">
+                      <label class="form__label mb-4" for="Cordiant2"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Cordiant</span>
+                      </label>
+                    </div>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <button class="btn-unstyled d-flex align-items-center" type="submit"><span class="h6 mr-2">Показать еще</span><span class="ds-icon-readmore h3 color-theme-brand pointer-events-none"></span>
+                  <button class="readmore d-flex align-items-center" type="submit" data-toggle="list" data-target="#brand"><span class="h6 mr-2 pointer-events-none">Показать еще</span><span class="ds-icon-readmore h3 color-theme-brand readmore__icon pointer-events-none"></span>
                   </button>
                 </div>
               </form>
-              <div class="filter__alert d-flex align-items-center justify-content-between flex-lg-column color-theme-white bg-theme-brand px-lg-3 pt-lg-1 pb-lg-3 py-3 px-4">
+              <div class="filter__alert d-flex align-items-center justify-content-between flex-lg-column color-theme-white bg-theme-brand px-lg-3 pt-lg-1 pb-lg-3 py-3 px-4" style="top:574px;">
                 <div class="filter__alert-info h2 font-weight-bold d-flex align-items-center mb-lg-1">
                   <div class="h5 font-weight-normal mr-2">Найдено:</div>713
                 </div>
@@ -307,361 +323,358 @@
             </div>
           </form>
           <div class="category mb-3">
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Шины Yokohama Ice Guard IG55 215/55 R17 98T</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">CORDIANT Sport 3</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55</a>
                 </div>
-              </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card card_sm card_tile">
-              <div class="card__header"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
-              <div class="card__body d-flex flex-column justify-content-between flex-grow-1 card__body_lg">
-                <div class="card__intro">
-                  <div class="card__meta card__meta_col mb-3">
-                    <div class="card__features mb-2 mb-sm-0">
-                      <div class="icon-marker mr-2">
-                        <svg class="icon-fluid">
-                          <use xlink:href="#icon-summer"></use>
-                        </svg>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand text-left text-sm-right">R16 / R17 / R18 / R19</div>
-                  </div><a class="card__title d-block" href="#">CORDIANT Sport 3</a>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Зимние шины Yokohama Ice</a>
+                </div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
-              <div class="card__footer">
-                <div class="card__meta card__meta_row justify-content-center justify-content-sm-start">
-                  <div class="card__price"><span class="card__price-value">от 7 337.12</span>₽/шт.</div>
+            </div>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
+                      </div>
+                    </div>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">Шины Yokohama Ice Guard IG55 215/55 R17 98T</a>
+                </div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card_tile d-sm-flex flex-column justify-content-between h-100 pt-3 px-3 pb-4">
+              <div class="card__header justify-content-center justify-content-sm-between mb-sm-3"><a class="card__picture mb-0" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""></a></div>
+              <div class="card__body card__body_lg d-flex flex-column justify-content-between flex-grow-1">
+                <div class="card__intro mb-3">
+                  <div class="card__meta card__meta_row flex-wrap flex-sm-nowrap mb-3">
+                    <div class="card__features mb-1 mb-sm-0">
+                      <div class="icon-marker"><span class="ds-icon-summer pointer-events-none"></span>
+                      </div>
+                    </div>
+                    <div class="card__params flex-grow-1 text-sm-right color-theme-brand mb-1 mb-sm-0">R16 / R17 / R18 / R19</div>
+                  </div><a class="card__title d-block mb-3" href="#">CORDIANT Sport 3</a>
+                </div>
+                <div class="card__footer">
+                  <div class="card__meta card__meta_row">
+                    <div class="card__price"><span class="card__price-value">от 7 337.12&nbsp;</span>₽/шт.</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="box-shadow pt-4 pb-3 mb-5">
+      <div class="wrapper">
+        <div class="h2 font-weight-bold mb-4">Другие бренды:</div><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></a><a class="d-inline-block mr-2 mr-sm-3 mb-4" href="#"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></a>
+      </div>
+    </div>
+    <div class="wrapper">
       <div class="mb-3">
         <div class="h2 font-weight-bold mb-4">Часто выбирают:</div>
         <form class="form mb-3" action="#">
