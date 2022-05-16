@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="ru" itemscope itemtype="http://schema.org/WebPage">
+  <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Данные пользователя</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <title itemprop="headline">Данные пользователя</title>
+    <meta name="keywords" content="" itemprop="keywords">
+    <meta name="description" content="" itemprop="description">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
     
     <header class="header">
-      <div class="header__top">
+      <div class="header__top zi-2">
         <div class="wrapper d-flex flex-wrap align-items-center">
           <div class="col-xl-6 col-lg-12 col-8 d-flex align-items-center justify-content-xl-start justify-content-lg-between mb-xl-0 mb-lg-2">
             <div class="contacts d-flex align-items-center justify-content-lg-between col-xl-7 col-lg-5 w-auto px-0">
               <div class="contacts__item d-flex align-items-center h5 text-nowrap mr-4"><span class="ds-icon-placemark contacts__icon h3 color-theme-brand mr-lg-2 pointer-events-none"></span><span class="d-none d-lg-block">г. Ростов-на-Дону</span>
-              </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-4" href="#"><span class="ds-icon-phone contacts__icon h3 color-theme-brand mr-lg-2 pointer-events-none"></span><span class="d-none d-lg-block">+7 (365) 277-70-68</span></a>
+              </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-4" href="#"><span class="ds-icon-phone contacts__icon h3 color-theme-brand mr-lg-2 pointer-events-none"></span><span class="d-none d-lg-block">+7 (863) 22-99-99-4</span></a>
             </div>
             <nav class="social d-flex align-items-center"><a class="social__item color-theme-brand mr-4 mr-lg-3" href="#"><span class="ds-icon-wapp-filled h3 pointer-events-none"></span></a><a class="social__item color-theme-brand" href="#"><span class="ds-icon-tg-filled h3 pointer-events-none"></span></a></nav>
           </div>
@@ -24,9 +24,9 @@
           </div>
           <div class="col-xl-1 col-lg-2 col-4 d-flex align-items-xl-start justify-content-end">
             <div class="menu">
-              <button class="menu__title d-flex align-items-center" type="button"><span class="mr-1">Помощь</span><span class="ds-icon-dropdown menu__icon h6 pointer-events-none"></span>
+              <button class="menu__title theme-hover d-flex align-items-center zi-2" type="button"><span class="mr-1">Помощь</span><span class="ds-icon-dropdown menu__icon h6 pointer-events-none"></span>
               </button>
-              <div class="menu__wrapper"></div>
+              <div class="menu__wrapper pt-2"><a class="h6 d-block theme-hover zi-2 mb-2" href="#">О компании</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Новости</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Статьи</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Вопросы и ответы</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Оплата и доставка</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Кредит</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">КупиВкредит</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Политика конфиденциальности</a></div>
             </div>
           </div>
         </div>
@@ -37,9 +37,9 @@
               <use xlink:href="img/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <nav class="header__nav d-flex align-items-center justify-content-center">
-            <button class="header__btn header__btn_type_toggler text-uppercase mr-3" type="button" data-target="#categories"><span class="ds-icon-menu header__btn-icon header__btn-icon_show mr-md-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close mr-md-2 pointer-events-none"></span><span class="d-none d-sm-block pointer-events-none">Каталог</span>
+            <button class="header__btn header__btn_type_toggler text-uppercase mr-3" type="button" data-target="#categories"><span class="ds-icon-menu header__btn-icon header__btn-icon_show mr-sm-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close mr-sm-2 pointer-events-none"></span><span class="d-none d-sm-block pointer-events-none">Каталог</span>
             </button>
-            <button class="header__btn header__btn_type_toggler text-uppercase" type="button" data-target="#services"><span class="ds-icon-services header__btn-icon header__btn-icon_show mr-md-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close mr-md-2 pointer-events-none"></span><span class="d-none d-sm-block pointer-events-none">Услуги</span>
+            <button class="header__btn header__btn_type_toggler text-uppercase" type="button" data-target="#services"><span class="ds-icon-services header__btn-icon header__btn-icon_show mr-sm-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close mr-sm-2 pointer-events-none"></span><span class="d-none d-sm-block pointer-events-none">Услуги</span>
             </button>
             <div class="panel">
               <div class="panel__wrapper" id="services">
@@ -160,70 +160,462 @@
             </div>
           </nav>
         </div>
-        <div class="header__col header__col_search col-xl-3 mb-3">
-          <form class="search" action="#" method="post">
-            <input class="search__field" type="text" placeholder="Я ищу..." value="">
-            <button class="search__btn" type="submit"><span class="ds-icon-search pointer-events-none"></span>
-            </button>
-          </form>
-        </div>
-        <div class="header__col header__col_nav col-xl-5 col-lg-7 flex-grow-1 flex-lg-grow-0 mb-3">
-          <nav class="header__nav d-flex align-items-center justify-content-lg-start justify-content-between flex-grow-1 mr-lg-4">
-            <button class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap d-lg-none" type="button"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-search pointer-events-none"></span></span><span class="header__btn-title">Поиск</span></button>
-            <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="d-flex align-items-center justify-content-center pos-rel"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center mr-md-1"><span class="ds-icon-compare pointer-events-none"></span></span><span class="header__counter header__counter_value_compare d-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-circle">3</span></span><span class="header__btn-title">Сравнить</span></a>
-              <div class="popup popup_width_md popup_pos_left box-shadow border-radius d-block">
-                <div class="popup__triangle bg-theme-white box-shadow"></div>
-                <div class="bg-theme-white border-radius zi-2 px-4 py-3">
-                  <div class="d-flex align-items-start justify-content-between mb-4">
-                    <div class="popup__title h3 font-weight-bold color-theme-brand">Товар готов к сравнению</div>
-                    <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-success color-theme-white rounded-pill px-2 py-1">3 шт.</div>
+        <div class="col-xl-8 col-lg-7 d-flex flex-wrap align-items-center mb-3">
+          <div class="header__col header__col_search header__col_search_wide">
+            <form class="header__search" action="#" method="post">
+              <input class="header__search-field" type="text" placeholder="Я ищу..." value="">
+              <button class="header__search-btn header__search-btn_close" type="reset"><span class="ds-icon-close-noborder pointer-events-none"></span>
+              </button>
+              <button class="header__search-btn" type="submit"><span class="ds-icon-search pointer-events-none"></span>
+              </button>
+              <div class="header__search-dropdown">
+                <div class="header__search-section">
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman 5 195/65 R15 95T XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
                   </div>
-                  <div class="popup__content mb-5"><a class="h5 theme-hover" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL  Ice Guard</a></div>
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Летние шины Nokian Nordman SX2 195/65 R15 91H</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div>
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman 7 195/65 R15 95T XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div>
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman RS2 205/55 R16 94R XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div>
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">185/65/15 NORDMAN RS-2 XL R*</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div><a class="h5 color-theme-brand" href="#">показать все товары (54) &gt;</a>
+                </div>
+                <div class="header__search-section">
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-7</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div>
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN RS2</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div>
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-7 SUV</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div>
+                  <div class="header__search-row mb-2">
+                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-8</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                  </div>
+                </div>
+                <div class="header__search-section"><a class="h5 d-block mb-4" href="#">Зимние шины</a><a class="h5 d-block mb-4" href="#">Шины для внедорожника</a><a class="h5 d-block mb-4" href="#">Шины на газель</a><a class="h5 d-block mb-4" href="#">Шипованые шины</a><a class="h5 d-block" href="#">Автошторки</a></div>
+              </div>
+            </form>
+          </div>
+          <div class="header__col header__col_nav flex-grow-1 flex-xl-grow-0">
+            <nav class="header__nav d-flex align-items-center justify-content-lg-start justify-content-between flex-grow-1 mr-lg-4">
+              <button class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap d-lg-none" type="button"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-search pointer-events-none"></span></span><span class="header__btn-title">Поиск</span></button>
+              <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="d-flex align-items-center justify-content-center pos-rel"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center mr-md-1"><span class="ds-icon-compare pointer-events-none"></span></span><span class="header__counter header__counter_value_compare d-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-circle">3</span></span><span class="header__btn-title">Сравнить</span></a>
+                <div class="popup popup_width_md popup_pos_left box-shadow border-radius d-block">
+                  <div class="popup__triangle bg-theme-white box-shadow"></div>
+                  <div class="bg-theme-white border-radius overflow-hidden zi-2 px-4 py-3">
+                    <div class="d-flex align-items-start justify-content-between mb-4">
+                      <div class="h3 font-weight-bold color-theme-brand">Товар готов к сравнению</div>
+                      <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-success color-theme-white rounded-pill px-2 py-1">3 шт.</div>
+                    </div>
+                    <div class="mb-5"><a class="h5 theme-hover d-inline-block mr-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL  Ice Guard</a></div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button class="popup__close btn btn_nobg text-left px-0" type="button">Продолжить<br>покупки</button>
+                      <button class="btn text-uppercase" type="button">Сравнить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-car color-theme-success pointer-events-none"></span></span><span class="header__btn-title">HYUNDAI Accent</span></a>
+                <div class="popup box-shadow border-radius d-block">
+                  <div class="popup__triangle bg-theme-white box-shadow"></div>
+                  <div class="bg-theme-white border-radius overflow-hidden zi-2 pt-4 pb-3 px-4">
+                    <div class="h5 color-theme-brand mb-2">Выберете свой автомобиль и поиск товаров на сайте станет значительно проще.</div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <button class="popup__close btn btn_nobg px-0" type="button">Позже</button><a class="btn font-weight-bold px-3" href="#">ОК</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-case pointer-events-none"></span></span><span class="header__btn-title">Заказы</span></a>
+                <div class="popup popup_width_md popup_pos_left box-shadow border-radius d-block">
+                  <div class="popup__triangle bg-theme-white box-shadow"></div>
+                  <form class="bg-theme-white border-radius overflow-hidden zi-2 px-4 py-3" action="#">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                      <div class="h3 font-weight-bold color-theme-brand mr-3">Что с моим заказом?</div>
+                      <button class="popup__close btn-unstyled rounded-circle bg-theme-white" type="button"><span class="ds-icon-close h3 color-theme-brand pointer-events-none"></span>
+                      </button>
+                    </div>
+                    <div class="mb-5">
+                      <div class="form__item mb-4">
+                        <input class="form__field" type="text" value="">
+                        <label class="form__label form__label_title">Номер заказа</label>
+                      </div>
+                      <div class="form__item">
+                        <input class="form__field" type="text" value="">
+                        <label class="form__label form__label_title">+7 (___) ___-__-__</label>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end">
+                      <button class="btn text-uppercase" type="submit">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="pos-rel col-lg-3">
+                <div class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div class="header__nav-icon header__nav-icon_feature_bonus d-flex flex-column align-items-center justify-content-center mr-md-1"><span class="ds-icon-user pointer-events-none"></span>
+                    </div>
+                    <div class="header__counter d-none d-md-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-pill px-2"><span class="font-weight-bold mr-1">300</span>Б.₽.</div>
+                  </div>
+                  <div class="d-flex justify-content-center"><a class="header__btn-title btn-unstyled" href="#">Сергей | выход</a></div>
+                </div>
+              </div>
+            </nav>
+            <div class="pos-rel">
+              <div class="d-flex align-items-center justify-content-center">
+                <button class="header__btn header__btn_type_cart-holder header__btn_inverse" type="button" data-target="#cart"><span class="ds-icon-cart header__btn-icon header__btn-icon_show zi-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close zi-2 mr-md-2 pointer-events-none"></span><span class="header__btn-caption color-theme-white text-uppercase pointer-events-none zi-2 d-none d-sm-block">Корзина</span>
+                </button>
+                <div class="header__cart-data d-flex flex-column justify-content-between zi-2"><a class="header__counter d-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-pill px-md-2 mb-1" href="#"><span class="font-weight-bold mr-md-1">3</span><span class="d-none d-md-block">шт.</span></a><a class="header__counter d-flex align-items-center justify-content-center h6 bg-theme-light color-theme-brand rounded-pill box-shadow px-md-2" href="#"><span class="mr-md-1">29</span><span class="ds-icon-favourite d-none d-md-block pointer-events-none"></span></a></div>
+              </div>
+              <div class="popup popup_width_md popup_pos_right box-shadow border-radius d-block">
+                <div class="popup__triangle bg-theme-white box-shadow"></div>
+                <div class="bg-theme-white border-radius overflow-hidden zi-2 px-4 py-3">
+                  <div class="d-flex align-items-start justify-content-between mb-4">
+                    <div class="h3 font-weight-bold color-theme-brand">Товар добавлен в избранное</div>
+                    <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-light color-theme-brand rounded-pill px-2 py-1">3 шт.</div>
+                  </div>
+                  <div class="mb-5"><a class="h5 theme-hover d-inline-block mr-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL  Ice Guard</a></div>
                   <div class="d-flex align-items-center justify-content-between">
                     <button class="popup__close btn btn_nobg text-left px-0" type="button">Продолжить<br>покупки</button>
-                    <button class="btn text-uppercase" href="#">Сравнить</button>
+                    <button class="btn text-uppercase" type="button">В избранное</button>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-car color-theme-success pointer-events-none"></span></span><span class="header__btn-title">HYUNDAI Accent</span></a>
-              <div class="popup box-shadow border-radius d-block">
+              <div class="popup popup_width_lg popup_pos_right box-shadow border-radius d-block">
                 <div class="popup__triangle bg-theme-white box-shadow"></div>
-                <div class="bg-theme-white border-radius zi-2 pt-4 pb-3 px-4">
-                  <div class="popup__title h5 color-theme-brand mb-2">Выберете свой автомобиль и поиск товаров на сайте станет значительно проще.</div>
-                  <div class="d-flex align-items-center justify-content-between">
-                    <button class="popup__close btn btn_nobg px-0" type="button">Позже</button><a class="btn font-weight-bold px-3" href="#">ОК</a>
+                <button class="popup__close popup__close_type_btn btn-unstyled rounded-circle bg-theme-white" type="button"><span class="ds-icon-close h3 color-theme-brand pointer-events-none"></span>
+                </button>
+                <div class="bg-theme-white border-radius overflow-hidden zi-2">
+                  <div class="popup__content">
+                    <div class="p-4 border-bottom">
+                      <div class="h3 font-weight-bold color-theme-brand mb-4">Товар успешно добавлен в корзину</div>
+                      <div class="row mb-4">
+                        <div class="col-4 col-sm-3 offset-4 text-center pr-3 mb-2 mb-sm-0 ml-sm-0"><a class="border border-radius overflow-hidden d-block" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                        <div class="col-sm-8"><a class="h5 theme-hover d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL Ice Guard</a>
+                          <div class="d-flex align-items-center">
+                            <div class="recalculate recalculate_sm recalculate_shadow d-flex align-items-center overflow-hidden bg-theme-white mr-4">
+                              <input class="recalculate__field d-none" type="number" name="count" value="1">
+                              <button class="recalculate__btn recalculate__btn_sm font-weight-bold color-theme-brand flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                              <div class="recalculate__value recalculate__value_sm d-flex align-items-center justify-content-center color-theme-brand">1</div>
+                              <button class="recalculate__btn recalculate__btn_sm font-weight-bold color-theme-brand flex-grow-1 recalculate__btn_add" type="button">+</button>
+                            </div>
+                            <div class="h3 d-flex">
+                              <div class="font-weight-bold text-nowrap mr-1">7 337.12</div>₽
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-between">
+                        <button class="popup__close btn btn_nobg h4 mb-2 mb-sm-0 px-3 px-0 py-0" type="button"><span class="ds-icon-continue h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h5 pointer-events-none">Продолжить покупки</span>
+                        </button><a class="btn text-uppercase" href="#">Перейти в корзину</a>
+                      </div>
+                    </div>
+                    <div class="pt-4 px-4 pb-3">
+                      <div class="h4 mb-3">Рекомендуем</div>
+                      <div class="slides slides_carousel swiper-container pt-1 pb-3">
+                        <div class="slides__nav">
+                          <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button"><span class="ds-icon-arrow-left pointer-events-none"></span>
+                          </button>
+                          <button class="slides__btn slides__btn_next slides-carousel-next" type="button"><span class="ds-icon-arrow-right pointer-events-none"></span>
+                          </button>
+                        </div>
+                        <div class="swiper-wrapper align-items-stretch">
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-case pointer-events-none"></span></span><span class="header__btn-title">Заказы</span></a></div>
-            <div class="pos-rel col-lg-3">
-              <div class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap">
-                <div class="d-flex align-items-center justify-content-center">
-                  <div class="header__nav-icon header__nav-icon_feature_bonus d-flex flex-column align-items-center justify-content-center mr-md-1"><span class="ds-icon-user pointer-events-none"></span>
+              <div class="popup popup_width_lg popup_pos_right box-shadow border-radius" id="cart">
+                <div class="popup__triangle bg-theme-white box-shadow"></div>
+                <div class="bg-theme-white border-radius overflow-hidden zi-2">
+                  <div class="popup__content">
+                    <div class="p-4 border-bottom">
+                      <div class="d-flex flex-wrap align-items-center mb-4">
+                        <div class="h3 font-weight-bold color-theme-brand mr-3">Товары в корзине</div>
+                        <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-brand color-theme-white rounded-pill px-2 py-1">4 шт.</div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <div class="col-4 col-sm-2 offset-4 mb-2 mb-sm-0 ml-sm-0"><a class="border border-radius overflow-hidden d-block" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                        <div class="col-sm-6"><a class="h5 theme-hover d-block mb-2 mb-sm-0" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL Ice Guard</a></div>
+                        <div class="col-sm-4 d-flex align-items-center justify-content-between">
+                          <div class="h5">4 шт.</div>
+                          <div class="h3 d-flex">
+                            <div class="font-weight-bold text-nowrap mr-1">7 337.12</div>₽
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <div class="col-4 col-sm-2 offset-4 mb-2 mb-sm-0 ml-sm-0"><a class="border border-radius overflow-hidden d-block" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                        <div class="col-sm-6"><a class="h5 theme-hover d-block mb-2 mb-sm-0" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL Ice Guard</a></div>
+                        <div class="col-sm-4 d-flex align-items-center justify-content-between">
+                          <div class="h5">4 шт.</div>
+                          <div class="h3 d-flex">
+                            <div class="font-weight-bold text-nowrap mr-1">7 337.12</div>₽
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <div class="col-4 col-sm-2 offset-4 mb-2 mb-sm-0 ml-sm-0"><a class="border border-radius overflow-hidden d-block" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                        <div class="col-sm-6"><a class="h5 theme-hover d-block mb-2 mb-sm-0" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL Ice Guard</a></div>
+                        <div class="col-sm-4 d-flex align-items-center justify-content-between">
+                          <div class="h5">4 шт.</div>
+                          <div class="h3 d-flex">
+                            <div class="font-weight-bold text-nowrap mr-1">7 337.12</div>₽
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row align-items-center mb-3">
+                        <div class="col-4 col-sm-2 offset-4 mb-2 mb-sm-0 ml-sm-0"><a class="border border-radius overflow-hidden d-block" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                        <div class="col-sm-6"><a class="h5 theme-hover d-block mb-2 mb-sm-0" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL Ice Guard</a></div>
+                        <div class="col-sm-4 d-flex align-items-center justify-content-between">
+                          <div class="h5">4 шт.</div>
+                          <div class="h3 d-flex">
+                            <div class="font-weight-bold text-nowrap mr-1">7 337.12</div>₽
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-between">
+                        <button class="popup__close btn btn_nobg h4 mb-2 mb-sm-0 px-3 px-0 py-0" type="button"><span class="ds-icon-continue h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h5 pointer-events-none">Продолжить покупки</span>
+                        </button><a class="btn text-uppercase" href="#">Перейти в корзину</a>
+                      </div>
+                    </div>
+                    <div class="pt-4 px-4 pb-3">
+                      <div class="h4 mb-3">Рекомендуем</div>
+                      <div class="slides slides_carousel swiper-container pt-1 pb-3">
+                        <div class="slides__nav">
+                          <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button"><span class="ds-icon-arrow-left pointer-events-none"></span>
+                          </button>
+                          <button class="slides__btn slides__btn_next slides-carousel-next" type="button"><span class="ds-icon-arrow-right pointer-events-none"></span>
+                          </button>
+                        </div>
+                        <div class="swiper-wrapper align-items-stretch">
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide pr-3">
+                            <div class="card card_slide_sm d-flex flex-column justify-content-between h-100 p-3">
+                              <div class="card__header mb-2"><a class="card__picture" href="#"><img class="img-fluid" src="img/content/cards/card-2.jpg" alt="" title=""/></a>
+                                <div class="card__meta card__meta_left">
+                                  <div class="label label_hit text-uppercase px-2">Хит</div>
+                                </div>
+                              </div>
+                              <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card__intro"><a class="h6 theme-hover d-block mb-1" href="#">Диск КиК Сильверстоун (КС770-02) 6,5x17</a></div>
+                                <div class="card__footer">
+                                  <div class="card__meta card__meta_row mb-2">
+                                    <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
+                                  </div><a class="btn text-uppercase" href="#">В корзину</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="header__counter d-none d-md-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-pill px-2"><span class="font-weight-bold mr-1">300</span>Б.₽.</div>
-                </div>
-                <div class="d-flex justify-content-center"><a class="header__btn-title btn-unstyled" href="#">Сергей | выход</a></div>
-              </div>
-            </div>
-          </nav>
-          <div class="pos-rel">
-            <div class="d-flex align-items-center justify-content-center"><a class="header__btn header__btn_inverse" href="#"><span class="ds-icon-cart header__btn-icon d-block pointer-events-none"></span></a>
-              <div class="header__cart-data d-flex flex-column justify-content-between"><a class="header__counter d-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-pill px-md-2 mb-1" href="#"><span class="font-weight-bold mr-md-1">3</span><span class="d-none d-md-block">шт.</span></a><a class="header__counter d-flex align-items-center justify-content-center h6 bg-theme-light color-theme-brand rounded-pill box-shadow px-md-2" href="#"><span class="mr-md-1">29</span><span class="ds-icon-favourite d-none d-md-block pointer-events-none"></span></a></div>
-            </div>
-            <div class="popup popup_width_md popup_pos_right box-shadow border-radius d-block">
-              <div class="popup__triangle bg-theme-white box-shadow"></div>
-              <div class="bg-theme-white border-radius zi-2 px-4 py-3">
-                <div class="d-flex align-items-start justify-content-between mb-4">
-                  <div class="popup__title h3 font-weight-bold color-theme-brand">Товар добавлен в избранное</div>
-                  <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-light color-theme-brand rounded-pill px-2 py-1">3 шт.</div>
-                </div>
-                <div class="popup__content mb-5"><a class="h5 theme-hover" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL  Ice Guard</a></div>
-                <div class="d-flex align-items-center justify-content-between">
-                  <button class="popup__close btn btn_nobg text-left px-0" type="button">Продолжить<br>покупки</button>
-                  <button class="btn text-uppercase" href="#">В избранное</button>
                 </div>
               </div>
             </div>
@@ -232,14 +624,14 @@
       </div>
       <div class="header__bottom">
         <nav class="topmenu swiper-container">
-          <div class="topmenu__wrapper swiper-wrapper">
-            <div class="swiper-slide w-auto"><a class="topmenu__item" href="#">Автошины</a></div>
-            <div class="swiper-slide w-auto"><a class="topmenu__item" href="#">Мотошины</a></div>
-            <div class="swiper-slide w-auto"><a class="topmenu__item" href="#">Диски</a></div>
-            <div class="swiper-slide w-auto"><a class="topmenu__item" href="#">Аккумуляторы</a></div>
-            <div class="swiper-slide w-auto"><a class="topmenu__item" href="#">Масла</a></div>
-            <div class="swiper-slide w-auto"><a class="topmenu__item" href="#">Автотовары</a></div>
-            <div class="swiper-slide w-auto"><a class="topmenu__item" href="#">Шиномонтаж</a></div>
+          <div class="topmenu__wrapper swiper-wrapper" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Автошины</span></a></div>
+            <div class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Мотошины</span></a></div>
+            <div class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Диски</span></a></div>
+            <div class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Аккумуляторы</span></a></div>
+            <div class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Масла</span></a></div>
+            <div class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Автотовары</span></a></div>
+            <div class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Шиномонтаж</span></a></div>
           </div>
         </nav>
       </div>
@@ -249,9 +641,14 @@
       </div>
     </header>
     <div class="wrapper">
-      <nav class="pathway"><a class="pathway__link" href="#">Главная</a><a class="pathway__current" href="#">Данные пользователя</a></nav>
+      <ul class="pathway" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="pathway__link" href="#" itemprop="item"><span itemprop="name">Главная</span>
+            <meta itemprop="position" content="1"></a></li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="pathway__current" href="#" itemprop="item"><span itemprop="name">Данные пользователя</span>
+            <meta itemprop="position" content="2"></a></li>
+      </ul>
       <section class="content">
-        <h1>Личный кабинет</h1>
+        <h1 itemprop="name">Личный кабинет</h1>
       </section>
       <div class="row align-items-start">
         <div class="sidebar col-xl-3 col-lg-4 mb-lg-4">
@@ -280,7 +677,7 @@
                     <div class="form__label form__label_title">Телефон</div>
                   </div>
                   <div class="form__item active mb-4">
-                    <input class="form__field" type="text" value="glumglam@gmail.com">
+                    <input class="form__field input-email" type="text" value="glumglam@gmail.com">
                     <div class="form__label form__label_title">e-mail</div>
                   </div>
                 </div>
@@ -319,8 +716,12 @@
           </div>
           <div class="swiper-wrapper align-items-stretch">
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -342,7 +743,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2 align-items-end">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -364,8 +765,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -387,7 +792,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -405,8 +810,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -428,7 +837,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -447,8 +856,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="label label_discount text-uppercase px-2">Скидка</div>
                     <div class="card__features card__features_col">
@@ -467,7 +880,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -486,8 +899,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="label label_sale text-uppercase px-2">Акция</div>
                     <div class="card__features card__features_col">
@@ -505,7 +922,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -523,8 +940,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="label label_hit text-uppercase px-2">Хит</div>
                     <div class="card__features card__features_col">
@@ -551,7 +972,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -570,8 +991,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -593,7 +1018,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2 align-items-end">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -615,8 +1040,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -638,7 +1067,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -656,8 +1085,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="card__features card__features_col">
                     </div>
@@ -679,7 +1112,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -698,8 +1131,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="label label_discount text-uppercase px-2">Скидка</div>
                     <div class="card__features card__features_col">
@@ -718,7 +1155,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -737,8 +1174,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="label label_sale text-uppercase px-2">Акция</div>
                     <div class="card__features card__features_col">
@@ -756,7 +1197,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -774,8 +1215,12 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex">
-                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a>
+              <div class="card flex-column justify-content-between h-100 p-3 card_slide d-flex" itemscope="itemscope" itemtype="http://schema.org/Product"><span class="d-none" itemtype="http://schema.org/AggregateOffer" itemscope="itemscope" itemprop="offers">
+                  <meta itemprop="availability" content="http://schema.org/InStock"/>
+                  <meta itemprop="priceCurrency" content="RUB"/>
+                  <meta itemprop="price" content="7337.12"/>
+                  <meta itemprop="lowPrice" content="100"/></span>
+                <div class="card__header mb-3"><a class="card__picture mb-2" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title="" itemprop="image"/></a>
                   <div class="card__meta card__meta_left">
                     <div class="label label_hit text-uppercase px-2">Хит</div>
                     <div class="card__features card__features_col">
@@ -802,7 +1247,7 @@
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
-                  <div class="card__intro"><a class="card__title d-block mb-2" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</a></div>
+                  <div class="card__intro"><a class="card__title d-block mb-2" href="#" itemprop="url"><span itemprop="name">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL</span></a></div>
                   <div class="card__footer">
                     <div class="card__meta card__meta_row mb-2">
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
@@ -824,26 +1269,28 @@
         </div>
       </div>
     </div>
-    <footer class="footer h6 color-theme-white bg-theme-brand">
+    <footer class="footer h6 color-theme-white bg-theme-brand" itemscope itemtype="http://schema.org/WPFooter">
+      <meta itemprop="copyrightYear" content="2022">
+      <meta itemprop="copyrightHolder" content="ДонШина Ростов">
       <div class="wrapper d-flex flex-wrap">
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
-            <div class="footer__nav-title h4">Каталог</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Диски</a><a class="footer__nav-item color-theme-white mb-2" href="#">Мотошины</a><a class="footer__nav-item color-theme-white mb-2" href="#">Акб</a><a class="footer__nav-item color-theme-white mb-2" href="#">Масла</a><a class="footer__nav-item color-theme-white mb-2" href="#">Автотовары</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="footer__nav-title h4">Каталог</div><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Шины</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Диски</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Мотошины</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Акб</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Масла</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Автотовары</span></a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
-            <div class="footer__nav-title h4">Услуги</div><a class="footer__nav-item color-theme-white mb-2" href="#">Шиномонтаж</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сезонное хранение шин и дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Заправка автокондиционеровов</a><a class="footer__nav-item color-theme-white mb-2" href="#">Прокатка дисков</a><a class="footer__nav-item color-theme-white mb-2" href="#">Покраска дисков</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="footer__nav-title h4">Услуги</div><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Шиномонтаж</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Сезонное хранение шин и дисков</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Заправка автокондиционеровов</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Прокатка дисков</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Покраска дисков</span></a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
-            <div class="footer__nav-title h4">Пользователям</div><a class="footer__nav-item color-theme-white mb-2" href="#">Скидки и акции</a><a class="footer__nav-item color-theme-white mb-2" href="#">Сравнить</a><a class="footer__nav-item color-theme-white mb-2" href="#">Избранное</a><a class="footer__nav-item color-theme-white mb-2" href="#">Подбор по авто</a><a class="footer__nav-item color-theme-white mb-2" href="#">Шинный калькулятор</a><a class="footer__nav-item color-theme-white mb-2" href="#">О компании</a><a class="footer__nav-item color-theme-white mb-2" href="#">Новости</a><a class="footer__nav-item color-theme-white mb-2" href="#">Статьи</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="footer__nav-title h4">Пользователям</div><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Скидки и акции</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Сравнить</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Избранное</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Подбор по авто</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Шинный калькулятор</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">О компании</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Новости</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Статьи</span></a>
           </nav>
         </div>
         <div class="col-lg-2 col-md-3">
-          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0">
-            <div class="footer__nav-title h4">Помощь</div><a class="footer__nav-item color-theme-white mb-2" href="#">Контакты</a><a class="footer__nav-item color-theme-white mb-2" href="#">Вопросы и ответы</a><a class="footer__nav-item color-theme-white mb-2" href="#">Оплата и доставка</a><a class="footer__nav-item color-theme-white mb-2" href="#">Кредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">КупиВкредит</a><a class="footer__nav-item color-theme-white mb-2" href="#">Политика конфиденциальности</a>
+          <nav class="footer__nav d-flex flex-column pr-xl-5 pr-md-4 mb-5 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="footer__nav-title h4">Помощь</div><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Контакты</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Вопросы и ответы</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Оплата и доставка</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Кредит</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">КупиВкредит</span></a><a class="footer__nav-item color-theme-white mb-2" itemprop="url" href="#"><span itemprop="name">Политика конфиденциальности</span></a>
           </nav>
         </div>
         <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo color-theme-white mb-4" href="#">
@@ -851,24 +1298,30 @@
               <use xlink:href="img/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <div class="row align-items-center">
-            <div class="col-8">
-              <div class="contacts mb-2">
+            <div class="col-8" itemscope itemtype="http://schema.org/AutoPartsStore"><img class="d-none" src="img/logo.png" alt="" title="" itemprop="image"/>
+              <meta itemprop="name" content="ДонШина Ростов">
+              <meta itemprop="priceRange" content="Информация о ценах по телефону +7 (863) 22-99-99-4">
+              <meta itemprop="openingHours" content="Mo-Fr 09:00-19:00">
+              <meta itemprop="openingHours" content="Sa 10:00-17:00"><span class="d-none" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                <meta itemprop="latitude" content="47.244980">
+                <meta itemprop="longitude" content="39.648187"></span>
+              <div class="contacts mb-2" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span class="d-none" itemprop="postalCode">344103</span><span class="d-none" itemprop="addressRegion">Ростовская область</span><span class="d-none" itemprop="addressLocality" content="Ростов-на-Дону"></span><span class="d-none" itemprop="streetAddress">ул. Доватора, 11</span>
                 <div class="contacts__item d-flex align-items-center h5 text-nowrap mb-1"><span class="ds-icon-placemark contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">г. Ростов-на-Дону</span>
-                </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#"><span class="ds-icon-phone-nobg contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">+7 (365) 277-70-68</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#"><span class="ds-icon-email contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">office@don-shina.ru</span></a>
+                </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#"><span class="ds-icon-phone-nobg contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white" itemprop="telephone">+7 (863) 22-99-99-4</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="mailto:office@don-shina.ru" itemprop="email"><span class="ds-icon-email contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">office@don-shina.ru</span></a>
               </div>
             </div>
             <div class="col-4">
-              <nav class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-white mr-4 mr-lg-3" href="#"><span class="ds-icon-wapp h3 pointer-events-none"></span></a><a class="social__item color-theme-white" href="#"><span class="ds-icon-tg h3 pointer-events-none"></span></a></nav>
+              <div class="social d-flex flex-wrap align-items-center"><a class="social__item color-theme-white mr-4 mr-lg-3" href="#"><span class="ds-icon-wapp h3 pointer-events-none"></span></a><a class="social__item color-theme-white" href="#"><span class="ds-icon-tg h3 pointer-events-none"></span></a></div>
             </div>
           </div>
           <div class="mb-2"><img class="img-fluid" src="img/visa.png" alt="" title=""/><img class="img-fluid" src="img/mc.png" alt="" title=""/>
           </div>
-          <div class="copyright">© 2021 Все права защищены.</div>
+          <div class="copyright">© 2022 Все права защищены.</div>
         </div>
       </div>
     </footer>
     <div class="modal fade" id="reg" tabindex="-1" aria-hidden="true">
-      <form class="modal-dialog" action="#">
+      <form class="modal-dialog" id="form-reg" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
@@ -880,20 +1333,20 @@
           <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
             <div class="form">
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field" id="reg__username" type="text" value="" name="reg__username">
                 <div class="form__label form__label_title">Ваше имя *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" id="reg__phone" type="text" value="" name="reg__phone">
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-email" id="reg__email" type="text" value="" name="reg__email">
                 <div class="form__label form__label_title">E-mail *</div>
               </div>
               <div class="form__item">
-                <input class="form__toggler form__toggler_checkbox" id="modal-form-checkbox" type="checkbox" value="">
-                <label class="form__label form__label_checkbox" for="modal-form-checkbox"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
+                <input class="form__toggler form__toggler_checkbox" id="reg__confidential" type="checkbox" value="" name="reg__confidential">
+                <label class="form__label form__label_checkbox" for="reg__confidential"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
                 </label>
               </div>
             </div>
@@ -912,7 +1365,7 @@
       </form>
     </div>
     <div class="modal fade" id="auth" tabindex="-1" aria-hidden="true">
-      <form class="modal-dialog" action="#">
+      <form class="modal-dialog" id="form-login" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
@@ -924,11 +1377,11 @@
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
             <div class="form mb-4">
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" id="login__username" type="text" value="" name="login__username">
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
               <div class="form__item">
-                <input class="form__field" type="text" value="">
+                <input class="form__field" id="login__pwd" type="text" value="" name="login__pwd">
                 <div class="form__label form__label_title">Пароль *</div>
               </div>
             </div>
@@ -954,7 +1407,7 @@
             <div class="h5 text-center mb-3">Укажите ваш телефон, и мы отправим&nbsp;<br>вам новый пароль</div>
             <div class="form mb-4">
               <div class="form__item">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" type="text" value="">
                 <div class="form__label form__label_title">+7 (_ _ _) _ _ _-_ _-_ _</div>
               </div>
             </div>
@@ -973,8 +1426,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
-    <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="js/main.bundle.js"></script>
-</body>
+<script src="js/validate.bundle.js"></script><script src="js/ion.bundle.js"></script><script src="js/search.bundle.js"></script></body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="ru" itemscope itemtype="http://schema.org/WebPage">
+  <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Иконки</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <title itemprop="headline">Иконки</title>
+    <meta name="keywords" content="" itemprop="keywords">
+    <meta name="description" content="" itemprop="description">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
     <div class="header d-none"></div>
@@ -532,7 +532,7 @@
       </div>
     </div>
     <div class="modal fade" id="reg" tabindex="-1" aria-hidden="true">
-      <form class="modal-dialog" action="#">
+      <form class="modal-dialog" id="form-reg" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
@@ -544,20 +544,20 @@
           <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
             <div class="form">
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field" id="reg__username" type="text" value="" name="reg__username">
                 <div class="form__label form__label_title">Ваше имя *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" id="reg__phone" type="text" value="" name="reg__phone">
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-email" id="reg__email" type="text" value="" name="reg__email">
                 <div class="form__label form__label_title">E-mail *</div>
               </div>
               <div class="form__item">
-                <input class="form__toggler form__toggler_checkbox" id="modal-form-checkbox" type="checkbox" value="">
-                <label class="form__label form__label_checkbox" for="modal-form-checkbox"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
+                <input class="form__toggler form__toggler_checkbox" id="reg__confidential" type="checkbox" value="" name="reg__confidential">
+                <label class="form__label form__label_checkbox" for="reg__confidential"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
                 </label>
               </div>
             </div>
@@ -576,7 +576,7 @@
       </form>
     </div>
     <div class="modal fade" id="auth" tabindex="-1" aria-hidden="true">
-      <form class="modal-dialog" action="#">
+      <form class="modal-dialog" id="form-login" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
@@ -588,11 +588,11 @@
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
             <div class="form mb-4">
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" id="login__username" type="text" value="" name="login__username">
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
               <div class="form__item">
-                <input class="form__field" type="text" value="">
+                <input class="form__field" id="login__pwd" type="text" value="" name="login__pwd">
                 <div class="form__label form__label_title">Пароль *</div>
               </div>
             </div>
@@ -618,7 +618,7 @@
             <div class="h5 text-center mb-3">Укажите ваш телефон, и мы отправим&nbsp;<br>вам новый пароль</div>
             <div class="form mb-4">
               <div class="form__item">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" type="text" value="">
                 <div class="form__label form__label_title">+7 (_ _ _) _ _ _-_ _-_ _</div>
               </div>
             </div>
@@ -637,8 +637,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
-    <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="js/main.bundle.js"></script>
-</body>
+<script src="js/validate.bundle.js"></script><script src="js/ion.bundle.js"></script><script src="js/search.bundle.js"></script></body>
 </html>

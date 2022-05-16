@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="ru" itemscope itemtype="http://schema.org/WebPage">
+  <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Модальные окна</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <title itemprop="headline">Модальные окна</title>
+    <meta name="keywords" content="" itemprop="keywords">
+    <meta name="description" content="" itemprop="description">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
     <div class="header d-none"></div>
@@ -17,10 +17,11 @@
         <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#auth">Авторизация</a></li>
         <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#pwd">Восстановление пароля</a></li>
         <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#order-success">Заказ успешно оформлен</a></li>
+        <li class="mb-3" style="list-style:decimal;"><a class="text-underline" href="#" data-toggle="modal" data-target="#booking-success">Запись на шиномонтаж успешно оформлена</a></li>
       </ol>
     </div>
     <div class="modal fade" id="personal-vin-success" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog_wide">
+      <div class="modal-dialog modal-dialog_lg">
         <div class="modal-content border-0 box-shadow overflow-hidden p-md-5 p-4">
           <svg class="modal__bg">
             <use xlink:href="img/icons/icons.svg#icon-settings"></use>
@@ -44,7 +45,7 @@
       </div>
     </div>
     <div class="modal fade" id="order-success" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog_wide">
+      <div class="modal-dialog modal-dialog_lg">
         <div class="modal-content border-0 box-shadow py-3">
           <svg class="modal__bg modal__bg_checked">
             <use xlink:href="img/icons/icons.svg#icon-checked-double"></use>
@@ -56,7 +57,7 @@
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3 zi-2">
             <div class="h5 mb-4">Ваш заказ успешно оформлен и будет обработан в ближайшее время. С вами свяжется менеджер для его подтверждения.</div>
-            <div class="h5 mb-4">Вы можете следить за выполнением своего заказа в личном кабинете. Либо Вы можете получать информацию удобных для вас месенджерах, сообщив нам номер своего заказа.</div>
+            <div class="h5 mb-4">Вы можете следить за выполнением своего заказа в&nbsp;<a class="color-theme-brand" href="#">личном кабинете.&nbsp;</a>Либо Вы можете получать информацию удобных для вас месенджерах, сообщив нам номер своего заказа.</div>
             <div class="desclist">
               <div class="d-flex align-items-center mb-1">
                 <div class="desclist__title h6 text-oneline px-0 col-xl-2 col-sm-3">Номер заказа:</div>
@@ -81,8 +82,52 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="booking-success" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog_lg">
+        <div class="modal-content border-0 box-shadow py-3">
+          <svg class="modal__bg modal__bg_checked">
+            <use xlink:href="img/icons/icons.svg#icon-checked-double"></use>
+          </svg>
+          <div class="modal-header d-flex align-items-center justify-content-between border-0 py-0 px-4 mb-4">
+            <div class="h3 font-weight-bold color-theme-brand mr-3">Запись на шиномонтаж успешно оформлена. Ждем вас в назначенное время.</div>
+            <button class="close h2 btn-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            </button>
+          </div>
+          <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3 zi-2">
+            <div class="desclist">
+              <div class="d-flex align-items-center mb-1">
+                <div class="desclist__title h6 text-oneline px-0 col-xl-2 col-sm-3">Номер записи:</div>
+                <div class="h3 font-weight-bold col-xl-10 col-sm-9">49409</div>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <div class="desclist__title h6 text-oneline px-0 col-xl-2 col-sm-3">Адрес:</div>
+                <div class="h5 col-xl-10 col-sm-9">ул. Доватора, 11</div>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <div class="desclist__title h6 text-oneline px-0 col-xl-2 col-sm-3">Дата:</div>
+                <div class="h5 col-xl-10 col-sm-9">10 января 2021 г.</div>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <div class="desclist__title h6 text-oneline px-0 col-xl-2 col-sm-3">Время:</div>
+                <div class="h5 col-xl-10 col-sm-9">11 : 00</div>
+              </div>
+            </div>
+          </div>
+          <div class="px-4">
+            <div class="row align-items-center zi-2">
+              <div class="contacts d-md-flex flex-wrap align-items-center col-xl-10 mb-xl-0 mb-3">
+                <div class="h5 color-theme-brand col-12 px-0 mb-2">Добравляйтесь и получайте напоминание там, где это удобно:</div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-0 mr-md-4 mb-2 mb-xl-0" href="#"><span class="ds-icon-tg-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Следить в Telegram</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-2 mb-xl-0" href="#"><span class="ds-icon-wapp-filled contacts__icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="contacts__item-title">Следить в WhatsApp</span></a>
+              </div>
+              <div class="col-xl-2 d-flex justify-content-xl-end">
+                <button class="btn text-uppercse px-4" type="button" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="modal fade" id="reg" tabindex="-1" aria-hidden="true">
-      <form class="modal-dialog" action="#">
+      <form class="modal-dialog" id="form-reg" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
@@ -94,20 +139,20 @@
           <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
             <div class="form">
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field" id="reg__username" type="text" value="" name="reg__username">
                 <div class="form__label form__label_title">Ваше имя *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" id="reg__phone" type="text" value="" name="reg__phone">
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-email" id="reg__email" type="text" value="" name="reg__email">
                 <div class="form__label form__label_title">E-mail *</div>
               </div>
               <div class="form__item">
-                <input class="form__toggler form__toggler_checkbox" id="modal-form-checkbox" type="checkbox" value="">
-                <label class="form__label form__label_checkbox" for="modal-form-checkbox"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
+                <input class="form__toggler form__toggler_checkbox" id="reg__confidential" type="checkbox" value="" name="reg__confidential">
+                <label class="form__label form__label_checkbox" for="reg__confidential"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
                 </label>
               </div>
             </div>
@@ -126,7 +171,7 @@
       </form>
     </div>
     <div class="modal fade" id="auth" tabindex="-1" aria-hidden="true">
-      <form class="modal-dialog" action="#">
+      <form class="modal-dialog" id="form-login" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
@@ -138,11 +183,11 @@
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
             <div class="form mb-4">
               <div class="form__item mb-4">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" id="login__username" type="text" value="" name="login__username">
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
               <div class="form__item">
-                <input class="form__field" type="text" value="">
+                <input class="form__field" id="login__pwd" type="text" value="" name="login__pwd">
                 <div class="form__label form__label_title">Пароль *</div>
               </div>
             </div>
@@ -168,7 +213,7 @@
             <div class="h5 text-center mb-3">Укажите ваш телефон, и мы отправим&nbsp;<br>вам новый пароль</div>
             <div class="form mb-4">
               <div class="form__item">
-                <input class="form__field" type="text" value="">
+                <input class="form__field input-phone" type="text" value="">
                 <div class="form__label form__label_title">+7 (_ _ _) _ _ _-_ _-_ _</div>
               </div>
             </div>
@@ -187,8 +232,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/dropdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.4.20/js/touch.js"></script>
-    <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="js/main.bundle.js"></script>
-</body>
+<script src="js/validate.bundle.js"></script><script src="js/ion.bundle.js"></script><script src="js/search.bundle.js"></script></body>
 </html>
