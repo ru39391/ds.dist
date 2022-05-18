@@ -265,19 +265,7 @@
         <h1 itemprop="name">Купить шины для HYUNDAI Accent 2000-2005 LC Sedan 1.3 в Ростове-на-Дону</h1>
       </section>
       <div class="category-counter mb-4">1 840 товаров в 4 каталогах</div>
-      <form class="form mb-3" action="#">
-        <input class="form__toggler form__toggler_radio" id="filter-radio-1" name="search-radio" type="radio" value="" checked="checked"/>
-        <label class="form__label form__label_lg" for="filter-radio-1">Шины (887)</label>
-        <input class="form__toggler form__toggler_radio" id="filter-radio-2" name="search-radio" type="radio" value=""/>
-        <label class="form__label form__label_lg" for="filter-radio-2">Мотошины (0)</label>
-        <input class="form__toggler form__toggler_radio" id="filter-radio-3" name="search-radio" type="radio" value=""/>
-        <label class="form__label form__label_lg" for="filter-radio-3">Диски (67)</label>
-        <input class="form__toggler form__toggler_radio" id="filter-radio-4" name="search-radio" type="radio" value=""/>
-        <label class="form__label form__label_lg" for="filter-radio-4">АКБ (0)</label>
-        <input class="form__toggler form__toggler_radio" id="filter-radio-5" name="search-radio" type="radio" value=""/>
-        <label class="form__label form__label_lg" for="filter-radio-5">Масла (0)</label>
-        <input class="form__toggler form__toggler_radio" id="filter-radio-6" name="search-radio" type="radio" value=""/>
-        <label class="form__label form__label_lg" for="filter-radio-6">Автотовары (238)</label>
+      <form class="form mb-3" action="#"><a class="toggler toggler_lg active" href="#">Активный</a><a class="toggler toggler_lg" href="#">Шины (887)</a><a class="toggler toggler_lg" href="#">Мотошины (0)</a><a class="toggler toggler_lg" href="#">Диски (67)</a><a class="toggler toggler_lg" href="#">АКБ (0)</a><a class="toggler toggler_lg" href="#">Масла (0)</a><a class="toggler toggler_lg" href="#">Автотовары (238)</a>
       </form>
       <div class="row">
         <div class="col-xl-2 col-lg-3 mb-lg-4">
@@ -2951,19 +2939,23 @@
           <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
             <div class="form">
               <div class="form__item mb-4">
-                <input class="form__field" id="reg__username" type="text" value="" name="reg__username">
+                <input class="form__field error" id="reg__username" type="text" value="" name="reg__username">
+                <label class="error" id="reg__username-error" for="reg__username">Поле обязательно для заполнения</label>
                 <div class="form__label form__label_title">Ваше имя *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field input-phone" id="reg__phone" type="text" value="" name="reg__phone">
+                <input class="form__field input-phone error" id="reg__phone" type="text" value="" name="reg__phone">
+                <label class="error" id="reg__phone-error" for="reg__phone">Поле обязательно для заполнения</label>
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
               <div class="form__item mb-4">
-                <input class="form__field input-email" id="reg__email" type="text" value="" name="reg__email">
+                <input class="form__field error" id="reg__email" type="text" value="" name="reg__email">
+                <label class="error" id="reg__email-error" for="reg__email">Ведите e-mail</label>
                 <div class="form__label form__label_title">E-mail *</div>
               </div>
               <div class="form__item">
                 <input class="form__toggler form__toggler_checkbox" id="reg__confidential" type="checkbox" value="" name="reg__confidential">
+                <label class="error" id="reg__confidential-error" for="reg__confidential">Необходимо принять условия политики конфидециальности</label>
                 <label class="form__label form__label_checkbox" for="reg__confidential"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
                 </label>
               </div>
