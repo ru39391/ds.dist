@@ -34,7 +34,7 @@
       <div class="header__wrapper">
         <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo color-theme-brand mr-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="imgimg/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <nav class="header__nav d-flex align-items-center justify-content-center">
             <button class="header__btn header__btn_type_toggler text-uppercase mr-3" type="button" data-target="#categories"><span class="ds-icon-menu header__btn-icon header__btn-icon_show mr-sm-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close mr-sm-2 pointer-events-none"></span><span class="d-none d-sm-block pointer-events-none">Каталог</span>
@@ -52,7 +52,7 @@
                     <div class="col-xl-4">
                       <div class="banner banner_xs overflow-hidden mb-4 mb-xl-0"><img class="img-cover" src="img/content/banners/banner-1.jpg" alt="" title=""/>
                         <div class="banner__inner d-flex flex-column align-items-start justify-content-between p-4">
-                          <div class="banner__title h2 font-weight-bold color-theme-brand">Запись на шиномонтаж онлайн</div><a class="btn text-uppercase" href="#">Записаться</a>
+                          <div class="banner__title h2 font-weight-bold color-theme-brand">Запись на шиномонтаж онлайн</div><a class="button text-uppercase" href="#">Записаться</a>
                         </div>
                       </div>
                     </div>
@@ -103,7 +103,7 @@
                         <div class="mb-4"><a class="toggler py-1" href="#">Зимние шины</a><a class="toggler py-1" href="#">Летние шины</a><a class="toggler py-1" href="#">Шины для внедорожников</a><a class="toggler py-1" href="#">Всесезонные шины</a><a class="toggler py-1" href="#">Шины на Газель</a></div>
                         <div class="banner banner_sm overflow-hidden mb-4 mb-xl-0"><img class="img-cover" src="img/content/banners/banner-2.jpg" alt="" title=""/>
                           <div class="banner__inner p-4 d-flex flex-column align-items-center justify-content-between">
-                            <div class="banner__title h2 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="btn text-uppercase" href="#">Подобрать</a>
+                            <div class="banner__title h2 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="button text-uppercase" href="#">Подобрать</a>
                           </div>
                         </div>
                       </div>
@@ -121,7 +121,7 @@
                         <div class="mb-4"><a class="toggler py-1" href="#">Летние шины</a><a class="toggler py-1" href="#">Шины для внедорожников</a><a class="toggler py-1" href="#">Зимние шины</a><a class="toggler py-1" href="#">Всесезонные шины</a></div>
                         <div class="banner banner_sm overflow-hidden mb-4 mb-xl-0"><img class="img-cover" src="img/content/banners/banner-2.jpg" alt="" title=""/>
                           <div class="banner__inner p-4 d-flex flex-column align-items-center justify-content-between">
-                            <div class="banner__title h2 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="btn text-uppercase" href="#">Подобрать</a>
+                            <div class="banner__title h2 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="button text-uppercase" href="#">Подобрать</a>
                           </div>
                         </div>
                       </div>
@@ -220,13 +220,9 @@
               <div class="pos-rel col-xl-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-car pointer-events-none"></span></span><span class="header__btn-title">Выбор авто</span></a></div>
               <div class="pos-rel col-xl-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-case pointer-events-none"></span></span><span class="header__btn-title">Заказы</span></a></div>
               <div class="pos-rel col-xl-3">
-                <div class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap">
+                <div class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" data-toggle="modal" data-target="#auth-phone">
                   <div class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-user pointer-events-none"></span>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <button class="theme-hover d-none d-lg-block btn-unstyled" type="button" data-toggle="modal" data-target="#auth">Вход |</button>
-                    <button class="header__btn-title btn-unstyled" type="button" data-toggle="modal" data-target="#reg"> регистрация</button>
-                  </div>
+                  </div><span class="header__btn-title button-unstyled" data-toggle="modal" data-target="#reg"> Вход | регистрация</span>
                 </div>
               </div>
             </nav>
@@ -261,7 +257,7 @@
               <div class="col-lg-2 offset-lg-2">
                 <div class="form__select mb-4">
                   <div class="form__select-title">Ширина</div>
-                  <select class="custom-select">
+                  <select class="selecter">
                     <option>--</option>
                     <option>5</option>
                     <option>6.5</option>
@@ -278,7 +274,7 @@
               <div class="col-lg-2">
                 <div class="form__select mb-4">
                   <div class="form__select-title">Высота</div>
-                  <select class="custom-select">
+                  <select class="selecter">
                     <option>--</option>
                     <option>9.5</option>
                     <option>10</option>
@@ -295,7 +291,7 @@
               <div class="col-lg-2">
                 <div class="form__select mb-4">
                   <div class="form__select-title">Диаметр</div>
-                  <select class="custom-select">
+                  <select class="selecter">
                     <option>--</option>
                     <option>10</option>
                     <option>12</option>
@@ -309,176 +305,120 @@
             <div class="row">
               <div class="form__row col-lg-8 offset-lg-2">
                 <input class="form__toggler form__toggler_checkbox" id="tires-checkbox-1" type="checkbox" value="">
-                <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-1"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="icon-marker h4 ds-icon-allseason mr-2"><span class="path1"></span><span class="path2"></span></span><span class="form__label-title">Всесезонные</span>
+                <label class="form__label h5 mb-4" for="tires-checkbox-1"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="icon-marker h4 ds-icon-allseason mr-2"><span class="path1"></span><span class="path2"></span></span><span class="form__label-title">Всесезонные</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="tires-checkbox-2" type="checkbox" value="">
-                <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-2"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-summer icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Летние</span>
+                <label class="form__label h5 mb-4" for="tires-checkbox-2"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-summer icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Летние</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox form__toggler_param_winter" id="tires-checkbox-3" type="checkbox" value="">
-                <label class="form__label form__label_checkbox mb-4" for="tires-checkbox-3"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-winter icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Зимние</span>
+                <label class="form__label h5 mb-4" for="tires-checkbox-3"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-winter icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Зимние</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox form__toggler_param_spykes" id="tires-checkbox-4" type="checkbox" value="">
-                <label class="form__label form__label_checkbox d-none mb-4" for="tires-checkbox-4"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-spikes icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Шипы</span>
+                <label class="form__label h5 d-none mb-4" for="tires-checkbox-4"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-spikes icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Шипы</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox form__toggler_param_spykes" id="tires-checkbox-5" type="checkbox" value="">
-                <label class="form__label form__label_checkbox d-none mb-4" for="tires-checkbox-5"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-nonspikes icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Без шипов</span>
+                <label class="form__label h5 d-none mb-4" for="tires-checkbox-5"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-nonspikes icon-marker h4 mr-2 pointer-events-none"></span><span class="form__label-title">Без шипов</span>
                 </label>
               </div>
-              <div class="col-md-8 offset-md-2 text-center"><a class="btn text-uppercase px-4" href="#">подобрать</a></div>
+              <div class="col-md-8 offset-md-2 text-center"><a class="button text-uppercase px-4" href="#">подобрать</a></div>
             </div>
           </form>
           <form class="form tab-pane fade" id="filter-wheels" role="tabpanel" action="#">
-            <div class="row">
-              <div class="form__row col-lg-10 offset-lg-1">
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="form__select mb-4">
-                    <div class="form__select-title">Диаметр</div>
-                    <select class="custom-select">
-                      <option>--</option>
-                      <option>10</option>
-                      <option>12</option>
-                      <option>12C</option>
-                      <option>13</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="form__select mb-4">
-                    <div class="form__select-title">Ширина</div>
-                    <select class="custom-select">
-                      <option>--</option>
-                      <option>5</option>
-                      <option>6.5</option>
-                      <option>7</option>
-                      <option>10.5</option>
-                      <option>12.5</option>
-                      <option>30</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="form__select mb-4">
-                    <div class="form__select-title">Отверстий</div>
-                    <select class="custom-select">
-                      <option>--</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>8</option>
-                      <option>10</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="form__select mb-4">
-                    <div class="form__select-title">PCD</div>
-                    <select class="custom-select">
-                      <option>--</option>
-                      <option>98</option>
-                      <option>10</option>
-                      <option>105</option>
-                      <option>107.95</option>
-                      <option>108</option>
-                      <option>110</option>
-                    </select>
-                  </div>
+            <div class="row align-items-center">
+              <div class="col-lg-2 offset-lg-2">
+                <div class="form__select mb-4">
+                  <div class="form__select-title">Диаметр</div>
+                  <select class="selecter">
+                    <option>--</option>
+                    <option>10</option>
+                    <option>12</option>
+                    <option>12C</option>
+                    <option>13</option>
+                  </select>
                 </div>
               </div>
+              <div class="col-lg-2 offset-lg-1">
+                <div class="form__select mb-4">
+                  <div class="form__select-title">Ширина</div>
+                  <select class="selecter">
+                    <option>--</option>
+                    <option>10</option>
+                    <option>12</option>
+                    <option>12C</option>
+                    <option>13</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-2 offset-lg-1">
+                <div class="form__select mb-4">
+                  <div class="form__select-title">PCD</div>
+                  <select class="selecter">
+                    <option>--</option>
+                    <option>10</option>
+                    <option>12</option>
+                    <option>12C</option>
+                    <option>13</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
               <div class="form__row col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                 <input class="form__toggler form__toggler_checkbox" id="wheels-checkbox-11" type="checkbox" value="">
-                <label class="form__label form__label_checkbox mb-4" for="wheels-checkbox-11"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-iron icon-marker h3 mr-2 pointer-events-none"></span><span class="form__label-title">Кованые</span>
+                <label class="form__label h5 mb-4" for="wheels-checkbox-11"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="ds-icon-iron icon-marker h3 mr-2 pointer-events-none"></span><span class="form__label-title">Кованые</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="wheels-checkbox-21" type="checkbox" value="">
-                <label class="form__label form__label_checkbox mb-4" for="wheels-checkbox-21"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="icon-marker h3 ds-icon-founding mr-2"><span class="path1"></span><span class="path2"></span></span><span class="form__label-title">Литые</span>
+                <label class="form__label h5 mb-4" for="wheels-checkbox-21"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="icon-marker h3 ds-icon-founding mr-2"><span class="path1"></span><span class="path2"></span></span><span class="form__label-title">Литые</span>
                 </label>
                 <input class="form__toggler form__toggler_checkbox" id="wheels-checkbox-31" type="checkbox" value="">
-                <label class="form__label form__label_checkbox mb-4" for="wheels-checkbox-31"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="icon-marker h3 ds-icon-steel mr-2"><span class="path1"></span><span class="path2"></span></span><span class="form__label-title">Стальные</span>
+                <label class="form__label h5 mb-4" for="wheels-checkbox-31"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="icon-marker h3 ds-icon-steel mr-2"><span class="path1"></span><span class="path2"></span></span><span class="form__label-title">Стальные</span>
                 </label>
               </div>
-              <div class="col-md-10 offset-md-1 text-center"><a class="btn text-uppercase px-4" href="#">подобрать</a></div>
+              <div class="col-md-10 offset-md-1 text-center"><a class="button text-uppercase px-4" href="#">подобрать</a></div>
             </div>
           </form>
           <form class="form tab-pane fade" id="filter-cars" role="tabpanel" action="#">
             <div class="row">
               <div class="form__row col-lg-10 offset-lg-1">
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="dropdown mb-4">
-                    <button class="dropdown-toggle" id="filter-cars-dropdown-1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выберете марку</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-1">
-                      <div class="dropdown-menu__header mb-2">
-                        <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
-                      </div>
-                      <div class="dropdown-menu__body">
-                        <ul class="dropdown-menu__list">
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 1</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 2</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 3</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option selected" role="option">Значение 4</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 5</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 1</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 2</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 3</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 4</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 5</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form__col pr-md-4 pr-xl-0 pos-rel mb-4">
+                  <div class="form__select-title">Выберете марку</div>
+                  <select class="selecter" data-live-search="true">
+                    <option>Значение 1</option>
+                    <option>Значение 2</option>
+                    <option>Значение 3</option>
+                    <option>Значение 4</option>
+                    <option>Значение 5</option>
+                  </select>
                 </div>
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="dropdown mb-4">
-                    <button class="dropdown-toggle" id="filter-cars-dropdown-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Модель</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-2">
-                      <div class="dropdown-menu__header mb-2">
-                        <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
-                      </div>
-                      <div class="dropdown-menu__body">
-                        <ul class="dropdown-menu__list">
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 1</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 2</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 3</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option selected" role="option">Значение 4</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form__col pr-md-4 pr-xl-0 pos-rel mb-4">
+                  <div class="form__select-title">Модель</div>
+                  <select class="selecter" data-live-search="true" disabled>
+                    <option>Значение 1</option>
+                    <option>Значение 2</option>
+                    <option>Значение 3</option>
+                    <option>Значение 4</option>
+                    <option>Значение 5</option>
+                  </select>
                 </div>
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="dropdown mb-4">
-                    <button class="dropdown-toggle" id="filter-cars-dropdown-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Кузов</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-3">
-                      <div class="dropdown-menu__header mb-2">
-                        <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
-                      </div>
-                      <div class="dropdown-menu__body">
-                        <ul class="dropdown-menu__list">
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 1</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 2</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 3</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option selected" role="option">Значение 4</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form__col pr-md-4 pr-xl-0 pos-rel mb-4">
+                  <div class="form__select-title">Кузов</div>
+                  <select class="selecter" data-live-search="true" disabled>
+                    <option>Значение 1</option>
+                    <option>Значение 2</option>
+                    <option>Значение 3</option>
+                    <option>Значение 4</option>
+                    <option>Значение 5</option>
+                  </select>
                 </div>
-                <div class="form__col pr-md-4 pr-xl-0">
-                  <div class="dropdown mb-4">
-                    <button class="dropdown-toggle" id="filter-cars-dropdown-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>Двигатель</button>
-                    <div class="dropdown-menu" aria-labelledby="filter-cars-dropdown-4">
-                      <div class="dropdown-menu__header mb-2">
-                        <input class="dropdown__field" type="search" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list">
-                      </div>
-                      <div class="dropdown-menu__body">
-                        <ul class="dropdown-menu__list">
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 1</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 2</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option" role="option">Значение 3</a></li>
-                          <li class="dropdown-menu__list-item"><a class="dropdown-menu__list-option selected" role="option">Значение 4</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <div class="form__col pr-md-4 pr-xl-0 pos-rel mb-4">
+                  <div class="form__select-title">Двигатель</div>
+                  <select class="selecter" data-live-search="true" disabled>
+                    <option>Значение 1</option>
+                    <option>Значение 2</option>
+                    <option>Значение 3</option>
+                    <option>Значение 4</option>
+                    <option>Значение 5</option>
+                  </select>
                 </div>
                 <div class="col-lg-10 offset-lg-1">
                   <div class="form__title mb-3">Наиболее популярные:</div>
@@ -494,7 +434,7 @@
               <div class="col-md-2 col-sm-3 col-6"><a class="result-item mb-4" href="#"><span class="result-item__pic"><img class="img-fluid" src="img/content/results/car-1.jpg" alt="" title=""/></span><span class="result-item__title px-xl-3 px-lg-2 px-1">Honda CR-V Car Sport внедорожник Toyota RAV4</span></a></div>
             </div>
             <div class="row">
-              <div class="col-lg-10 offset-lg-1 d-flex flex-sm-row flex-column align-items-center justify-content-sm-around justify-content-center"><a class="btn text-uppercase px-4 mb-4 mb-sm-0" href="#">подобрать шины</a><a class="btn text-uppercase px-4" href="#">подобрать Диски</a></div>
+              <div class="col-lg-10 offset-lg-1 d-flex flex-sm-row flex-column align-items-center justify-content-sm-around justify-content-center"><a class="button text-uppercase px-4 mb-4 mb-sm-0" href="#">подобрать шины</a><a class="button text-uppercase px-4" href="#">подобрать Диски</a></div>
             </div>
           </form>
         </div>
@@ -511,7 +451,7 @@
         <div class="col-lg-4 offset-lg-1 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
           <div class="banner overflow-hidden"><img class="img-cover" src="img/content/banners/banner-1.jpg" alt="" title=""/>
             <div class="banner__inner d-flex flex-column align-items-center justify-content-between px-3 py-4">
-              <div class="banner__title banner__title_sm h1 text-uppercase font-weight-bold color-theme-brand">Запись на шиномонтаж онлайн</div><a class="btn text-uppercase" href="#">Записаться</a>
+              <div class="banner__title banner__title_sm h1 text-uppercase font-weight-bold color-theme-brand">Запись на шиномонтаж онлайн</div><a class="button text-uppercase" href="#">Записаться</a>
             </div>
           </div>
         </div>
@@ -564,7 +504,7 @@
           </ul>
         </div>
         <div class="tab-content mb-5">
-          <div class="tab-pane d-block fade show active" id="tab-pane-1" role="tabpanel">
+          <div class="tab-pane d-block overflow-hidden fade show active" id="tab-pane-1" role="tabpanel">
             <div class="slides slides_grid swiper-container pt-1 pb-4">
               <div class="slides__nav">
                 <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button"><span class="ds-icon-arrow-left pointer-events-none"></span>
@@ -612,7 +552,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -660,7 +600,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -707,7 +647,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -756,7 +696,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -808,7 +748,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -859,7 +799,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -902,7 +842,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -949,7 +889,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -994,7 +934,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1005,7 +945,7 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade show" id="tab-pane-2" role="tabpanel">
+          <div class="tab-pane d-block overflow-hidden fade show" id="tab-pane-2" role="tabpanel">
             <div class="slides slides_grid swiper-container pt-1 pb-4">
               <div class="slides__nav">
                 <button class="slides__btn slides__btn_prev slides-carousel-prev" type="button"><span class="ds-icon-arrow-left pointer-events-none"></span>
@@ -1053,7 +993,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1101,7 +1041,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1148,7 +1088,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1197,7 +1137,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1249,7 +1189,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1300,7 +1240,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1343,7 +1283,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1390,7 +1330,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1435,7 +1375,7 @@
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                             <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                             <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                          </div><a class="btn text-uppercase" href="#">В корзину</a>
+                          </div><a class="button text-uppercase" href="#">В корзину</a>
                         </div>
                         <button class="card__btn card__btn_link w-100" type="button"><span class="ds-icon-plane h4 color-theme-brand d-flex flex-column align-items-center justify-content-center mr-1 pointer-events-none"></span>Купить в один клик
                         </button>
@@ -1446,8 +1386,8 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade show" id="tab-pane-3" role="tabpanel"></div>
-          <div class="tab-pane fade show" id="tab-pane-4" role="tabpanel"></div>
+          <div class="tab-pane d-block overflow-hidden fade show" id="tab-pane-3" role="tabpanel"></div>
+          <div class="tab-pane d-block overflow-hidden fade show" id="tab-pane-4" role="tabpanel"></div>
         </div>
       </div>
       <div class="mb-3">
@@ -1503,7 +1443,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1548,7 +1488,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1594,7 +1534,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1637,7 +1577,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1678,7 +1618,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1729,7 +1669,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1778,7 +1718,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1823,7 +1763,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1869,7 +1809,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1912,7 +1852,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -1953,7 +1893,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -2004,7 +1944,7 @@
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_add" type="button">+</button>
-                      </div><a class="btn text-uppercase" href="#">В корзину</a>
+                      </div><a class="button text-uppercase" href="#">В корзину</a>
                     </div>
                   </div>
                 </div>
@@ -2069,7 +2009,7 @@
         <div class="col-lg-3 ml-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
           <div class="banner overflow-hidden"><img class="img-cover" src="img/content/banners/banner-2.jpg" alt="" title=""/>
             <div class="banner__inner banner__inner_offset d-flex flex-column align-items-center justify-content-between">
-              <div class="banner__title h1 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="btn text-uppercase" href="#">Подобрать</a>
+              <div class="banner__title h1 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="button text-uppercase" href="#">Подобрать</a>
             </div>
           </div>
         </div>
@@ -2127,7 +2067,7 @@
         </div>
         <div class="col-xl-3 offset-xl-1 col-lg-4 col-md-6"><a class="logo color-theme-white mb-4" href="#">
             <svg class="icon-fluid">
-              <use xlink:href="img/icons/icons.svg#icon-logo"></use>
+              <use xlink:href="imgimg/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <div class="row align-items-center">
             <div class="col-8" itemscope itemtype="http://schema.org/AutoPartsStore"><img class="d-none" src="img/logo.png" alt="" title="" itemprop="image"/>
@@ -2159,7 +2099,7 @@
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
               <div class="h3 font-weight-bold color-theme-brand mr-3">Регистрация</div>
             </div>
-            <button class="close h2 btn-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
@@ -2182,7 +2122,7 @@
               <div class="form__item">
                 <input class="form__toggler form__toggler_checkbox" id="reg__confidential" type="checkbox" value="" name="reg__confidential">
                 <label class="error" id="reg__confidential-error" for="reg__confidential">Необходимо принять условия политики конфидециальности</label>
-                <label class="form__label form__label_checkbox" for="reg__confidential"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
+                <label class="form__label h5" for="reg__confidential"><span class="ds-icon-checked form__label-icon pointer-events-none"></span><span class="form__label-title">Я принимаю&nbsp;<a class="text-underline" href="#">политику конфиденциальности&nbsp;</a>*</span>
                 </label>
               </div>
             </div>
@@ -2193,38 +2133,59 @@
                 <div class="h6">*-поля обязательные для заполнения</div>
               </div>
               <div class="col-xl-7 text-xl-right text-center">
-                <button class="btn text-uppercase px-3" type="submit">Зарегистрироваться</button>
+                <button class="button text-uppercase px-3" type="submit">Зарегистрироваться</button>
               </div>
             </div>
           </div>
         </div>
       </form>
     </div>
-    <div class="modal fade" id="auth" tabindex="-1" aria-hidden="true">
-      <form class="modal-dialog" id="form-login" action="#">
+    <div class="modal fade" id="auth-phone" tabindex="-1" aria-hidden="true">
+      <form class="modal-dialog" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
-              <div class="h3 font-weight-bold color-theme-brand mr-3">Вход</div>
+              <div class="h3 font-weight-bold color-theme-brand mr-3">Войдите или зарегистрируйтесь</div>
             </div>
-            <button class="close h2 btn-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
             <div class="form mb-4">
               <div class="form__item mb-4">
-                <input class="form__field input-phone" id="login__username" type="text" value="" name="login__username">
+                <input class="form__field input-phone" type="text" value="">
                 <div class="form__label form__label_title">Номер телефона *</div>
               </div>
-              <div class="form__item">
-                <input class="form__field" id="login__pwd" type="text" value="" name="login__pwd">
-                <div class="form__label form__label_title">Пароль *</div>
-              </div>
             </div>
-            <div class="d-flex flex-wrap align-items-center justify-content-between"><a class="h5" href="#" data-dismiss="modal" data-toggle="modal" data-target="#pwd">Забыли пароль?</a><a class="h5" href="#" data-dismiss="modal" data-toggle="modal" data-target="#reg">Регистрация</a></div>
+            <div class="d-flex flex-wrap align-items-center justify-content-between"><a class="h5" href="#" data-dismiss="modal" data-toggle="modal" data-target="#auth-email">Войти по почте</a></div>
           </div>
           <div class="text-center px-4">
-            <button class="btn text-uppercase px-5" type="submit">Вход</button>
+            <button class="button text-uppercase px-5" type="submit">Получить код</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal fade" id="auth-email" tabindex="-1" aria-hidden="true">
+      <form class="modal-dialog" action="#">
+        <div class="modal-content border-0 box-shadow py-3">
+          <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
+            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
+              <div class="h3 font-weight-bold color-theme-brand mr-3">Войдите по почте</div>
+            </div>
+            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            </button>
+          </div>
+          <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
+            <div class="form mb-4">
+              <div class="form__item mb-4">
+                <input class="form__field input-email" type="text" value="">
+                <div class="form__label form__label_title">Только для зарегистрированных пользователей *</div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap align-items-center justify-content-between"><a class="h5" href="#" data-dismiss="modal" data-toggle="modal" data-target="#auth-phone">Войти или зарегистрироваться</a></div>
+          </div>
+          <div class="text-center px-4">
+            <button class="button text-uppercase px-5" type="submit">Получить код</button>
           </div>
         </div>
       </form>
@@ -2236,7 +2197,7 @@
             <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
               <div class="h3 font-weight-bold color-theme-brand mr-3">Забыли пароль?</div>
             </div>
-            <button class="close h2 btn-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
@@ -2250,7 +2211,7 @@
             <div class="d-flex flex-wrap align-items-center justify-content-end"><a class="h5" href="#" data-dismiss="modal" data-toggle="modal" data-target="#reg">Регистрация</a></div>
           </div>
           <div class="text-center px-4">
-            <button class="btn text-uppercase px-5" type="submit">Отправить</button>
+            <button class="button text-uppercase px-5" type="submit">Отправить</button>
           </div>
         </div>
       </form>
@@ -2265,6 +2226,7 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
   <script src="js/main.bundle.js"></script>
 <script src="js/validate.bundle.js"></script><script src="js/ion.bundle.js"></script><script src="js/search.bundle.js"></script></body>
 </html>
