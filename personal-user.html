@@ -8,51 +8,73 @@
     <meta name="description" content="" itemprop="description">
   <link href="css/main.min.css" rel="stylesheet"></head>
   <body>
-    
-    <div class="header header_top">
-      <div class="wrapper d-flex flex-wrap align-items-center">
-        <div class="col-xl-6 col-lg-12 col-8 d-flex align-items-center justify-content-xl-start justify-content-lg-between mb-xl-0 mb-lg-2">
-          <div class="contacts d-flex align-items-center justify-content-lg-between col-xl-7 col-lg-5 w-auto px-0">
-            <div class="contacts__item d-flex align-items-center h5 text-nowrap mr-4"><span class="ds-icon-placemark contacts__icon h3 color-theme-brand mr-lg-2 pointer-events-none"></span><span class="d-none d-lg-block">г. Ростов-на-Дону</span>
-            </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mr-4" href="#"><span class="ds-icon-phone contacts__icon h3 color-theme-brand mr-lg-2 pointer-events-none"></span><span class="d-none d-lg-block">+7 (863) 22-99-99-4</span></a>
+    <div class="icons d-none"></div>
+    <div class="top-panel popup-holder">
+      <div class="top-panel__wrapper wrapper">
+        <div class="top-panel__contacts col-xl-6 col-lg-12 col-md-8 px-0 px-lg-1">
+          <div class="contacts contacts_type_row col-xl-7 col-lg-5 flex-grow-1 flex-md-grow-0 w-auto px-0">
+            <div class="contacts__item contacts__item_fs_sm text-nowrap popup-toggler mr-4" data-target="#location"><span class="ds-icon-placemark contacts__icon h3 color-theme-blue mr-lg-2 pointer-events-none"></span><span class="theme-hover d-md-none d-lg-block pointer-events-none">г. Ростов-на-Дону</span>
+              <div class="popup popup_width_md popup_type_plain popup_pos_left box-shadow border-radius" id="location">
+                <div class="popup__triangle bg-theme-white box-shadow"></div>
+                <button class="popup__close popup__close_type_btn button-unstyled rounded-circle bg-theme-white" type="button"><span class="ds-icon-close h3 color-theme-blue pointer-events-none"></span>
+                </button>
+                <div class="search-holder bg-theme-white border-radius overflow-hidden zi-2 px-4 pt-4 pb-2">
+                  <div class="d-flex align-items-start justify-content-between mb-4">
+                    <div class="h5 text-left color-theme-blue">Выберите свой город и пользоваться сайтом станет удобнее</div>
+                  </div>
+                  <form class="search search_border_rounded" action="#" method="post">
+                    <input class="search__field" type="text" value="" placeholder="Я ищу...">
+                    <button class="search__btn search__btn_type_reset" type="reset"><span class="ds-icon-close-noborder pointer-events-none"></span>
+                    </button>
+                    <button class="search__btn search__btn_type_submit" type="submit"><span class="ds-icon-search h4 pointer-events-none"></span>
+                    </button>
+                  </form>
+                  <div class="search-dropdown search-dropdown_pos_stat">
+                    <div class="search-dropdown__wrapper">
+                      <div class="search-dropdown__section"><a class="h5 d-block mb-3" href="#">Санкт-Петербург (Ленинградская обл.)</a><a class="h5 d-block mb-3" href="#">Самара (Самарская обл.)</a><a class="h5 d-block mb-3" href="#">Самарское (Ростовская обл.)</a><a class="h5 d-block mb-3" href="#">Саратов (Саратовская обл.)</a><a class="h5 d-block mb-3" href="#">Саранск (Нижегородская обл.)</a><a class="h5 d-block" href="#">Сальск (Ростовская обл.)</a></div>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-6 mb-4"><a class="h6" href="#">Ростов-на-Дону</a></div>
+                    <div class="col-6 mb-4"><a class="h6" href="#">Краснодар</a></div>
+                    <div class="col-6 mb-4"><a class="h6" href="#">Сочи</a></div>
+                    <div class="col-6 mb-4"><a class="h6" href="#">Ставрополь</a></div>
+                  </div>
+                </div>
+              </div>
+            </div><a class="contacts__item h5 text-nowrap mr-4" href="#"><span class="ds-icon-phone contacts__icon h3 color-theme-blue mr-lg-2 pointer-events-none"></span><span class="d-none d-lg-block">+7 (863) 22-99-99-4</span></a>
           </div>
-          <nav class="social d-flex align-items-center"><a class="social__item color-theme-brand mr-4 mr-lg-3" href="#"><span class="ds-icon-wapp-filled h3 pointer-events-none"></span></a><a class="social__item color-theme-brand" href="#"><span class="ds-icon-tg-filled h3 pointer-events-none"></span></a></nav>
+          <nav class="social d-flex align-items-center"><a class="social__item color-theme-blue mr-4 mr-lg-3" href="#"><span class="ds-icon-wapp-filled h3 pointer-events-none"></span></a><a class="social__item color-theme-blue" href="#"><span class="ds-icon-tg-filled h3 pointer-events-none"></span></a></nav>
         </div>
-        <div class="col-xl-5 col-lg-10 d-none d-lg-block">
-          <nav class="header__nav d-flex align-items-center justify-content-xl-end"><a class="header__nav-item mr-4" href="#">Скидки и акции</a><a class="header__nav-item mr-4" href="#">Бонусные рубли</a><a class="header__nav-item" href="#">Контакты</a></nav>
-        </div>
-        <div class="col-xl-1 col-lg-2 col-4 d-flex align-items-xl-start justify-content-end">
-          <div class="menu">
-            <button class="menu__title theme-hover d-flex align-items-center zi-2" type="button"><span class="mr-1">Помощь</span><span class="ds-icon-dropdown menu__icon h6 pointer-events-none"></span>
-            </button>
-            <div class="menu__wrapper pt-2"><a class="h6 d-block theme-hover zi-2 mb-2" href="#">О компании</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Новости</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Статьи</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Вопросы и ответы</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Оплата и доставка</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Кредит</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">КупиВкредит</a><a class="h6 d-block theme-hover zi-2 mb-2" href="#">Политика конфиденциальности</a></div>
-          </div>
-        </div>
+        <nav class="top-panel__nav col-xl-5 col-lg-10"><a class="mr-4" href="#">Скидки и акции</a><a class="mr-4" href="#">Бонусные рубли</a><a href="#">Контакты</a></nav>
+        <nav class="navbar col-xl-1 col-lg-2 col-md-4">
+          <button class="navbar__title" type="button"><span class="mr-1">Помощь</span><span class="ds-icon-dropdown navbar__icon pointer-events-none"></span>
+          </button>
+          <div class="navbar__wrapper"><a class="navbar__link" href="#">О компании</a><a class="navbar__link" href="#">Новости</a><a class="navbar__link" href="#">Статьи</a><a class="navbar__link" href="#">Вопросы и ответы</a><a class="navbar__link" href="#">Оплата и доставка</a><a class="navbar__link" href="#">Кредит</a><a class="navbar__link" href="#">КупиВкредит</a><a class="navbar__link" href="#">Политика конфиденциальности</a></div>
+        </nav>
       </div>
     </div>
-    <header class="header header_bottom">
-      <div class="header__wrapper wrapper d-flex align-items-center">
-        <div class="header__col header__col_logo col-xl-4 col-lg-5 mb-3"><a class="logo color-theme-brand mr-4" href="#">
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="header__col header__col_side_left col-xl-4 col-lg-5 px-0 px-lg-1"><a class="logo logo_place_header color-theme-blue mr-4" href="#">
             <svg class="icon-fluid">
               <use xlink:href="img/icons/icons.svg#icon-logo"></use>
             </svg></a>
-          <nav class="header__nav d-flex align-items-center justify-content-center">
-            <button class="header__btn header__btn_type_toggler text-uppercase mr-3" type="button" data-target="#categories"><span class="ds-icon-menu header__btn-icon header__btn-icon_show mr-sm-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close mr-sm-2 pointer-events-none"></span><span class="d-none d-sm-block pointer-events-none">Каталог</span>
-            </button>
-            <button class="header__btn header__btn_type_toggler text-uppercase" type="button" data-target="#services"><span class="ds-icon-services header__btn-icon header__btn-icon_show mr-sm-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close mr-sm-2 pointer-events-none"></span><span class="d-none d-sm-block pointer-events-none">Услуги</span>
+          <div class="header__togglers">
+            <button class="header__btn header__btn_type_toggler text-uppercase" type="button" data-target="#categories"><span class="ds-icon-menu header__btn-icon header__btn-icon_show pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close pointer-events-none"></span><span class="header__btn-title">Каталог</span>
             </button>
             <div class="panel">
               <div class="panel__wrapper" id="services">
-                <button class="panel__close d-flex align-items-center d-xl-none bg-theme-brand color-theme-white" type="button"><span class="ds-icon-close h3 mr-2 pointer-events-none"></span><span class="h4 text-uppercase">услуги</span>
+                <button class="panel-close-btn" type="button"><span class="ds-icon-close h3 mr-2 pointer-events-none"></span><span class="h4 text-uppercase">услуги</span>
                 </button>
                 <div class="wrapper">
                   <div class="row">
-                    <div class="panel__nav border-0 col-xl-4"><a class="panel__nav-link panel__nav-link_type_btn d-flex align-items-center px-3 mb-xl-3" href="#"><span class="ds-icon-services-tires h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h4">Шиномонтаж</span></a><a class="panel__nav-link panel__nav-link_type_btn d-flex align-items-center px-3 mb-xl-3" href="#"><span class="ds-icon-services-store h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h4">Сезонное хранение шин и дисков</span></a><a class="panel__nav-link panel__nav-link_type_btn d-flex align-items-center px-3 mb-xl-3" href="#"><span class="ds-icon-services-aircond h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h4">Заправка автокондиционеров</span></a></div>
-                    <div class="panel__nav border-0 col-xl-4 mb-5 mb-xl-0"><a class="panel__nav-link panel__nav-link_type_btn d-flex align-items-center px-3 mb-xl-3" href="#"><span class="ds-icon-services-wheel-rolled h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h4">Прокатка дисков</span></a><a class="panel__nav-link panel__nav-link_type_btn d-flex align-items-center px-3 mb-xl-3" href="#"><span class="ds-icon-services-wheel-painted h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h4">Покраска дисков</span></a><a class="panel__nav-link panel__nav-link_type_btn d-flex align-items-center px-3 mb-xl-3" href="#"><span class="ds-icon-services-vin h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h4">Подбор по VIN</span></a></div>
+                    <div class="panel__nav border-0 col-xl-4"><a class="panel__nav-link panel__nav-link_type_plain" href="#"><span class="ds-icon-services-tires h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h4">Шиномонтаж</span></a><a class="panel__nav-link panel__nav-link_type_plain" href="#"><span class="ds-icon-services-store h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h4">Сезонное хранение шин и дисков</span></a><a class="panel__nav-link panel__nav-link_type_plain" href="#"><span class="ds-icon-services-aircond h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h4">Заправка автокондиционеров</span></a></div>
+                    <div class="panel__nav col-xl-4 border-0 mb-5 mb-xl-0"><a class="panel__nav-link panel__nav-link_type_plain" href="#"><span class="ds-icon-services-wheel-rolled h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h4">Прокатка дисков</span></a><a class="panel__nav-link panel__nav-link_type_plain" href="#"><span class="ds-icon-services-wheel-painted h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h4">Покраска дисков</span></a><a class="panel__nav-link panel__nav-link_type_plain" href="#"><span class="ds-icon-services-vin h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h4">Подбор по VIN</span></a></div>
                     <div class="col-xl-4">
                       <div class="banner banner_xs overflow-hidden mb-4 mb-xl-0"><img class="img-cover" src="img/content/banners/banner-1.jpg" alt="" title=""/>
                         <div class="banner__inner d-flex flex-column align-items-start justify-content-between p-4">
-                          <div class="banner__title h2 font-weight-bold color-theme-brand">Запись на шиномонтаж онлайн</div><a class="button text-uppercase" href="#">Записаться</a>
+                          <div class="banner__title h2 font-weight-bold color-theme-blue">Запись на шиномонтаж онлайн</div><a class="button text-uppercase" href="#">Записаться</a>
                         </div>
                       </div>
                     </div>
@@ -60,97 +82,97 @@
                 </div>
               </div>
               <div class="panel__wrapper" id="categories">
-                <button class="panel__close d-flex align-items-center d-xl-none bg-theme-brand color-theme-white" type="button"><span class="ds-icon-close h3 mr-2 pointer-events-none"></span><span class="h4 text-uppercase">каталог</span>
+                <button class="panel-close-btn" type="button"><span class="ds-icon-close h3 mr-2 pointer-events-none"></span><span class="h4 text-uppercase">каталог</span>
                 </button>
                 <div class="wrapper">
                   <div class="row align-items-start">
                     <div class="panel__nav col-xl-2 pr-xl-2">
-                      <div class="panel__nav-item px-3 px-xl-0 py-2 py-xl-0 mb-xl-1" data-target="#tires"><a class="panel__nav-link overflow-hidden d-flex align-items-center flex-grow-1 panel__nav-link_active px-3 py-xl-2 mr-1" href="#"><span class="ds-icon-tires h3 color-theme-brand mr-2 pointer-events-none"></span><span class="panel__nav-title h4">Автошины</span></a>
-                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-brand pointer-events-none"></span>
+                      <div class="panel__nav-item" data-target="#tires"><a class="panel__nav-link panel__nav-link_type_btn panel__nav-link_active" href="#"><span class="ds-icon-tires h3 color-theme-blue mr-2 pointer-events-none"></span><span class="panel__nav-title">Автошины</span></a>
+                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-blue pointer-events-none"></span>
                         </button>
                       </div>
-                      <div class="panel__nav-item px-3 px-xl-0 py-2 py-xl-0 mb-xl-1" data-target="#moto"><a class="panel__nav-link overflow-hidden d-flex align-items-center flex-grow-1 px-3 py-xl-2 mr-1" href="#"><span class="ds-icon-moto h3 color-theme-brand mr-2 pointer-events-none"></span><span class="panel__nav-title h4">Мотошины</span></a>
-                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-brand pointer-events-none"></span>
+                      <div class="panel__nav-item" data-target="#moto"><a class="panel__nav-link panel__nav-link_type_btn" href="#"><span class="ds-icon-moto h3 color-theme-blue mr-2 pointer-events-none"></span><span class="panel__nav-title">Мотошины</span></a>
+                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-blue pointer-events-none"></span>
                         </button>
                       </div>
-                      <div class="panel__nav-item px-3 px-xl-0 py-2 py-xl-0 mb-xl-1" data-target="#wheels"><a class="panel__nav-link overflow-hidden d-flex align-items-center flex-grow-1 px-3 py-xl-2 mr-1" href="#"><span class="ds-icon-wheels h3 color-theme-brand mr-2 pointer-events-none"></span><span class="panel__nav-title h4">Диски</span></a>
-                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-brand pointer-events-none"></span>
+                      <div class="panel__nav-item" data-target="#wheels"><a class="panel__nav-link panel__nav-link_type_btn" href="#"><span class="ds-icon-wheels h3 color-theme-blue mr-2 pointer-events-none"></span><span class="panel__nav-title">Диски</span></a>
+                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-blue pointer-events-none"></span>
                         </button>
                       </div>
-                      <div class="panel__nav-item px-3 px-xl-0 py-2 py-xl-0 mb-xl-1" data-target="#battery"><a class="panel__nav-link overflow-hidden d-flex align-items-center flex-grow-1 px-3 py-xl-2 mr-1" href="#"><span class="ds-icon-battery h3 color-theme-brand mr-2 pointer-events-none"></span><span class="panel__nav-title h4">Аккумуляторы</span></a>
-                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-brand pointer-events-none"></span>
+                      <div class="panel__nav-item" data-target="#battery"><a class="panel__nav-link panel__nav-link_type_btn" href="#"><span class="ds-icon-battery h3 color-theme-blue mr-2 pointer-events-none"></span><span class="panel__nav-title">Аккумуляторы</span></a>
+                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-blue pointer-events-none"></span>
                         </button>
                       </div>
-                      <div class="panel__nav-item px-3 px-xl-0 py-2 py-xl-0 mb-xl-1" data-target="#detail"><a class="panel__nav-link overflow-hidden d-flex align-items-center flex-grow-1 px-3 py-xl-2 mr-1" href="#"><span class="ds-icon-detail h3 color-theme-brand mr-2 pointer-events-none"></span><span class="panel__nav-title h4">Автотовары</span></a>
-                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-brand pointer-events-none"></span>
+                      <div class="panel__nav-item" data-target="#detail"><a class="panel__nav-link panel__nav-link_type_btn" href="#"><span class="ds-icon-detail h3 color-theme-blue mr-2 pointer-events-none"></span><span class="panel__nav-title">Автотовары</span></a>
+                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-blue pointer-events-none"></span>
                         </button>
                       </div>
-                      <div class="panel__nav-item px-3 px-xl-0 py-2 py-xl-0 mb-xl-1" data-target="#oil"><a class="panel__nav-link overflow-hidden d-flex align-items-center flex-grow-1 px-3 py-xl-2 mr-1" href="#"><span class="ds-icon-oil h3 color-theme-brand mr-2 pointer-events-none"></span><span class="panel__nav-title h4">Масла</span></a>
-                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-brand pointer-events-none"></span>
+                      <div class="panel__nav-item" data-target="#oil"><a class="panel__nav-link panel__nav-link_type_btn" href="#"><span class="ds-icon-oil h3 color-theme-blue mr-2 pointer-events-none"></span><span class="panel__nav-title">Масла</span></a>
+                        <button class="panel__nav-btn" type="button"><span class="ds-icon-arrow-right color-theme-blue pointer-events-none"></span>
                         </button>
                       </div>
                     </div>
                     <div class="panel__grid panel__grid_active col-xl-10" id="tires">
-                      <div class="panel__content px-xl-4">
+                      <div class="panel__content">
                         <div class="h4 mb-4 d-none d-xl-block">Производители автошин:</div>
-                        <button class="panel__toggler d-flex align-items-center d-xl-none px-3 py-2 border-bottom" type="button"><span class="ds-icon-arrow-left h6 color-theme-brand pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
+                        <button class="panel__toggler" type="button"><span class="ds-icon-arrow-left h6 color-theme-blue pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
                         </button>
                         <div class="panel__subcategory mb-4 mb-xl-0"><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a>
                         </div>
-                        <div class="text-center d-none d-xl-block"><a class="readmore" href="#"><span class="mr-2 pointer-events-none">Показать еще</span><span class="ds-icon-readmore readmore__icon h3 color-theme-brand pointer-events-none"></span></a></div>
+                        <div class="text-center d-none d-xl-block"><a class="readmore" href="#"><span class="mr-2 pointer-events-none">Показать еще</span><span class="ds-icon-readmore readmore__icon h3 color-theme-blue pointer-events-none"></span></a></div>
                       </div>
-                      <div class="panel__aside px-3 px-xl-4">
+                      <div class="panel__aside">
                         <div class="mb-4"><a class="toggler py-1" href="#">Зимние шины</a><a class="toggler py-1" href="#">Летние шины</a><a class="toggler py-1" href="#">Шины для внедорожников</a><a class="toggler py-1" href="#">Всесезонные шины</a><a class="toggler py-1" href="#">Шины на Газель</a></div>
                         <div class="banner banner_sm overflow-hidden mb-4 mb-xl-0"><img class="img-cover" src="img/content/banners/banner-2.jpg" alt="" title=""/>
-                          <div class="banner__inner p-4 d-flex flex-column align-items-center justify-content-between">
+                          <div class="banner__inner d-flex flex-column align-items-center justify-content-between p-4">
                             <div class="banner__title h2 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="button text-uppercase" href="#">Подобрать</a>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="panel__grid col-xl-10" id="moto">
-                      <div class="panel__content px-xl-4">
+                      <div class="panel__content">
                         <div class="h4 mb-4 d-none d-xl-block">Производители мотошин:</div>
-                        <button class="panel__toggler d-flex align-items-center d-xl-none px-3 py-2 border-bottom" type="button"><span class="ds-icon-arrow-left h6 color-theme-brand pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
+                        <button class="panel__toggler" type="button"><span class="ds-icon-arrow-left h6 color-theme-blue pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
                         </button>
                         <div class="panel__subcategory mb-4 mb-xl-0"><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-1.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-2.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-3.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-4.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a><a class="brand brand_border_bottom d-flex align-items-center justify-content-around d-xl-inline-block px-3 py-2 p-xl-0 mr-xl-3 mb-xl-4" href="#"><span class="d-inline-block pl-3 pr-1 px-xl-0"><img class="img-fluid" src="img/content/logo/logo-5.jpg" alt="" title=""/></span><span class="h5 text-nowrap d-block d-xl-none">Название бренда</span></a>
                         </div>
-                        <div class="text-center d-none d-xl-block"><a class="readmore" href="#"><span class="mr-2 pointer-events-none">Показать еще</span><span class="ds-icon-readmore readmore__icon h3 color-theme-brand pointer-events-none"></span></a></div>
+                        <div class="text-center d-none d-xl-block"><a class="readmore" href="#"><span class="mr-2 pointer-events-none">Показать еще</span><span class="ds-icon-readmore readmore__icon h3 color-theme-blue pointer-events-none"></span></a></div>
                       </div>
-                      <div class="panel__aside px-3 px-xl-4">
+                      <div class="panel__aside">
                         <div class="mb-4"><a class="toggler py-1" href="#">Летние шины</a><a class="toggler py-1" href="#">Шины для внедорожников</a><a class="toggler py-1" href="#">Зимние шины</a><a class="toggler py-1" href="#">Всесезонные шины</a></div>
                         <div class="banner banner_sm overflow-hidden mb-4 mb-xl-0"><img class="img-cover" src="img/content/banners/banner-2.jpg" alt="" title=""/>
-                          <div class="banner__inner p-4 d-flex flex-column align-items-center justify-content-between">
+                          <div class="banner__inner d-flex flex-column align-items-center justify-content-between p-4">
                             <div class="banner__title h2 font-weight-bold color-theme-white">Подбор запчастей по VIN-коду</div><a class="button text-uppercase" href="#">Подобрать</a>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="panel__grid col-xl-10" id="wheels">
-                      <div class="panel__content px-xl-4">
+                      <div class="panel__content">
                         <div class="h4 mb-4 d-none d-xl-block">Производители дисков</div>
-                        <button class="panel__toggler d-flex align-items-center d-xl-none px-3 py-2 border-bottom" type="button"><span class="ds-icon-arrow-left h6 color-theme-brand pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
+                        <button class="panel__toggler" type="button"><span class="ds-icon-arrow-left h6 color-theme-blue pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
                         </button>
                       </div>
                     </div>
                     <div class="panel__grid col-xl-10" id="battery">
-                      <div class="panel__content px-xl-4">
+                      <div class="panel__content">
                         <div class="h4 mb-4 d-none d-xl-block">Производители аккумуляторов</div>
-                        <button class="panel__toggler d-flex align-items-center d-xl-none px-3 py-2 border-bottom" type="button"><span class="ds-icon-arrow-left h6 color-theme-brand pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
+                        <button class="panel__toggler" type="button"><span class="ds-icon-arrow-left h6 color-theme-blue pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
                         </button>
                       </div>
                     </div>
                     <div class="panel__grid col-xl-10" id="detail">
-                      <div class="panel__content px-xl-4">
+                      <div class="panel__content">
                         <div class="h4 mb-4 d-none d-xl-block">Производители автотоваров</div>
-                        <button class="panel__toggler d-flex align-items-center d-xl-none px-3 py-2 border-bottom" type="button"><span class="ds-icon-arrow-left h6 color-theme-brand pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
+                        <button class="panel__toggler" type="button"><span class="ds-icon-arrow-left h6 color-theme-blue pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
                         </button>
                       </div>
                     </div>
                     <div class="panel__grid col-xl-10" id="oil">
-                      <div class="panel__content px-xl-4">
+                      <div class="panel__content">
                         <div class="h4 mb-4 d-none d-xl-block">Производители масел</div>
-                        <button class="panel__toggler d-flex align-items-center d-xl-none px-3 py-2 border-bottom" type="button"><span class="ds-icon-arrow-left h6 color-theme-brand pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
+                        <button class="panel__toggler" type="button"><span class="ds-icon-arrow-left h6 color-theme-blue pl-3 mr-2 pointer-events-none"></span><span class="h5">Назад</span>
                         </button>
                       </div>
                     </div>
@@ -158,73 +180,79 @@
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-        <div class="col-xl-8 col-lg-7 d-flex flex-wrap align-items-center mb-3">
-          <div class="header__col header__col_search header__col_search_wide">
-            <form class="header__search" action="#" method="post">
-              <input class="header__search-field" type="text" placeholder="Я ищу..." value="">
-              <button class="header__search-btn header__search-btn_close" type="reset"><span class="ds-icon-close-noborder pointer-events-none"></span>
-              </button>
-              <button class="header__search-btn" type="submit"><span class="ds-icon-search pointer-events-none"></span>
-              </button>
-              <div class="header__search-dropdown">
-                <div class="header__search-section">
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman 5 195/65 R15 95T XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Летние шины Nokian Nordman SX2 195/65 R15 91H</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman 7 195/65 R15 95T XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman RS2 205/55 R16 94R XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">185/65/15 NORDMAN RS-2 XL R*</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div><a class="h5 color-theme-brand" href="#">показать все товары (54) &gt;</a>
-                </div>
-                <div class="header__search-section">
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-7</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN RS2</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-7 SUV</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                  <div class="header__search-row mb-2">
-                    <div class="header__search-picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
-                    <div class="header__search-desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-8</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
-                  </div>
-                </div>
-                <div class="header__search-section"><a class="h5 d-block mb-4" href="#">Зимние шины</a><a class="h5 d-block mb-4" href="#">Шины для внедорожника</a><a class="h5 d-block mb-4" href="#">Шины на газель</a><a class="h5 d-block mb-4" href="#">Шипованые шины</a><a class="h5 d-block" href="#">Автошторки</a></div>
-              </div>
-            </form>
           </div>
-          <div class="header__col header__col_nav flex-grow-1 flex-xl-grow-0">
-            <nav class="header__nav d-flex align-items-center justify-content-lg-start justify-content-between flex-grow-1 mr-lg-4">
-              <button class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap d-lg-none" type="button"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-search pointer-events-none"></span></span><span class="header__btn-title">Поиск</span></button>
-              <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="d-flex align-items-center justify-content-center pos-rel"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center mr-md-1"><span class="ds-icon-compare pointer-events-none"></span></span><span class="header__counter header__counter_value_compare d-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-circle">3</span></span><span class="header__btn-title">Сравнить</span></a>
+        </div>
+        <div class="header__col header__col_side_right search-holder col-xl-8 col-lg-7">
+          <div class="search-panel">
+            <div class="search-panel__wrapper">
+              <button class="panel-close-btn" type="button"><span class="ds-icon-close h3 mr-2 pointer-events-none"></span><span class="h4 text-uppercase pointer-events-none">Поиск</span>
+              </button>
+              <form class="search" action="#" method="post">
+                <input class="search__field" type="text" value="" placeholder="Я ищу...">
+                <button class="search__btn search__btn_type_reset" type="reset"><span class="ds-icon-close-noborder pointer-events-none"></span>
+                </button>
+                <button class="search__btn search__btn_type_submit" type="submit"><span class="ds-icon-search h4 pointer-events-none"></span>
+                </button>
+              </form>
+              <div class="search-dropdown">
+                <div class="search-dropdown__wrapper">
+                  <div class="search-dropdown__section">
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman 5 195/65 R15 95T XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Летние шины Nokian Nordman SX2 195/65 R15 91H</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman 7 195/65 R15 95T XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">Зимние шины Nokian Nordman RS2 205/55 R16 94R XL</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">185/65/15 NORDMAN RS-2 XL R*</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div><a class="h5 color-theme-blue" href="#">показать все товары (54) &gt;</a>
+                  </div>
+                  <div class="search-dropdown__section">
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-7</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN RS2</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-7 SUV</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                    <div class="search-dropdown__row mb-2">
+                      <div class="search-dropdown__picture mr-2"><a href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
+                      <div class="search-dropdown__desc flex-grow-1"><a class="h5 d-block mb-1" href="#">NOKIAN NORDMAN-8</a><span class="h6 color-theme-disabled">3 630.90 ₽</span></div>
+                    </div>
+                  </div>
+                  <div class="search-dropdown__section"><a class="h5 d-block mb-4" href="#">Зимние шины</a><a class="h5 d-block mb-4" href="#">Шины для внедорожника</a><a class="h5 d-block mb-4" href="#">Шины на газель</a><a class="h5 d-block mb-4" href="#">Шипованые шины</a><a class="h5 d-block" href="#">Автошторки</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom-panel">
+            <div class="header__navbar">
+              <button class="header__navbar-item header__navbar-item_toggler_search" type="button"><span class="header__navbar-icon pointer-events-none"><span class="ds-icon-search pointer-events-none"></span></span><span class="header__navbar-caption pointer-events-none">Поиск</span></button>
+              <div class="header__navbar-item"><span class="header__navbar-top"><span class="header__navbar-icon mr-md-1"><span class="ds-icon-compare pointer-events-none"></span></span><span class="header__navbar-badge rounded-circle">3</span></span><span class="header__navbar-caption">Сравнить</span>
                 <div class="popup popup_width_md popup_pos_left box-shadow border-radius d-block">
                   <div class="popup__triangle bg-theme-white box-shadow"></div>
                   <div class="bg-theme-white border-radius overflow-hidden zi-2 px-4 py-3">
                     <div class="d-flex align-items-start justify-content-between mb-4">
-                      <div class="h3 font-weight-bold color-theme-brand">Товар готов к сравнению</div>
+                      <div class="h3 font-weight-bold text-left color-theme-blue">Товар готов к сравнению</div>
                       <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-success color-theme-white rounded-pill px-2 py-1">3 шт.</div>
                     </div>
-                    <div class="mb-5"><a class="h5 theme-hover d-inline-block mr-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL  Ice Guard</a></div>
+                    <div class="mb-5"><a class="h5 theme-hover d-inline-block text-left mr-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL  Ice Guard</a></div>
                     <div class="d-flex align-items-center justify-content-between">
                       <button class="popup__close button button_nobg text-left px-0" type="button">Продолжить<br>покупки</button>
                       <button class="button text-uppercase" type="button">Сравнить</button>
@@ -232,24 +260,24 @@
                   </div>
                 </div>
               </div>
-              <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-car color-theme-success pointer-events-none"></span></span><span class="header__btn-title">HYUNDAI Accent</span></a>
+              <div class="header__navbar-item"><span class="header__navbar-icon"><span class="ds-icon-car color-theme-success pointer-events-none"></span></span><span class="header__navbar-caption">HYUNDAI Accent</span>
                 <div class="popup box-shadow border-radius d-block">
                   <div class="popup__triangle bg-theme-white box-shadow"></div>
                   <div class="bg-theme-white border-radius overflow-hidden zi-2 pt-4 pb-3 px-4">
-                    <div class="h5 color-theme-brand mb-2">Выберете свой автомобиль и поиск товаров на сайте станет значительно проще.</div>
+                    <div class="h5 color-theme-blue text-left mb-2">Выберете свой автомобиль и поиск товаров на сайте станет значительно проще.</div>
                     <div class="d-flex align-items-center justify-content-between">
                       <button class="popup__close button button_nobg px-0" type="button">Позже</button><a class="button font-weight-bold px-3" href="#">ОК</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="header__nav-icon d-flex flex-column align-items-center justify-content-center"><span class="ds-icon-case pointer-events-none"></span></span><span class="header__btn-title">Заказы</span></a>
+              <div class="header__navbar-item"><span class="header__navbar-icon"><span class="ds-icon-case pointer-events-none"></span></span><span class="header__navbar-caption">Заказы</span>
                 <div class="popup popup_width_md popup_pos_left box-shadow border-radius d-block">
                   <div class="popup__triangle bg-theme-white box-shadow"></div>
                   <form class="bg-theme-white border-radius overflow-hidden zi-2 px-4 py-3" action="#">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                      <div class="h3 font-weight-bold color-theme-brand mr-3">Что с моим заказом?</div>
-                      <button class="popup__close button-unstyled rounded-circle bg-theme-white" type="button"><span class="ds-icon-close h3 color-theme-brand pointer-events-none"></span>
+                      <div class="h3 font-weight-bold color-theme-blue mr-3">Что с моим заказом?</div>
+                      <button class="popup__close button-unstyled rounded-circle bg-theme-white" type="button"><span class="ds-icon-close h3 color-theme-blue pointer-events-none"></span>
                       </button>
                     </div>
                     <div class="mb-5">
@@ -268,20 +296,16 @@
                   </form>
                 </div>
               </div>
-              <div class="pos-rel col-lg-3"><a class="header__nav-item header__nav-item_col d-flex flex-column text-center text-nowrap" href="#"><span class="d-flex align-items-center justify-content-center"><span class="header__nav-icon header__nav-icon_feature_bonus d-flex flex-column align-items-center justify-content-center mr-md-1"><span class="ds-icon-user pointer-events-none"></span></span><span class="header__counter d-none d-md-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-pill px-2"><span class="font-weight-bold mr-1">300</span>Б.₽.</span></span><span class="header__btn-title button-unstyled">Сергей | выход</span></a></div>
-            </nav>
-            <div class="pos-rel">
-              <div class="d-flex align-items-center justify-content-center">
-                <button class="header__btn header__btn_type_cart-holder header__btn_inverse" type="button" data-target="#cart"><span class="ds-icon-cart header__btn-icon header__btn-icon_show zi-2 pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close zi-2 mr-md-2 pointer-events-none"></span><span class="header__btn-caption color-theme-white text-uppercase pointer-events-none zi-2 d-none d-sm-block">Корзина</span>
-                </button>
-                <div class="header__cart-data d-flex flex-column justify-content-between zi-2"><a class="header__counter d-flex align-items-center justify-content-center h6 bg-theme-success color-theme-white rounded-pill px-md-2 mb-1" href="#"><span class="font-weight-bold mr-md-1">3</span><span class="d-none d-md-block">шт.</span></a><a class="header__counter d-flex align-items-center justify-content-center h6 bg-theme-light color-theme-brand rounded-pill box-shadow px-md-2" href="#"><span class="mr-md-1">29</span><span class="ds-icon-favourite d-none d-md-block pointer-events-none"></span></a></div>
-              </div>
+              <button class="header__navbar-item" type="button"><span class="header__navbar-top"><span class="header__navbar-icon mr-md-1"><span class="ds-icon-user color-theme-success pointer-events-none"></span></span><span class="header__navbar-badge header__navbar-badge_width_auto d-none d-md-flex rounded-pill px-2"><span class="font-weight-bold mr-1">300</span>Б.₽.</span></span><span class="header__navbar-caption">Сергей | выход</span></button>
+            </div>
+            <div class="header__aside d-flex"><a class="header__btn header__btn_place_panel" href="#"><span class="header__btn-icon header__btn-icon_type_holder"><span class="ds-icon-cart pointer-events-none"></span></span><span class="header__btn-title">Корзина</span></a>
+              <div class="header__aside-meta"><a class="header__aside-badge bg-theme-success rounded-pill" href="#"><span class="color-theme-white font-weight-bold mr-md-1">3</span><span class="color-theme-white d-none d-md-block">шт.</span></a><a class="header__aside-badge rounded-pill box-shadow" href="#"><span class="mr-md-1">29</span><span class="ds-icon-favourite d-none d-md-block pointer-events-none"></span></a></div>
               <div class="popup popup_width_md popup_pos_right box-shadow border-radius d-block">
                 <div class="popup__triangle bg-theme-white box-shadow"></div>
                 <div class="bg-theme-white border-radius overflow-hidden zi-2 px-4 py-3">
                   <div class="d-flex align-items-start justify-content-between mb-4">
-                    <div class="h3 font-weight-bold color-theme-brand">Товар добавлен в избранное</div>
-                    <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-light color-theme-brand rounded-pill px-2 py-1">3 шт.</div>
+                    <div class="h3 font-weight-bold color-theme-blue">Товар добавлен в избранное</div>
+                    <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-light color-theme-blue rounded-pill px-2 py-1">3 шт.</div>
                   </div>
                   <div class="mb-5"><a class="h5 theme-hover d-inline-block mr-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL  Ice Guard</a></div>
                   <div class="d-flex align-items-center justify-content-between">
@@ -292,21 +316,21 @@
               </div>
               <div class="popup popup_width_lg popup_pos_right box-shadow border-radius d-block">
                 <div class="popup__triangle bg-theme-white box-shadow"></div>
-                <button class="popup__close popup__close_type_btn button-unstyled rounded-circle bg-theme-white" type="button"><span class="ds-icon-close h3 color-theme-brand pointer-events-none"></span>
+                <button class="popup__close popup__close_type_btn button-unstyled rounded-circle bg-theme-white" type="button"><span class="ds-icon-close h3 color-theme-blue pointer-events-none"></span>
                 </button>
                 <div class="bg-theme-white border-radius overflow-hidden zi-2">
                   <div class="popup__content">
                     <div class="p-4 border-bottom">
-                      <div class="h3 font-weight-bold color-theme-brand mb-4">Товар успешно добавлен в корзину</div>
+                      <div class="h3 font-weight-bold color-theme-blue mb-4">Товар успешно добавлен в корзину</div>
                       <div class="row mb-4">
                         <div class="col-4 col-sm-3 offset-4 text-center pr-3 mb-2 mb-sm-0 ml-sm-0"><a class="border border-radius overflow-hidden d-block" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
                         <div class="col-sm-8"><a class="h5 theme-hover d-block mb-3" href="#">Зимние шины Yokohama Ice Guard IG55 215/55 R17 98T XL Ice Guard</a>
                           <div class="d-flex align-items-center">
                             <div class="recalculate recalculate_sm recalculate_shadow d-flex align-items-center overflow-hidden bg-theme-white mr-4">
                               <input class="recalculate__field d-none" type="number" name="count" value="1">
-                              <button class="recalculate__btn recalculate__btn_sm font-weight-bold color-theme-brand flex-grow-1 recalculate__btn_remove" type="button">-</button>
-                              <div class="recalculate__value recalculate__value_sm d-flex align-items-center justify-content-center color-theme-brand">1</div>
-                              <button class="recalculate__btn recalculate__btn_sm font-weight-bold color-theme-brand flex-grow-1 recalculate__btn_add" type="button">+</button>
+                              <button class="recalculate__btn recalculate__btn_sm font-weight-bold color-theme-blue flex-grow-1 recalculate__btn_remove" type="button">-</button>
+                              <div class="recalculate__value recalculate__value_sm d-flex align-items-center justify-content-center color-theme-blue">1</div>
+                              <button class="recalculate__btn recalculate__btn_sm font-weight-bold color-theme-blue flex-grow-1 recalculate__btn_add" type="button">+</button>
                             </div>
                             <div class="h3 d-flex">
                               <div class="font-weight-bold text-nowrap mr-1">7 337.12</div>₽
@@ -315,7 +339,7 @@
                         </div>
                       </div>
                       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-between">
-                        <button class="popup__close button button_nobg h4 mb-2 mb-sm-0 px-3 px-0 py-0" type="button"><span class="ds-icon-continue h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h5 pointer-events-none">Продолжить покупки</span>
+                        <button class="popup__close button button_nobg h4 mb-2 mb-sm-0 px-3 px-0 py-0" type="button"><span class="ds-icon-continue h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h5 pointer-events-none">Продолжить покупки</span>
                         </button><a class="button text-uppercase" href="#">Перейти в корзину</a>
                       </div>
                     </div>
@@ -443,8 +467,8 @@
                   <div class="popup__content">
                     <div class="p-4 border-bottom">
                       <div class="d-flex flex-wrap align-items-center mb-4">
-                        <div class="h3 font-weight-bold color-theme-brand mr-3">Товары в корзине</div>
-                        <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-brand color-theme-white rounded-pill px-2 py-1">4 шт.</div>
+                        <div class="h3 font-weight-bold color-theme-blue mr-3">Товары в корзине</div>
+                        <div class="h4 text-nowrap d-flex flex-column align-items-center justify-content-center box-shadow bg-theme-blue color-theme-white rounded-pill px-2 py-1">4 шт.</div>
                       </div>
                       <div class="row align-items-center mb-3">
                         <div class="col-4 col-sm-2 offset-4 mb-2 mb-sm-0 ml-sm-0"><a class="border border-radius overflow-hidden d-block" href="#"><img class="img-fluid" src="img/content/cards/card-1.jpg" alt="" title=""/></a></div>
@@ -487,7 +511,7 @@
                         </div>
                       </div>
                       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-between">
-                        <button class="popup__close button button_nobg h4 mb-2 mb-sm-0 px-3 px-0 py-0" type="button"><span class="ds-icon-continue h3 color-theme-brand mr-2 pointer-events-none"></span><span class="h5 pointer-events-none">Продолжить покупки</span>
+                        <button class="popup__close button button_nobg h4 mb-2 mb-sm-0 px-3 px-0 py-0" type="button"><span class="ds-icon-continue h3 color-theme-blue mr-2 pointer-events-none"></span><span class="h5 pointer-events-none">Продолжить покупки</span>
                         </button><a class="button text-uppercase" href="#">Перейти в корзину</a>
                       </div>
                     </div>
@@ -617,13 +641,13 @@
     <nav class="topmenu">
       <div class="topmenu__wrapper wrapper swiper-container">
         <ul class="swiper-wrapper justify-content-between" itemscope itemtype="https://schema.org/SiteNavigationElement">
-          <li class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Автошины</span></a></li>
-          <li class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Мотошины</span></a></li>
-          <li class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Диски</span></a></li>
-          <li class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Аккумуляторы</span></a></li>
-          <li class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Масла</span></a></li>
-          <li class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Автотовары</span></a></li>
-          <li class="swiper-slide w-auto"><a class="theme-hover d-inline-block mr-3" href="#" itemprop="url"><span itemprop="name">Шиномонтаж</span></a></li>
+          <li class="swiper-slide w-auto"><a class="topmenu__link mr-3" href="#" itemprop="url"><span itemprop="name">Автошины</span></a></li>
+          <li class="swiper-slide w-auto"><a class="topmenu__link mr-3" href="#" itemprop="url"><span itemprop="name">Мотошины</span></a></li>
+          <li class="swiper-slide w-auto"><a class="topmenu__link mr-3" href="#" itemprop="url"><span itemprop="name">Диски</span></a></li>
+          <li class="swiper-slide w-auto"><a class="topmenu__link mr-3" href="#" itemprop="url"><span itemprop="name">Аккумуляторы</span></a></li>
+          <li class="swiper-slide w-auto"><a class="topmenu__link mr-3" href="#" itemprop="url"><span itemprop="name">Масла</span></a></li>
+          <li class="swiper-slide w-auto"><a class="topmenu__link mr-3" href="#" itemprop="url"><span itemprop="name">Автотовары</span></a></li>
+          <li class="swiper-slide w-auto"><a class="topmenu__link mr-3" href="#" itemprop="url"><span itemprop="name">Шиномонтаж</span></a></li>
         </ul>
       </div>
     </nav>
@@ -644,7 +668,7 @@
       <div class="row align-items-start">
         <div class="aside aside_pos_fixed aside_pos_sticky col-xl-3 col-lg-4 mb-lg-4" id="leftmenu">
           <div class="aside__wrapper">
-            <nav class="leftmenu"><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-case leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Мои заказы</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-brand">2</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-favourite leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Избранное</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-success">3</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-gift leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Бонусные рубли</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-success">300<span class="leftmenu__badge-text">Б.₽.</span></span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-services leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Запись на услуги</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-settings leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Подбор по VIN</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-success">1</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-user leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Персональные данные</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-car leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Мой автомобиль</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-shield leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Смена пароля</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-exit leftmenu__item-icon h3 color-theme-brand mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Выход</span></a>
+            <nav class="leftmenu"><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-case leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Мои заказы</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-blue">2</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-favourite leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Избранное</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-success">3</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-gift leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Бонусные рубли</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-success">300<span class="leftmenu__badge-text">Б.₽.</span></span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-services leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Запись на услуги</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-settings leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Подбор по VIN</span><span class="leftmenu__badge h5 text-nowrap color-theme-white px-2 bg-theme-success">1</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-user leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Персональные данные</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-car leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Мой автомобиль</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-shield leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Смена пароля</span></a><a class="leftmenu__item d-flex align-items-center h4" href="https://don-shina.ru"><span class="ds-icon-exit leftmenu__item-icon h3 color-theme-blue mr-2 pointer-events-none"></span><span class="leftmenu__item-title d-block overflow-hidden text-nowrap mr-2">Выход</span></a>
             </nav>
           </div>
         </div>
@@ -652,7 +676,7 @@
           <div class="h2 font-weight-bold text-center mb-4">Данные пользователя</div>
           <form class="section pb-0 mb-5" action="#">
             <div class="border-bottom px-lg-5 px-md-4 px-3 pb-md-4 pb-3 mb-4">
-              <div class="h3 font-weight-bold color-theme-brand">Подробно заполненные персональные данные сделают работу с сайтом удобнее и быстрее:</div>
+              <div class="h3 font-weight-bold color-theme-blue">Подробно заполненные персональные данные сделают работу с сайтом удобнее и быстрее:</div>
             </div>
             <div class="border-bottom px-lg-5 px-md-4 px-3 mb-3">
               <div class="row">
@@ -728,7 +752,7 @@
                       <div class="icon-marker"><span class="ds-icon-spikes h4 pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -742,7 +766,7 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -778,7 +802,7 @@
                       <div class="icon-marker"><span class="ds-icon-spikes h4 pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -788,7 +812,7 @@
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -824,7 +848,7 @@
                       <div class="icon-marker"><span class="ds-icon-spikes h4 pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -835,7 +859,7 @@
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -868,7 +892,7 @@
                     </button>
                   </div>
                   <div class="card__meta card__meta_row mb-0">
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -879,7 +903,7 @@
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -911,7 +935,7 @@
                     </button>
                   </div>
                   <div class="card__meta card__meta_row mb-0">
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -921,7 +945,7 @@
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -962,7 +986,7 @@
                     </button>
                   </div>
                   <div class="card__meta card__meta_row mb-0">
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -973,7 +997,7 @@
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -1009,7 +1033,7 @@
                       <div class="icon-marker"><span class="ds-icon-spikes h4 pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -1023,7 +1047,7 @@
                       </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -1059,7 +1083,7 @@
                       <div class="icon-marker"><span class="ds-icon-spikes h4 pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -1069,7 +1093,7 @@
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -1105,7 +1129,7 @@
                       <div class="icon-marker"><span class="ds-icon-spikes h4 pointer-events-none"></span>
                       </div>
                     </div>
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -1116,7 +1140,7 @@
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -1149,7 +1173,7 @@
                     </button>
                   </div>
                   <div class="card__meta card__meta_row mb-0">
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -1160,7 +1184,7 @@
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -1192,7 +1216,7 @@
                     </button>
                   </div>
                   <div class="card__meta card__meta_row mb-0">
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -1202,7 +1226,7 @@
                       <div class="card__price"><span class="card__price-value">7 337.12</span>₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -1243,7 +1267,7 @@
                     </button>
                   </div>
                   <div class="card__meta card__meta_row mb-0">
-                    <div class="card__params flex-grow-1 text-right color-theme-brand">215 / 55  R16</div>
+                    <div class="card__params flex-grow-1 text-right color-theme-blue">215 / 55  R16</div>
                   </div>
                 </div>
                 <div class="card__body d-flex flex-column justify-content-between flex-grow-1">
@@ -1254,7 +1278,7 @@
                       <div class="card__price card__price_old">12 337.12₽</div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between zi-2">
-                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-brand mr-1">
+                      <div class="recalculate d-flex align-items-center flex-grow-1 overflow-hidden bg-theme-blue mr-1">
                         <input class="recalculate__field d-none" type="number" name="count" value="4"/>
                         <button class="recalculate__btn font-weight-bold color-theme-white flex-grow-1 recalculate__btn_remove" type="button">-</button>
                         <div class="recalculate__value d-flex align-items-center justify-content-center color-theme-white">4</div>
@@ -1270,7 +1294,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer h6 color-theme-white bg-theme-brand" itemscope itemtype="http://schema.org/WPFooter">
+    <footer class="footer h6 color-theme-white bg-theme-blue" itemscope itemtype="http://schema.org/WPFooter">
       <meta itemprop="copyrightYear" content="2022">
       <meta itemprop="copyrightHolder" content="ДонШина Ростов">
       <div class="wrapper d-flex flex-wrap">
@@ -1307,8 +1331,8 @@
                 <meta itemprop="latitude" content="47.244980">
                 <meta itemprop="longitude" content="39.648187"></span>
               <div class="contacts mb-2" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span class="d-none" itemprop="postalCode">344103</span><span class="d-none" itemprop="addressRegion">Ростовская область</span><span class="d-none" itemprop="addressLocality" content="Ростов-на-Дону"></span><span class="d-none" itemprop="streetAddress">ул. Доватора, 11</span>
-                <div class="contacts__item d-flex align-items-center h5 text-nowrap mb-1"><span class="ds-icon-placemark contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">г. Ростов-на-Дону</span>
-                </div><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="#"><span class="ds-icon-phone-nobg contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white" itemprop="telephone">+7 (863) 22-99-99-4</span></a><a class="contacts__item d-flex align-items-center h5 text-nowrap mb-1" href="mailto:office@don-shina.ru" itemprop="email"><span class="ds-icon-email contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">office@don-shina.ru</span></a>
+                <div class="contacts__item h5 text-nowrap mb-1"><span class="ds-icon-placemark contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">г. Ростов-на-Дону</span>
+                </div><a class="contacts__item h5 text-nowrap mb-1" href="#"><span class="ds-icon-phone-nobg contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white" itemprop="telephone">+7 (863) 22-99-99-4</span></a><a class="contacts__item h5 text-nowrap mb-1" href="mailto:office@don-shina.ru" itemprop="email"><span class="ds-icon-email contacts__icon h3 text-center color-theme-white mr-2 pointer-events-none"></span><span class="color-theme-white">office@don-shina.ru</span></a>
               </div>
             </div>
             <div class="col-4">
@@ -1325,10 +1349,10 @@
       <form class="modal-dialog" id="form-reg" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
-            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
-              <div class="h3 font-weight-bold color-theme-brand mr-3">Регистрация</div>
+            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-blue h3 mr-2 pointer-events-none"></span>
+              <div class="h3 font-weight-bold color-theme-blue mr-3">Регистрация</div>
             </div>
-            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            <button class="close h2 button-unstyled color-theme-blue py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-3 mb-3">
@@ -1373,10 +1397,10 @@
       <form class="modal-dialog" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
-            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
-              <div class="h3 font-weight-bold color-theme-brand mr-3">Войдите или зарегистрируйтесь</div>
+            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-blue h3 mr-2 pointer-events-none"></span>
+              <div class="h3 font-weight-bold color-theme-blue mr-3">Войдите или зарегистрируйтесь</div>
             </div>
-            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            <button class="close h2 button-unstyled color-theme-blue py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
@@ -1398,10 +1422,10 @@
       <form class="modal-dialog" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
-            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
-              <div class="h3 font-weight-bold color-theme-brand mr-3">Войдите по почте</div>
+            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-blue h3 mr-2 pointer-events-none"></span>
+              <div class="h3 font-weight-bold color-theme-blue mr-3">Войдите по почте</div>
             </div>
-            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            <button class="close h2 button-unstyled color-theme-blue py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
@@ -1423,10 +1447,10 @@
       <form class="modal-dialog" action="#">
         <div class="modal-content border-0 box-shadow py-3">
           <div class="modal-header d-flex align-items-center justify-content-between pt-0 px-4 pb-3 mb-4">
-            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-brand h3 mr-2 pointer-events-none"></span>
-              <div class="h3 font-weight-bold color-theme-brand mr-3">Забыли пароль?</div>
+            <div class="d-flex align-items-center"><span class="ds-icon-user color-theme-blue h3 mr-2 pointer-events-none"></span>
+              <div class="h3 font-weight-bold color-theme-blue mr-3">Забыли пароль?</div>
             </div>
-            <button class="close h2 button-unstyled color-theme-brand py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
+            <button class="close h2 button-unstyled color-theme-blue py-0" data-dismiss="modal"><span class="ds-icon-close pointer-events-none"></span>
             </button>
           </div>
           <div class="modal-body border-bottom pt-0 px-4 pb-2 mb-3">
@@ -1456,8 +1480,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/js/bootstrap-select.min.js"></script>
-  <script src="js/main.bundle.js"></script>
-<script src="js/validate.bundle.js"></script>
-<script src="js/ion.bundle.js"></script>
-<script src="js/search.bundle.js"></script></body>
+  <script src="js/main.bundle.js">
+<script
+ src="js/validate.bundle.js"></script><script src="js/ion.bundle.js"></script><script src="js/search.bundle.js"></script></body>
 </html>
