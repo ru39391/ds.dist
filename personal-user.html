@@ -61,7 +61,7 @@
               <use xlink:href="img/icons/icons.svg#icon-logo"></use>
             </svg></a>
           <div class="header__togglers">
-            <button class="header__btn header__btn_type_toggler text-uppercase" type="button" data-target="#categories"><span class="ds-icon-menu header__btn-icon header__btn-icon_show pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close pointer-events-none"></span><span class="header__btn-title">Каталог</span>
+            <button class="header__btn header__btn_type_toggler" type="button" data-target="#categories"><span class="ds-icon-menu header__btn-icon header__btn-icon_show pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close pointer-events-none"></span><span class="header__btn-title">Каталог</span>
             </button>
             <div class="panel">
               <div class="panel__wrapper" id="services">
@@ -298,7 +298,9 @@
               </div>
               <button class="header__navbar-item" type="button"><span class="header__navbar-top"><span class="header__navbar-icon mr-md-1"><span class="ds-icon-user color-theme-success pointer-events-none"></span></span><span class="header__navbar-badge header__navbar-badge_width_auto d-none d-md-flex rounded-pill px-2"><span class="font-weight-bold mr-1">300</span>Б.₽.</span></span><span class="header__navbar-caption">Сергей | выход</span></button>
             </div>
-            <div class="header__aside d-flex"><a class="header__btn header__btn_place_panel" href="#"><span class="header__btn-icon header__btn-icon_type_holder"><span class="ds-icon-cart pointer-events-none"></span></span><span class="header__btn-title">Корзина</span></a>
+            <div class="header__aside popup-holder d-flex">
+              <button class="header__btn header__btn_place_panel popup-toggler" type="button" data-target="#cart"><span class="ds-icon-cart header__btn-icon header__btn-icon_show pointer-events-none"></span><span class="ds-icon-close header__btn-icon header__btn-icon_close pointer-events-none"></span><span class="header__btn-title">Корзина</span>
+              </button>
               <div class="header__aside-meta"><a class="header__aside-badge bg-theme-success rounded-pill" href="#"><span class="color-theme-white font-weight-bold mr-md-1">3</span><span class="color-theme-white d-none d-md-block">шт.</span></a><a class="header__aside-badge rounded-pill box-shadow" href="#"><span class="mr-md-1">29</span><span class="ds-icon-favourite d-none d-md-block pointer-events-none"></span></a></div>
               <div class="popup popup_width_md popup_pos_right box-shadow border-radius d-block">
                 <div class="popup__triangle bg-theme-white box-shadow"></div>
